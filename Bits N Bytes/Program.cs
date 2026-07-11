@@ -1,3 +1,4 @@
+using Bits_N_Bytes.Database;
 namespace Bits_N_Bytes
 {
     internal static class Program
@@ -11,6 +12,16 @@ namespace Bits_N_Bytes
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
+            DatabaseHelper.InitializeDatabase();
+
+            DatabaseHelper.AddProduct(
+            "AMD Ryzen 7 5700",
+             9750,
+             20,
+             "Images/ryzen7.png"
+);
+
             Application.Run(new Form1());
         }
     }
