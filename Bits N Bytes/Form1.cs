@@ -27,7 +27,7 @@ namespace Bits_N_Bytes
 
             //HOME
 
-
+            
 
 
         }
@@ -36,6 +36,10 @@ namespace Bits_N_Bytes
         {
 
             //PRODUCT 
+
+            PRODUCT product = new PRODUCT();
+            product.Show();
+            this.Hide();
 
 
         }

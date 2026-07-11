@@ -39,11 +39,11 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new ReaLTaiizor.Controls.Panel();
-            pictureBox3 = new PictureBox();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            pictureBox3 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -88,12 +88,13 @@
             pictureBox5.BackgroundImageLayout = ImageLayout.Center;
             pictureBox5.ErrorImage = (Image)resources.GetObject("pictureBox5.ErrorImage");
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(868, 19);
+            pictureBox5.Location = new Point(959, 19);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(125, 61);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 14;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
@@ -101,7 +102,7 @@
             pictureBox6.BackgroundImageLayout = ImageLayout.Center;
             pictureBox6.ErrorImage = (Image)resources.GetObject("pictureBox6.ErrorImage");
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1260, 19);
+            pictureBox6.Location = new Point(1351, 19);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(150, 61);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -115,7 +116,7 @@
             pictureBox4.BackgroundImageLayout = ImageLayout.Center;
             pictureBox4.ErrorImage = (Image)resources.GetObject("pictureBox4.ErrorImage");
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1054, 19);
+            pictureBox4.Location = new Point(1145, 19);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(150, 61);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -140,12 +141,13 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(2057, 8);
+            pictureBox2.Location = new Point(2067, 8);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(81, 70);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click_2;
             // 
             // label2
             // 
@@ -153,7 +155,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(759, 171);
+            label2.Location = new Point(886, 180);
             label2.Name = "label2";
             label2.Size = new Size(209, 21);
             label2.TabIndex = 10;
@@ -165,7 +167,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Yu Gothic UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(632, 124);
+            label1.Location = new Point(759, 133);
             label1.Name = "label1";
             label1.Size = new Size(475, 47);
             label1.TabIndex = 9;
@@ -183,51 +185,10 @@
             panel2.Location = new Point(34, 300);
             panel2.Name = "panel2";
             panel2.Padding = new Padding(5);
-            panel2.Size = new Size(1845, 603);
+            panel2.Size = new Size(1845, 749);
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 12;
             panel2.Text = "panel2";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.BackgroundImageLayout = ImageLayout.None;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(42, 25);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(204, 168);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(42, 207);
-            label3.Name = "label3";
-            label3.Size = new Size(144, 37);
-            label3.TabIndex = 1;
-            label3.Text = "₱9,750.00";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(49, 257);
-            label4.Name = "label4";
-            label4.Size = new Size(107, 15);
-            label4.TabIndex = 2;
-            label4.Text = "AMD Ryzen 7 5700 ";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(49, 272);
-            label5.Name = "label5";
-            label5.Size = new Size(155, 15);
-            label5.TabIndex = 3;
-            label5.Text = " 8-Core 3.4 GHz Socket AM4";
-            label5.Click += label5_Click;
             // 
             // materialButton1
             // 
@@ -248,12 +209,53 @@
             materialButton1.UseAccentColor = false;
             materialButton1.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(49, 272);
+            label5.Name = "label5";
+            label5.Size = new Size(155, 15);
+            label5.TabIndex = 3;
+            label5.Text = " 8-Core 3.4 GHz Socket AM4";
+            label5.Click += label5_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(49, 257);
+            label4.Name = "label4";
+            label4.Size = new Size(107, 15);
+            label4.TabIndex = 2;
+            label4.Text = "AMD Ryzen 7 5700 ";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(42, 207);
+            label3.Name = "label3";
+            label3.Size = new Size(144, 37);
+            label3.TabIndex = 1;
+            label3.Text = "₱9,750.00";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.BackgroundImageLayout = ImageLayout.None;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(42, 25);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(204, 168);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
             // PRODUCT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1924, 915);
+            ClientSize = new Size(1924, 1061);
             Controls.Add(panel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label2);

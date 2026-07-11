@@ -42,7 +42,6 @@
             pictureBox6 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
@@ -50,7 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -59,7 +57,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Yu Gothic UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(880, 118);
+            label1.Location = new Point(747, 127);
             label1.Name = "label1";
             label1.Size = new Size(475, 47);
             label1.TabIndex = 2;
@@ -72,7 +70,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1007, 165);
+            label2.Location = new Point(874, 174);
             label2.Name = "label2";
             label2.Size = new Size(209, 21);
             label2.TabIndex = 3;
@@ -81,7 +79,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(1096, 201);
+            pictureBox3.Location = new Point(908, 288);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(684, 418);
             pictureBox3.TabIndex = 4;
@@ -92,7 +90,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Transparent;
-            label3.Location = new Point(176, 273);
+            label3.Location = new Point(163, 388);
             label3.Name = "label3";
             label3.Size = new Size(339, 50);
             label3.TabIndex = 5;
@@ -103,7 +101,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Transparent;
-            label4.Location = new Point(176, 323);
+            label4.Location = new Point(163, 438);
             label4.Name = "label4";
             label4.Size = new Size(184, 50);
             label4.TabIndex = 6;
@@ -115,7 +113,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Gold;
-            label5.Location = new Point(176, 373);
+            label5.Location = new Point(163, 488);
             label5.Name = "label5";
             label5.Size = new Size(268, 50);
             label5.TabIndex = 7;
@@ -126,7 +124,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Gold;
-            label6.Location = new Point(176, 423);
+            label6.Location = new Point(163, 538);
             label6.Name = "label6";
             label6.Size = new Size(189, 50);
             label6.TabIndex = 8;
@@ -149,7 +147,6 @@
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(pictureBox2);
             panel1.EdgeColor = Color.White;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
@@ -165,7 +162,7 @@
             pictureBox5.BackgroundImageLayout = ImageLayout.Center;
             pictureBox5.ErrorImage = (Image)resources.GetObject("pictureBox5.ErrorImage");
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(820, 19);
+            pictureBox5.Location = new Point(729, 19);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(125, 61);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -179,7 +176,7 @@
             pictureBox6.BackgroundImageLayout = ImageLayout.Center;
             pictureBox6.ErrorImage = (Image)resources.GetObject("pictureBox6.ErrorImage");
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1202, 19);
+            pictureBox6.Location = new Point(1111, 19);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(150, 61);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -193,7 +190,7 @@
             pictureBox4.BackgroundImageLayout = ImageLayout.Center;
             pictureBox4.ErrorImage = (Image)resources.GetObject("pictureBox4.ErrorImage");
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1004, 19);
+            pictureBox4.Location = new Point(913, 19);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(150, 61);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -214,17 +211,6 @@
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1828, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(81, 70);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -252,7 +238,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -267,7 +252,6 @@
         private Label label6;
         private FlowLayoutPanel flowLayoutPanel1;
         private ReaLTaiizor.Controls.Panel panel1;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
