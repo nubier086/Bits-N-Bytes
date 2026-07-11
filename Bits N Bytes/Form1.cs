@@ -21,5 +21,43 @@ namespace Bits_N_Bytes
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+            //HOME
+
+
+
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+            //PRODUCT 
+
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+            //ABOUT 
+
+
+
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+            //HOME LOGO
+
+
+
+
+        }
     }
 }
