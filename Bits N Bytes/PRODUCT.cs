@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Bits_N_Bytes.Database;
 
 namespace Bits_N_Bytes
 {
@@ -80,6 +81,20 @@ namespace Bits_N_Bytes
             Viewcart viewcart = new Viewcart();
             viewcart.Show();
             //idk why they duplicate 
+        }
+
+        //MATERIALBUTTON CODE CONNECTED TO DATABASE
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            string productName = "AMD Ryzen 7 5700";
+            string description = label4.Text + " " + label5.Text;
+            decimal price = decimal.Parse(label3.Text.Replace("₱", "").Replace(",", ""));
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+
+            
         }
     }
 }
