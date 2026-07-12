@@ -37,13 +37,13 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label2 = new Label();
-            label1 = new Label();
             panel2 = new ReaLTaiizor.Controls.Panel();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             pictureBox3 = new PictureBox();
+            label10 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -161,18 +161,6 @@
             label2.TabIndex = 10;
             label2.Text = "Your Dream PC Starts Here!";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Yu Gothic UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(759, 133);
-            label1.Name = "label1";
-            label1.Size = new Size(475, 47);
-            label1.TabIndex = 9;
-            label1.Text = "WELCOME TO BITS N BYTES!";
-            // 
             // panel2
             // 
             panel2.BackColor = Color.White;
@@ -197,7 +185,7 @@
             materialButton1.Depth = 0;
             materialButton1.HighEmphasis = true;
             materialButton1.Icon = null;
-            materialButton1.Location = new Point(90, 306);
+            materialButton1.Location = new Point(72, 306);
             materialButton1.Margin = new Padding(4, 6, 4, 6);
             materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton1.Name = "materialButton1";
@@ -213,7 +201,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(49, 272);
+            label5.Location = new Point(42, 272);
             label5.Name = "label5";
             label5.Size = new Size(155, 15);
             label5.TabIndex = 3;
@@ -251,16 +239,27 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Transparent;
+            label10.Location = new Point(725, 130);
+            label10.Name = "label10";
+            label10.Size = new Size(516, 50);
+            label10.TabIndex = 21;
+            label10.Text = "WELCOME TO BITS B BYTES!";
+            // 
             // PRODUCT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1924, 1061);
+            Controls.Add(label10);
             Controls.Add(panel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label2);
-            Controls.Add(label1);
             Name = "PRODUCT";
             Text = "PRODUCT";
             flowLayoutPanel1.ResumeLayout(false);
@@ -287,12 +286,12 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label2;
-        private Label label1;
         private ReaLTaiizor.Controls.Panel panel2;
         private PictureBox pictureBox3;
         private Label label5;
         private Label label4;
         private Label label3;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private Label label10;
     }
 }

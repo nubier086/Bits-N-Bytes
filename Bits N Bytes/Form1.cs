@@ -27,7 +27,9 @@ namespace Bits_N_Bytes
 
             //HOME
 
-            
+          Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
 
 
         }
@@ -48,7 +50,9 @@ namespace Bits_N_Bytes
         {
 
             //ABOUT 
-
+            About about = new About(); 
+            about.Show();
+            this.Hide();
 
 
 

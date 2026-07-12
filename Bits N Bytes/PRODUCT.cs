@@ -29,6 +29,12 @@ namespace Bits_N_Bytes
         private void pictureBox6_Click(object sender, EventArgs e)
         {
 
+            //ABOUT
+
+            About about = new About();
+            about.Show();
+            this.Hide();
+
 
 
 

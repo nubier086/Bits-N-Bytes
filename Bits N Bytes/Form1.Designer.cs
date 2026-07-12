@@ -79,7 +79,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(908, 288);
+            pictureBox3.Location = new Point(1025, 403);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(684, 418);
             pictureBox3.TabIndex = 4;
@@ -90,7 +90,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Transparent;
-            label3.Location = new Point(163, 388);
+            label3.Location = new Point(173, 485);
             label3.Name = "label3";
             label3.Size = new Size(339, 50);
             label3.TabIndex = 5;
@@ -101,7 +101,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Transparent;
-            label4.Location = new Point(163, 438);
+            label4.Location = new Point(173, 535);
             label4.Name = "label4";
             label4.Size = new Size(184, 50);
             label4.TabIndex = 6;
@@ -113,7 +113,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Gold;
-            label5.Location = new Point(163, 488);
+            label5.Location = new Point(173, 585);
             label5.Name = "label5";
             label5.Size = new Size(268, 50);
             label5.TabIndex = 7;
@@ -124,7 +124,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Gold;
-            label6.Location = new Point(163, 538);
+            label6.Location = new Point(173, 635);
             label6.Name = "label6";
             label6.Size = new Size(189, 50);
             label6.TabIndex = 8;
