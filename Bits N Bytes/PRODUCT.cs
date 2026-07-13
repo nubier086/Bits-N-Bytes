@@ -276,5 +276,88 @@ namespace Bits_N_Bytes
 
             MessageBox.Show("Added to cart!");
         }
+
+        private void PRODUCT_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbtnmb4_Click(object sender, EventArgs e)
+        {
+            string productName = "MAG Z890 Tomahawk WiFi";
+            string description = lblnamemb4 + " " + lblspecmb4;
+            decimal price = decimal.Parse(
+    lblpricemb4.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnmb5_Click(object sender, EventArgs e)
+        {
+            string productName = "PRO Z890-P WiFi";
+            string description = lblnamemb5 + " " + lblspecmb5;
+            decimal price = decimal.Parse(
+    lblpricemb5.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnram1_Click(object sender, EventArgs e)
+        {
+            string productName = "Trident Z5 Royal Neo";
+            string description = lblnameram1 + " " + lblspecram1;
+            decimal price = decimal.Parse(
+    lblpriceram1.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnram2_Click(object sender, EventArgs e)
+        {
+            string productName = "Trident Z5 RGB";
+            string description = lblnameram2 + " " + lblspecram2;
+            decimal price = decimal.Parse(
+    lblpriceram2.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnram3_Click(object sender, EventArgs e)
+        {
+            string productName = "Ripjaws M5 RGB";
+            string description = lblnameram3 + " " + lblspecram3;
+            decimal price = decimal.Parse(
+    lblpriceram3.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnram4_Click(object sender, EventArgs e)
+        {
+            string productName = "Flare X5 ";
+            string description = lblnameram4 + " " + lblspecram4;
+            decimal price = decimal.Parse(
+    lblpriceram4.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
     }
 }

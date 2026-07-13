@@ -75,6 +75,36 @@
             mbtnrtx5070 = new MaterialSkin.Controls.MaterialButton();
             pictureBox12 = new PictureBox();
             panel2 = new ReaLTaiizor.Controls.Panel();
+            mbtnram4 = new MaterialSkin.Controls.MaterialButton();
+            lblspecram4 = new Label();
+            lblnameram4 = new Label();
+            lblpriceram4 = new Label();
+            pictureBox24 = new PictureBox();
+            mbtnram3 = new MaterialSkin.Controls.MaterialButton();
+            lblspecram3 = new Label();
+            lblnameram3 = new Label();
+            lblpriceram3 = new Label();
+            pictureBox23 = new PictureBox();
+            mbtnram2 = new MaterialSkin.Controls.MaterialButton();
+            lblspecram2 = new Label();
+            lblnameram2 = new Label();
+            lblpriceram2 = new Label();
+            pictureBox22 = new PictureBox();
+            mbtnram1 = new MaterialSkin.Controls.MaterialButton();
+            lblspecram1 = new Label();
+            lblnameram1 = new Label();
+            lblpriceram1 = new Label();
+            pictureBox21 = new PictureBox();
+            mbtnmb5 = new MaterialSkin.Controls.MaterialButton();
+            lblspecmb5 = new Label();
+            lblnamemb5 = new Label();
+            lblpricemb5 = new Label();
+            pictureBox20 = new PictureBox();
+            mbtnmb4 = new MaterialSkin.Controls.MaterialButton();
+            lblspecmb4 = new Label();
+            lblnamemb4 = new Label();
+            lblpricemb4 = new Label();
+            pictureBox19 = new PictureBox();
             mbtnmb3 = new MaterialSkin.Controls.MaterialButton();
             lblspecmb3 = new Label();
             lblnamemb3 = new Label();
@@ -125,6 +155,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -671,7 +707,40 @@
             // 
             // panel2
             // 
+            panel2.AutoScroll = true;
+            panel2.AutoScrollMargin = new Size(1840, 1500);
+            panel2.AutoScrollMinSize = new Size(1840, 1500);
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(mbtnram4);
+            panel2.Controls.Add(lblspecram4);
+            panel2.Controls.Add(lblnameram4);
+            panel2.Controls.Add(lblpriceram4);
+            panel2.Controls.Add(pictureBox24);
+            panel2.Controls.Add(mbtnram3);
+            panel2.Controls.Add(lblspecram3);
+            panel2.Controls.Add(lblnameram3);
+            panel2.Controls.Add(lblpriceram3);
+            panel2.Controls.Add(pictureBox23);
+            panel2.Controls.Add(mbtnram2);
+            panel2.Controls.Add(lblspecram2);
+            panel2.Controls.Add(lblnameram2);
+            panel2.Controls.Add(lblpriceram2);
+            panel2.Controls.Add(pictureBox22);
+            panel2.Controls.Add(mbtnram1);
+            panel2.Controls.Add(lblspecram1);
+            panel2.Controls.Add(lblnameram1);
+            panel2.Controls.Add(lblpriceram1);
+            panel2.Controls.Add(pictureBox21);
+            panel2.Controls.Add(mbtnmb5);
+            panel2.Controls.Add(lblspecmb5);
+            panel2.Controls.Add(lblnamemb5);
+            panel2.Controls.Add(lblpricemb5);
+            panel2.Controls.Add(pictureBox20);
+            panel2.Controls.Add(mbtnmb4);
+            panel2.Controls.Add(lblspecmb4);
+            panel2.Controls.Add(lblnamemb4);
+            panel2.Controls.Add(lblpricemb4);
+            panel2.Controls.Add(pictureBox19);
             panel2.Controls.Add(mbtnmb3);
             panel2.Controls.Add(lblspecmb3);
             panel2.Controls.Add(lblnamemb3);
@@ -743,14 +812,374 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(pictureBox3);
             panel2.EdgeColor = Color.FromArgb(32, 41, 50);
-            panel2.Location = new Point(34, 300);
+            panel2.Location = new Point(34, 218);
             panel2.Name = "panel2";
             panel2.Padding = new Padding(5);
-            panel2.Size = new Size(1840, 825);
+            panel2.Size = new Size(1840, 1500);
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 12;
             panel2.Text = "panel2";
             panel2.Click += panel2_Click;
+            // 
+            // mbtnram4
+            // 
+            mbtnram4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnram4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnram4.Depth = 0;
+            mbtnram4.HighEmphasis = true;
+            mbtnram4.Icon = null;
+            mbtnram4.Location = new Point(1404, 1026);
+            mbtnram4.Margin = new Padding(4, 6, 4, 6);
+            mbtnram4.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnram4.Name = "mbtnram4";
+            mbtnram4.NoAccentTextColor = Color.Empty;
+            mbtnram4.Size = new Size(114, 36);
+            mbtnram4.TabIndex = 99;
+            mbtnram4.Text = "Add To Cart";
+            mbtnram4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnram4.UseAccentColor = false;
+            mbtnram4.UseVisualStyleBackColor = true;
+            mbtnram4.Click += mbtnram4_Click;
+            // 
+            // lblspecram4
+            // 
+            lblspecram4.AutoSize = true;
+            lblspecram4.Location = new Point(1314, 988);
+            lblspecram4.Name = "lblspecram4";
+            lblspecram4.Size = new Size(195, 15);
+            lblspecram4.TabIndex = 98;
+            lblspecram4.Text = "DDR5-6000, Low Profile, AMD EXPO";
+            // 
+            // lblnameram4
+            // 
+            lblnameram4.AutoSize = true;
+            lblnameram4.Location = new Point(1314, 973);
+            lblnameram4.Name = "lblnameram4";
+            lblnameram4.Size = new Size(48, 15);
+            lblnameram4.TabIndex = 97;
+            lblnameram4.Text = "Flare X5";
+            // 
+            // lblpriceram4
+            // 
+            lblpriceram4.AutoSize = true;
+            lblpriceram4.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblpriceram4.Location = new Point(1314, 923);
+            lblpriceram4.Name = "lblpriceram4";
+            lblpriceram4.Size = new Size(105, 37);
+            lblpriceram4.TabIndex = 96;
+            lblpriceram4.Text = "₱6,500";
+            // 
+            // pictureBox24
+            // 
+            pictureBox24.BackColor = Color.Transparent;
+            pictureBox24.BackgroundImage = (Image)resources.GetObject("pictureBox24.BackgroundImage");
+            pictureBox24.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox24.Location = new Point(1314, 741);
+            pictureBox24.Name = "pictureBox24";
+            pictureBox24.Size = new Size(204, 168);
+            pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox24.TabIndex = 95;
+            pictureBox24.TabStop = false;
+            // 
+            // mbtnram3
+            // 
+            mbtnram3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnram3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnram3.Depth = 0;
+            mbtnram3.HighEmphasis = true;
+            mbtnram3.Icon = null;
+            mbtnram3.Location = new Point(1149, 1026);
+            mbtnram3.Margin = new Padding(4, 6, 4, 6);
+            mbtnram3.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnram3.Name = "mbtnram3";
+            mbtnram3.NoAccentTextColor = Color.Empty;
+            mbtnram3.Size = new Size(114, 36);
+            mbtnram3.TabIndex = 94;
+            mbtnram3.Text = "Add To Cart";
+            mbtnram3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnram3.UseAccentColor = false;
+            mbtnram3.UseVisualStyleBackColor = true;
+            mbtnram3.Click += mbtnram3_Click;
+            // 
+            // lblspecram3
+            // 
+            lblspecram3.AutoSize = true;
+            lblspecram3.Location = new Point(1059, 988);
+            lblspecram3.Name = "lblspecram3";
+            lblspecram3.Size = new Size(212, 15);
+            lblspecram3.TabIndex = 93;
+            lblspecram3.Text = "DDR5-6400, RGB, Gaming Performance";
+            // 
+            // lblnameram3
+            // 
+            lblnameram3.AutoSize = true;
+            lblnameram3.Location = new Point(1059, 973);
+            lblnameram3.Name = "lblnameram3";
+            lblnameram3.Size = new Size(122, 15);
+            lblnameram3.TabIndex = 92;
+            lblnameram3.Text = "Ripjaws M5 RGB 32GB";
+            // 
+            // lblpriceram3
+            // 
+            lblpriceram3.AutoSize = true;
+            lblpriceram3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblpriceram3.Location = new Point(1059, 923);
+            lblpriceram3.Name = "lblpriceram3";
+            lblpriceram3.Size = new Size(105, 37);
+            lblpriceram3.TabIndex = 91;
+            lblpriceram3.Text = "₱7,500";
+            // 
+            // pictureBox23
+            // 
+            pictureBox23.BackColor = Color.Transparent;
+            pictureBox23.BackgroundImage = (Image)resources.GetObject("pictureBox23.BackgroundImage");
+            pictureBox23.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox23.Location = new Point(1059, 741);
+            pictureBox23.Name = "pictureBox23";
+            pictureBox23.Size = new Size(204, 168);
+            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox23.TabIndex = 90;
+            pictureBox23.TabStop = false;
+            // 
+            // mbtnram2
+            // 
+            mbtnram2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnram2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnram2.Depth = 0;
+            mbtnram2.HighEmphasis = true;
+            mbtnram2.Icon = null;
+            mbtnram2.Location = new Point(892, 1026);
+            mbtnram2.Margin = new Padding(4, 6, 4, 6);
+            mbtnram2.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnram2.Name = "mbtnram2";
+            mbtnram2.NoAccentTextColor = Color.Empty;
+            mbtnram2.Size = new Size(114, 36);
+            mbtnram2.TabIndex = 89;
+            mbtnram2.Text = "Add To Cart";
+            mbtnram2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnram2.UseAccentColor = false;
+            mbtnram2.UseVisualStyleBackColor = true;
+            mbtnram2.Click += mbtnram2_Click;
+            // 
+            // lblspecram2
+            // 
+            lblspecram2.AutoSize = true;
+            lblspecram2.Location = new Point(802, 988);
+            lblspecram2.Name = "lblspecram2";
+            lblspecram2.Size = new Size(185, 15);
+            lblspecram2.TabIndex = 88;
+            lblspecram2.Text = "DDR5-6400, RGB, Intel XMP Ready";
+            // 
+            // lblnameram2
+            // 
+            lblnameram2.AutoSize = true;
+            lblnameram2.Location = new Point(802, 973);
+            lblnameram2.Name = "lblnameram2";
+            lblnameram2.Size = new Size(85, 15);
+            lblnameram2.TabIndex = 87;
+            lblnameram2.Text = "Trident Z5 RGB";
+            // 
+            // lblpriceram2
+            // 
+            lblpriceram2.AutoSize = true;
+            lblpriceram2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblpriceram2.Location = new Point(802, 923);
+            lblpriceram2.Name = "lblpriceram2";
+            lblpriceram2.Size = new Size(105, 37);
+            lblpriceram2.TabIndex = 86;
+            lblpriceram2.Text = "₱8,500";
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.BackColor = Color.Transparent;
+            pictureBox22.BackgroundImage = (Image)resources.GetObject("pictureBox22.BackgroundImage");
+            pictureBox22.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox22.Location = new Point(802, 741);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(204, 168);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 85;
+            pictureBox22.TabStop = false;
+            // 
+            // mbtnram1
+            // 
+            mbtnram1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnram1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnram1.Depth = 0;
+            mbtnram1.HighEmphasis = true;
+            mbtnram1.Icon = null;
+            mbtnram1.Location = new Point(635, 1026);
+            mbtnram1.Margin = new Padding(4, 6, 4, 6);
+            mbtnram1.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnram1.Name = "mbtnram1";
+            mbtnram1.NoAccentTextColor = Color.Empty;
+            mbtnram1.Size = new Size(114, 36);
+            mbtnram1.TabIndex = 84;
+            mbtnram1.Text = "Add To Cart";
+            mbtnram1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnram1.UseAccentColor = false;
+            mbtnram1.UseVisualStyleBackColor = true;
+            mbtnram1.Click += mbtnram1_Click;
+            // 
+            // lblspecram1
+            // 
+            lblspecram1.AutoSize = true;
+            lblspecram1.Location = new Point(545, 988);
+            lblspecram1.Name = "lblspecram1";
+            lblspecram1.Size = new Size(219, 15);
+            lblspecram1.TabIndex = 83;
+            lblspecram1.Text = "DDR5-6400, RGB, CL32, Premium Design";
+            // 
+            // lblnameram1
+            // 
+            lblnameram1.AutoSize = true;
+            lblnameram1.Location = new Point(545, 973);
+            lblnameram1.Name = "lblnameram1";
+            lblnameram1.Size = new Size(120, 15);
+            lblnameram1.TabIndex = 82;
+            lblnameram1.Text = "Trident Z5 Royal Neo ";
+            // 
+            // lblpriceram1
+            // 
+            lblpriceram1.AutoSize = true;
+            lblpriceram1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblpriceram1.Location = new Point(545, 923);
+            lblpriceram1.Name = "lblpriceram1";
+            lblpriceram1.Size = new Size(121, 37);
+            lblpriceram1.TabIndex = 81;
+            lblpriceram1.Text = "₱12,000";
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.BackColor = Color.Transparent;
+            pictureBox21.BackgroundImage = (Image)resources.GetObject("pictureBox21.BackgroundImage");
+            pictureBox21.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox21.Location = new Point(545, 741);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(204, 168);
+            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox21.TabIndex = 80;
+            pictureBox21.TabStop = false;
+            // 
+            // mbtnmb5
+            // 
+            mbtnmb5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnmb5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnmb5.Depth = 0;
+            mbtnmb5.HighEmphasis = true;
+            mbtnmb5.Icon = null;
+            mbtnmb5.Location = new Point(385, 1026);
+            mbtnmb5.Margin = new Padding(4, 6, 4, 6);
+            mbtnmb5.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnmb5.Name = "mbtnmb5";
+            mbtnmb5.NoAccentTextColor = Color.Empty;
+            mbtnmb5.Size = new Size(114, 36);
+            mbtnmb5.TabIndex = 79;
+            mbtnmb5.Text = "Add To Cart";
+            mbtnmb5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnmb5.UseAccentColor = false;
+            mbtnmb5.UseVisualStyleBackColor = true;
+            mbtnmb5.Click += mbtnmb5_Click;
+            // 
+            // lblspecmb5
+            // 
+            lblspecmb5.AutoSize = true;
+            lblspecmb5.Location = new Point(295, 988);
+            lblspecmb5.Name = "lblspecmb5";
+            lblspecmb5.Size = new Size(204, 15);
+            lblspecmb5.TabIndex = 78;
+            lblspecmb5.Text = "Z890, DDR5, PCIe 5.0, Budget Friendly";
+            // 
+            // lblnamemb5
+            // 
+            lblnamemb5.AutoSize = true;
+            lblnamemb5.Location = new Point(295, 973);
+            lblnamemb5.Name = "lblnamemb5";
+            lblnamemb5.Size = new Size(96, 15);
+            lblnamemb5.TabIndex = 77;
+            lblnamemb5.Text = "PRO Z890-P WiFi";
+            // 
+            // lblpricemb5
+            // 
+            lblpricemb5.AutoSize = true;
+            lblpricemb5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblpricemb5.Location = new Point(295, 923);
+            lblpricemb5.Name = "lblpricemb5";
+            lblpricemb5.Size = new Size(121, 37);
+            lblpricemb5.TabIndex = 76;
+            lblpricemb5.Text = "₱14,000";
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.BackColor = Color.Transparent;
+            pictureBox20.BackgroundImage = (Image)resources.GetObject("pictureBox20.BackgroundImage");
+            pictureBox20.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox20.Location = new Point(295, 741);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(204, 168);
+            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox20.TabIndex = 75;
+            pictureBox20.TabStop = false;
+            // 
+            // mbtnmb4
+            // 
+            mbtnmb4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnmb4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnmb4.Depth = 0;
+            mbtnmb4.HighEmphasis = true;
+            mbtnmb4.Icon = null;
+            mbtnmb4.Location = new Point(132, 1026);
+            mbtnmb4.Margin = new Padding(4, 6, 4, 6);
+            mbtnmb4.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnmb4.Name = "mbtnmb4";
+            mbtnmb4.NoAccentTextColor = Color.Empty;
+            mbtnmb4.Size = new Size(114, 36);
+            mbtnmb4.TabIndex = 74;
+            mbtnmb4.Text = "Add To Cart";
+            mbtnmb4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnmb4.UseAccentColor = false;
+            mbtnmb4.UseVisualStyleBackColor = true;
+            mbtnmb4.Click += mbtnmb4_Click;
+            // 
+            // lblspecmb4
+            // 
+            lblspecmb4.AutoSize = true;
+            lblspecmb4.Location = new Point(42, 988);
+            lblspecmb4.Name = "lblspecmb4";
+            lblspecmb4.Size = new Size(179, 15);
+            lblspecmb4.TabIndex = 73;
+            lblspecmb4.Text = "Z890, DDR5, Strong VRM, Wi-Fi 7";
+            // 
+            // lblnamemb4
+            // 
+            lblnamemb4.AutoSize = true;
+            lblnamemb4.Location = new Point(42, 973);
+            lblnamemb4.Name = "lblnamemb4";
+            lblnamemb4.Size = new Size(149, 15);
+            lblnamemb4.TabIndex = 72;
+            lblnamemb4.Text = "MAG Z890 Tomahawk WiFi";
+            // 
+            // lblpricemb4
+            // 
+            lblpricemb4.AutoSize = true;
+            lblpricemb4.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblpricemb4.Location = new Point(42, 923);
+            lblpricemb4.Name = "lblpricemb4";
+            lblpricemb4.Size = new Size(121, 37);
+            lblpricemb4.TabIndex = 71;
+            lblpricemb4.Text = "₱18,000";
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.BackColor = Color.Transparent;
+            pictureBox19.BackgroundImage = (Image)resources.GetObject("pictureBox19.BackgroundImage");
+            pictureBox19.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox19.Location = new Point(42, 741);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(204, 168);
+            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox19.TabIndex = 70;
+            pictureBox19.TabStop = false;
             // 
             // mbtnmb3
             // 
@@ -1172,6 +1601,7 @@
             Controls.Add(label2);
             Name = "PRODUCT";
             Text = "PRODUCT";
+            Load += PRODUCT_Load;
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -1189,6 +1619,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
@@ -1281,5 +1717,36 @@
         private Label lblnamemb3;
         private Label lblpricemb3;
         private PictureBox pictureBox18;
+        private MaterialSkin.Controls.MaterialButton mbtnmb4;
+        private Label lblspecmb4;
+        private Label label6;
+        private Label lblpricemb4;
+        private PictureBox pictureBox19;
+        private Label lblnamemb4;
+        private MaterialSkin.Controls.MaterialButton mbtnmb5;
+        private Label lblspecmb5;
+        private Label lblnamemb5;
+        private Label lblpricemb5;
+        private PictureBox pictureBox20;
+        private MaterialSkin.Controls.MaterialButton mbtnram1;
+        private Label lblspecram1;
+        private Label lblnameram1;
+        private Label lblpriceram1;
+        private PictureBox pictureBox21;
+        private MaterialSkin.Controls.MaterialButton mbtnram3;
+        private Label lblspecram3;
+        private Label lblnameram3;
+        private Label lblpriceram3;
+        private PictureBox pictureBox23;
+        private MaterialSkin.Controls.MaterialButton mbtnram2;
+        private Label lblspecram2;
+        private Label lblnameram2;
+        private Label lblpriceram2;
+        private PictureBox pictureBox22;
+        private MaterialSkin.Controls.MaterialButton mbtnram4;
+        private Label lblspecram4;
+        private Label lblnameram4;
+        private Label lblpriceram4;
+        private PictureBox pictureBox24;
     }
 }
