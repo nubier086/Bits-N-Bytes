@@ -141,5 +141,140 @@ namespace Bits_N_Bytes
 
             MessageBox.Show("Added to cart!");
         }
+
+        private void mbtnintel7_Click(object sender, EventArgs e)
+        {
+            string productName = "Core Ultra 7 265K";
+            string description = lblnameintel7 + " " + lblspecintel7;
+            decimal price = decimal.Parse(
+    lblpriceintel7.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnintel5_Click(object sender, EventArgs e)
+        {
+            string productName = "Core Ultra 5 245K";
+            string description = lblnameintel5 + " " + lblspecintel5;
+            decimal price = decimal.Parse(
+    lblpriceintel5.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnrtx5070_Click(object sender, EventArgs e)
+        {
+            string productName = "RTX 5070";
+            string description = lblnamertx5070 + " " + lblspecrtx5070;
+            decimal price = decimal.Parse(
+    lblpricertx5070.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbtnrtx5070ti_Click(object sender, EventArgs e)
+        {
+            string productName = "RTX 5070 ti";
+            string description = lblnamertx5070ti + " " + lblspecrtx5070ti;
+            decimal price = decimal.Parse(
+    lblpricertx5070ti.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnrtx5080_Click(object sender, EventArgs e)
+        {
+            string productName = "RTX 5080";
+            string description = lblnamertx5080 + " " + lblspecrtx5080;
+            decimal price = decimal.Parse(
+    lblpricertx5080.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnrtx5090_Click(object sender, EventArgs e)
+        {
+            string productName = "RTX 5090";
+            string description = lblnamertx5090 + " " + lblspecrtx5090;
+            decimal price = decimal.Parse(
+    lblpricertx5090.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnrtx5060ti_Click(object sender, EventArgs e)
+        {
+            string productName = "RTX 5060 ti";
+            string description = lblnamertx5060ti + " " + lblspecrtx5060ti;
+            decimal price = decimal.Parse(
+    lblpricertx5060ti.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnmb1_Click(object sender, EventArgs e)
+        {
+            string productName = "MEG Z890 ACE";
+            string description = lblnamemb1 + " " + lblspecmb1;
+            decimal price = decimal.Parse(
+    lblpricemb1.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnmb2_Click(object sender, EventArgs e)
+        {
+            string productName = "MEG Z890 ACE";
+            string description = lblnamemb2 + " " + lblspecmb2;
+            decimal price = decimal.Parse(
+    lblpricemb2.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mbtnmb3_Click(object sender, EventArgs e)
+        {
+            string productName = "MEG Z890 ACE";
+            string description = lblnamemb3 + " " + lblspecmb3;
+            decimal price = decimal.Parse(
+    lblpricemb3.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
     }
 }
