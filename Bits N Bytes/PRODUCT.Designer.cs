@@ -38,6 +38,21 @@
             pictureBox2 = new PictureBox();
             label2 = new Label();
             panel2 = new ReaLTaiizor.Controls.Panel();
+            materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            lblsppecintel9 = new Label();
+            lblnameintel9 = new Label();
+            lblpriceintel9 = new Label();
+            pictureBox8 = new PictureBox();
+            mtbnryzen5 = new MaterialSkin.Controls.MaterialButton();
+            lblspecryen5 = new Label();
+            lblnameryzen5 = new Label();
+            lblpriceryzen5 = new Label();
+            pictureBox7 = new PictureBox();
+            mbtnryzen9 = new MaterialSkin.Controls.MaterialButton();
+            lblspecryzen9 = new Label();
+            lblnameryzen9 = new Label();
+            lblpriceryzen9 = new Label();
+            pcbRyzen9 = new PictureBox();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
             label5 = new Label();
             label4 = new Label();
@@ -52,6 +67,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pcbRyzen9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -164,6 +182,21 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(materialButton2);
+            panel2.Controls.Add(lblsppecintel9);
+            panel2.Controls.Add(lblnameintel9);
+            panel2.Controls.Add(lblpriceintel9);
+            panel2.Controls.Add(pictureBox8);
+            panel2.Controls.Add(mtbnryzen5);
+            panel2.Controls.Add(lblspecryen5);
+            panel2.Controls.Add(lblnameryzen5);
+            panel2.Controls.Add(lblpriceryzen5);
+            panel2.Controls.Add(pictureBox7);
+            panel2.Controls.Add(mbtnryzen9);
+            panel2.Controls.Add(lblspecryzen9);
+            panel2.Controls.Add(lblnameryzen9);
+            panel2.Controls.Add(lblpriceryzen9);
+            panel2.Controls.Add(pcbRyzen9);
             panel2.Controls.Add(materialButton1);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
@@ -178,6 +211,180 @@
             panel2.TabIndex = 12;
             panel2.Text = "panel2";
             // 
+            // materialButton2
+            // 
+            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton2.Depth = 0;
+            materialButton2.HighEmphasis = true;
+            materialButton2.Icon = null;
+            materialButton2.Location = new Point(903, 306);
+            materialButton2.Margin = new Padding(4, 6, 4, 6);
+            materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton2.Name = "materialButton2";
+            materialButton2.NoAccentTextColor = Color.Empty;
+            materialButton2.Size = new Size(114, 36);
+            materialButton2.TabIndex = 19;
+            materialButton2.Text = "ADD TO CART";
+            materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton2.UseAccentColor = false;
+            materialButton2.UseVisualStyleBackColor = true;
+            materialButton2.Click += materialButton2_Click;
+            // 
+            // lblsppecintel9
+            // 
+            lblsppecintel9.AutoSize = true;
+            lblsppecintel9.Location = new Point(802, 272);
+            lblsppecintel9.Name = "lblsppecintel9";
+            lblsppecintel9.Size = new Size(231, 30);
+            lblsppecintel9.TabIndex = 18;
+            lblsppecintel9.Text = "24 Cores (8P+16E), up to 5.7GHz, LGA1851,\r\n DDR5, PCIe 5.0";
+            // 
+            // lblnameintel9
+            // 
+            lblnameintel9.AutoSize = true;
+            lblnameintel9.Location = new Point(802, 257);
+            lblnameintel9.Name = "lblnameintel9";
+            lblnameintel9.Size = new Size(97, 15);
+            lblnameintel9.TabIndex = 17;
+            lblnameintel9.Text = "Core Ultra 9 285K";
+            // 
+            // lblpriceintel9
+            // 
+            lblpriceintel9.AutoSize = true;
+            lblpriceintel9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
+            lblpriceintel9.Location = new Point(802, 207);
+            lblpriceintel9.Name = "lblpriceintel9";
+            lblpriceintel9.Size = new Size(121, 37);
+            lblpriceintel9.TabIndex = 16;
+            lblpriceintel9.Text = "₱28,000";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
+            pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox8.Location = new Point(802, 24);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(204, 171);
+            pictureBox8.TabIndex = 15;
+            pictureBox8.TabStop = false;
+            // 
+            // mtbnryzen5
+            // 
+            mtbnryzen5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mtbnryzen5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mtbnryzen5.Depth = 0;
+            mtbnryzen5.HighEmphasis = true;
+            mtbnryzen5.Icon = null;
+            mtbnryzen5.Location = new Point(647, 306);
+            mtbnryzen5.Margin = new Padding(4, 6, 4, 6);
+            mtbnryzen5.MouseState = MaterialSkin.MouseState.HOVER;
+            mtbnryzen5.Name = "mtbnryzen5";
+            mtbnryzen5.NoAccentTextColor = Color.Empty;
+            mtbnryzen5.Size = new Size(114, 36);
+            mtbnryzen5.TabIndex = 14;
+            mtbnryzen5.Text = "ADD TO CART";
+            mtbnryzen5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mtbnryzen5.UseAccentColor = false;
+            mtbnryzen5.UseVisualStyleBackColor = true;
+            mtbnryzen5.Click += mtbnryzen5_Click;
+            // 
+            // lblspecryen5
+            // 
+            lblspecryen5.AutoSize = true;
+            lblspecryen5.Location = new Point(545, 272);
+            lblspecryen5.Name = "lblspecryen5";
+            lblspecryen5.Size = new Size(222, 30);
+            lblspecryen5.TabIndex = 13;
+            lblspecryen5.Text = "label16 Cores / 12 Threads, up to 5.4GHz,\r\n Zen 5, 65W";
+            // 
+            // lblnameryzen5
+            // 
+            lblnameryzen5.AutoSize = true;
+            lblnameryzen5.Location = new Point(545, 257);
+            lblnameryzen5.Name = "lblnameryzen5";
+            lblnameryzen5.Size = new Size(81, 15);
+            lblnameryzen5.TabIndex = 12;
+            lblnameryzen5.Text = "Ryzen 5 9600X";
+            // 
+            // lblpriceryzen5
+            // 
+            lblpriceryzen5.AutoSize = true;
+            lblpriceryzen5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
+            lblpriceryzen5.Location = new Point(545, 207);
+            lblpriceryzen5.Name = "lblpriceryzen5";
+            lblpriceryzen5.Size = new Size(121, 37);
+            lblpriceryzen5.TabIndex = 11;
+            lblpriceryzen5.Text = "₱14,000";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
+            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Location = new Point(545, 23);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(204, 170);
+            pictureBox7.TabIndex = 10;
+            pictureBox7.TabStop = false;
+            // 
+            // mbtnryzen9
+            // 
+            mbtnryzen9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnryzen9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnryzen9.Depth = 0;
+            mbtnryzen9.HighEmphasis = true;
+            mbtnryzen9.Icon = null;
+            mbtnryzen9.Location = new Point(385, 306);
+            mbtnryzen9.Margin = new Padding(4, 6, 4, 6);
+            mbtnryzen9.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnryzen9.Name = "mbtnryzen9";
+            mbtnryzen9.NoAccentTextColor = Color.Empty;
+            mbtnryzen9.Size = new Size(114, 36);
+            mbtnryzen9.TabIndex = 9;
+            mbtnryzen9.Text = "ADD TO CART";
+            mbtnryzen9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnryzen9.UseAccentColor = false;
+            mbtnryzen9.UseVisualStyleBackColor = true;
+            mbtnryzen9.Click += mbtnryzen9_Click;
+            // 
+            // lblspecryzen9
+            // 
+            lblspecryzen9.AutoSize = true;
+            lblspecryzen9.Location = new Point(295, 272);
+            lblspecryzen9.Name = "lblspecryzen9";
+            lblspecryzen9.Size = new Size(200, 30);
+            lblspecryzen9.TabIndex = 8;
+            lblspecryzen9.Text = "16 Cores / 32 Threads, up to 5.7GHz, \r\n3D V-Cache, AM5, DDR5, PCIe 5.0";
+            // 
+            // lblnameryzen9
+            // 
+            lblnameryzen9.AutoSize = true;
+            lblnameryzen9.Location = new Point(295, 257);
+            lblnameryzen9.Name = "lblnameryzen9";
+            lblnameryzen9.Size = new Size(95, 15);
+            lblnameryzen9.TabIndex = 7;
+            lblnameryzen9.Text = "Ryzen 9 9950X3D";
+            // 
+            // lblpriceryzen9
+            // 
+            lblpriceryzen9.AutoSize = true;
+            lblpriceryzen9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
+            lblpriceryzen9.Location = new Point(295, 207);
+            lblpriceryzen9.Name = "lblpriceryzen9";
+            lblpriceryzen9.Size = new Size(121, 37);
+            lblpriceryzen9.TabIndex = 6;
+            lblpriceryzen9.Text = "₱45,000";
+            // 
+            // pcbRyzen9
+            // 
+            pcbRyzen9.BackgroundImage = (Image)resources.GetObject("pcbRyzen9.BackgroundImage");
+            pcbRyzen9.BackgroundImageLayout = ImageLayout.Stretch;
+            pcbRyzen9.Location = new Point(295, 24);
+            pcbRyzen9.Name = "pcbRyzen9";
+            pcbRyzen9.Size = new Size(204, 169);
+            pcbRyzen9.TabIndex = 5;
+            pcbRyzen9.TabStop = false;
+            // 
             // materialButton1
             // 
             materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -185,7 +392,7 @@
             materialButton1.Depth = 0;
             materialButton1.HighEmphasis = true;
             materialButton1.Icon = null;
-            materialButton1.Location = new Point(72, 306);
+            materialButton1.Location = new Point(142, 306);
             materialButton1.Margin = new Padding(4, 6, 4, 6);
             materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton1.Name = "materialButton1";
@@ -271,6 +478,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pcbRyzen9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -293,5 +503,20 @@
         private Label label3;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private Label label10;
+        private Label lblpriceryzen9;
+        private PictureBox pcbRyzen9;
+        private Label lblspecryzen9;
+        private Label lblnameryzen9;
+        private MaterialSkin.Controls.MaterialButton mbtnryzen9;
+        private Label lblpriceryzen5;
+        private PictureBox pictureBox7;
+        private MaterialSkin.Controls.MaterialButton mtbnryzen5;
+        private Label lblspecryen5;
+        private Label lblnameryzen5;
+        private Label lblnameintel9;
+        private Label lblpriceintel9;
+        private PictureBox pictureBox8;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private Label lblsppecintel9;
     }
 }

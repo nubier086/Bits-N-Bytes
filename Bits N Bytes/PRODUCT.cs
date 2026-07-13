@@ -100,7 +100,46 @@ namespace Bits_N_Bytes
 
             MessageBox.Show("Added to cart!");
 
-            
+
+        }
+
+        private void mbtnryzen9_Click(object sender, EventArgs e)
+        {
+            string productName = "AMD Ryzen 9 9950X3D";
+            string description = lblnameryzen9 + " " + lblspecryzen9;
+            decimal price = decimal.Parse(
+    lblpriceryzen9.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void mtbnryzen5_Click(object sender, EventArgs e)
+        {
+            string productName = "Ryzen 5 9600X";
+            string description = lblnameryzen5 + " " + lblspecryen5;
+            decimal price = decimal.Parse(
+    lblpriceryzen5.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            string productName = "Core Ultra 9 285K";
+            string description = lblnameintel9 + " " + lblsppecintel9;
+            decimal price = decimal.Parse(
+    lblpriceintel9.Text.Replace("₱", "").Replace(",", "")
+);
+
+            DatabaseHelper.AddToCart(productName, description, price);
+
+            MessageBox.Show("Added to cart!");
         }
     }
 }
