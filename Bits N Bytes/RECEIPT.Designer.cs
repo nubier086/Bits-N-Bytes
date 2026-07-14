@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             label9 = new Label();
             bigTextBox1 = new ReaLTaiizor.Controls.BigTextBox();
             label1 = new Label();
@@ -40,7 +43,10 @@
             bigTextBox6 = new ReaLTaiizor.Controls.BigTextBox();
             label5 = new Label();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            productModelsBindingSource = new BindingSource(components);
             dgvCart = new DataGridView();
+            lblTotal = new Label();
+            ((System.ComponentModel.ISupportInitialize)productModelsBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCart).BeginInit();
             SuspendLayout();
             // 
@@ -219,16 +225,50 @@
             materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton1.UseAccentColor = false;
             materialButton1.UseVisualStyleBackColor = true;
+            materialButton1.Click += materialButton1_Click;
+            // 
+            // productModelsBindingSource
+            // 
+            productModelsBindingSource.DataSource = typeof(Models.ProductModels);
             // 
             // dgvCart
             // 
             dgvCart.AllowUserToAddRows = false;
+            dgvCart.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvCart.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCart.Location = new Point(474, 84);
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dgvCart.DefaultCellStyle = dataGridViewCellStyle4;
+            dgvCart.Location = new Point(500, 105);
             dgvCart.Name = "dgvCart";
             dgvCart.ReadOnly = true;
-            dgvCart.Size = new Size(737, 449);
+            dgvCart.Size = new Size(498, 390);
             dgvCart.TabIndex = 33;
+            // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.BackColor = Color.Black;
+            lblTotal.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTotal.ForeColor = Color.White;
+            lblTotal.Location = new Point(880, 498);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(118, 30);
+            lblTotal.TabIndex = 34;
+            lblTotal.Text = "Total: ₱0.00";
             // 
             // RECEIPT
             // 
@@ -236,6 +276,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1223, 700);
+            Controls.Add(lblTotal);
             Controls.Add(dgvCart);
             Controls.Add(materialButton1);
             Controls.Add(label5);
@@ -252,6 +293,7 @@
             ForeColor = Color.White;
             Name = "RECEIPT";
             Text = "RECEIPT";
+            ((System.ComponentModel.ISupportInitialize)productModelsBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvCart).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -271,6 +313,8 @@
         private ReaLTaiizor.Controls.BigTextBox bigTextBox6;
         private Label label5;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private BindingSource productModelsBindingSource;
         private DataGridView dgvCart;
+        private Label lblTotal;
     }
 }

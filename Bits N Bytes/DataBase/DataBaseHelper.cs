@@ -17,6 +17,24 @@ namespace Bits_N_Bytes.Database
             return new SqliteConnection(ConnectionString);
         }
 
+
+
+        public static void ClearCart2()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+
+                string query = "DELETE FROM Cart";
+
+                using (var command = new SqliteCommand(query, connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
         public static void InitializeDatabase()
         {
             string folder = Path.GetDirectoryName(DbPath)!;

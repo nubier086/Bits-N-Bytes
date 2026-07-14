@@ -45,6 +45,7 @@
             label6 = new Label();
             label4 = new Label();
             label10 = new Label();
+            label1 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -211,7 +212,7 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(120, 636);
             label5.Name = "label5";
-            label5.Size = new Size(876, 25);
+            label5.Size = new Size(877, 25);
             label5.TabIndex = 15;
             label5.Text = "Quality PC components and custom computer solutions at affordable prices. Whether you’re gaming,";
             // 
@@ -235,7 +236,7 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(120, 600);
             label4.Name = "label4";
-            label4.Size = new Size(806, 25);
+            label4.Size = new Size(807, 25);
             label4.TabIndex = 14;
             label4.Text = "We provide a comfortable and high-performance internet café experience while also offering";
             // 
@@ -244,11 +245,22 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Transparent;
-            label10.Location = new Point(811, 129);
+            label10.Location = new Point(942, 129);
             label10.Name = "label10";
-            label10.Size = new Size(360, 50);
+            label10.Size = new Size(259, 50);
             label10.TabIndex = 20;
-            label10.Text = "ABOUT Bits n Bytes";
+            label10.Text = "BITS N BYTES";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Gold;
+            label1.Location = new Point(787, 129);
+            label1.Name = "label1";
+            label1.Size = new Size(149, 50);
+            label1.TabIndex = 21;
+            label1.Text = "ABOUT";
             // 
             // About
             // 
@@ -256,6 +268,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1924, 1061);
+            Controls.Add(label1);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -299,5 +312,6 @@
         private Label label6;
         private Label label4;
         private Label label10;
+        private Label label1;
     }
 }

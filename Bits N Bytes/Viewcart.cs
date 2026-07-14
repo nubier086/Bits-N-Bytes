@@ -101,6 +101,15 @@ namespace Bits_N_Bytes
             }
         }
 
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
 
+
+            RECEIPT receipt = new RECEIPT();
+            receipt.Show();
+            this.Hide();
+
+
+        }
     }
 }
