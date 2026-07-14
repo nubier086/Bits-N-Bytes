@@ -1601,6 +1601,7 @@
             Controls.Add(label2);
             Name = "PRODUCT";
             Text = "PRODUCT";
+            WindowState = FormWindowState.Maximized;
             Load += PRODUCT_Load;
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);

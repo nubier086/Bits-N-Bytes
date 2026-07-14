@@ -230,6 +230,7 @@
             ForeColor = SystemColors.ControlText;
             Name = "Form1";
             Text = "Form1";
+            WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             flowLayoutPanel1.ResumeLayout(false);

@@ -106,7 +106,7 @@ namespace Bits_N_Bytes
         private void mbtnryzen9_Click(object sender, EventArgs e)
         {
             string productName = "AMD Ryzen 9 9950X3D";
-            string description = lblnameryzen9 + " " + lblspecryzen9;
+            string description = lblnameryzen9.Text + " " + lblspecryzen9.Text;
             decimal price = decimal.Parse(
     lblpriceryzen9.Text.Replace("₱", "").Replace(",", "")
 );
@@ -119,7 +119,7 @@ namespace Bits_N_Bytes
         private void mtbnryzen5_Click(object sender, EventArgs e)
         {
             string productName = "Ryzen 5 9600X";
-            string description = lblnameryzen5 + " " + lblspecryen5;
+            string description = lblnameryzen5.Text + " " + lblspecryen5.Text;
             decimal price = decimal.Parse(
     lblpriceryzen5.Text.Replace("₱", "").Replace(",", "")
 );
@@ -132,7 +132,7 @@ namespace Bits_N_Bytes
         private void materialButton2_Click(object sender, EventArgs e)
         {
             string productName = "Core Ultra 9 285K";
-            string description = lblnameintel9 + " " + lblsppecintel9;
+            string description = lblnameintel9.Text + " " + lblsppecintel9.Text;
             decimal price = decimal.Parse(
     lblpriceintel9.Text.Replace("₱", "").Replace(",", "")
 );
@@ -145,7 +145,7 @@ namespace Bits_N_Bytes
         private void mbtnintel7_Click(object sender, EventArgs e)
         {
             string productName = "Core Ultra 7 265K";
-            string description = lblnameintel7 + " " + lblspecintel7;
+            string description = lblnameintel7.Text + " " + lblspecintel7.Text;
             decimal price = decimal.Parse(
     lblpriceintel7.Text.Replace("₱", "").Replace(",", "")
 );
@@ -158,7 +158,7 @@ namespace Bits_N_Bytes
         private void mbtnintel5_Click(object sender, EventArgs e)
         {
             string productName = "Core Ultra 5 245K";
-            string description = lblnameintel5 + " " + lblspecintel5;
+            string description = lblnameintel5.Text + " " + lblspecintel5.Text;
             decimal price = decimal.Parse(
     lblpriceintel5.Text.Replace("₱", "").Replace(",", "")
 );
@@ -171,7 +171,7 @@ namespace Bits_N_Bytes
         private void mbtnrtx5070_Click(object sender, EventArgs e)
         {
             string productName = "RTX 5070";
-            string description = lblnamertx5070 + " " + lblspecrtx5070;
+            string description = lblnamertx5070.Text + " " + lblspecrtx5070.Text;
             decimal price = decimal.Parse(
     lblpricertx5070.Text.Replace("₱", "").Replace(",", "")
 );
@@ -189,7 +189,7 @@ namespace Bits_N_Bytes
         private void mbtnrtx5070ti_Click(object sender, EventArgs e)
         {
             string productName = "RTX 5070 ti";
-            string description = lblnamertx5070ti + " " + lblspecrtx5070ti;
+            string description = lblnamertx5070ti.Text + " " + lblspecrtx5070ti.Text;
             decimal price = decimal.Parse(
     lblpricertx5070ti.Text.Replace("₱", "").Replace(",", "")
 );
@@ -202,7 +202,7 @@ namespace Bits_N_Bytes
         private void mbtnrtx5080_Click(object sender, EventArgs e)
         {
             string productName = "RTX 5080";
-            string description = lblnamertx5080 + " " + lblspecrtx5080;
+            string description = lblnamertx5080.Text + " " + lblspecrtx5080.Text;
             decimal price = decimal.Parse(
     lblpricertx5080.Text.Replace("₱", "").Replace(",", "")
 );
@@ -215,7 +215,7 @@ namespace Bits_N_Bytes
         private void mbtnrtx5090_Click(object sender, EventArgs e)
         {
             string productName = "RTX 5090";
-            string description = lblnamertx5090 + " " + lblspecrtx5090;
+            string description = lblnamertx5090.Text + " " + lblspecrtx5090 ;
             decimal price = decimal.Parse(
     lblpricertx5090.Text.Replace("₱", "").Replace(",", "")
 );
@@ -228,7 +228,7 @@ namespace Bits_N_Bytes
         private void mbtnrtx5060ti_Click(object sender, EventArgs e)
         {
             string productName = "RTX 5060 ti";
-            string description = lblnamertx5060ti + " " + lblspecrtx5060ti;
+            string description = lblnamertx5060ti.Text + " " + lblspecrtx5060ti.Text;
             decimal price = decimal.Parse(
     lblpricertx5060ti.Text.Replace("₱", "").Replace(",", "")
 );
@@ -241,7 +241,7 @@ namespace Bits_N_Bytes
         private void mbtnmb1_Click(object sender, EventArgs e)
         {
             string productName = "MEG Z890 ACE";
-            string description = lblnamemb1 + " " + lblspecmb1;
+            string description = lblnamemb1.Text + " " + lblspecmb1.Text;
             decimal price = decimal.Parse(
     lblpricemb1.Text.Replace("₱", "").Replace(",", "")
 );
@@ -254,7 +254,7 @@ namespace Bits_N_Bytes
         private void mbtnmb2_Click(object sender, EventArgs e)
         {
             string productName = "MEG Z890 ACE";
-            string description = lblnamemb2 + " " + lblspecmb2;
+            string description = lblnamemb2.Text + " " + lblspecmb2.Text;
             decimal price = decimal.Parse(
     lblpricemb2.Text.Replace("₱", "").Replace(",", "")
 );
@@ -267,7 +267,7 @@ namespace Bits_N_Bytes
         private void mbtnmb3_Click(object sender, EventArgs e)
         {
             string productName = "MEG Z890 ACE";
-            string description = lblnamemb3 + " " + lblspecmb3;
+            string description = lblnamemb3.Text + " " + lblspecmb3.Text;
             decimal price = decimal.Parse(
     lblpricemb3.Text.Replace("₱", "").Replace(",", "")
 );
@@ -285,7 +285,7 @@ namespace Bits_N_Bytes
         private void mbtnmb4_Click(object sender, EventArgs e)
         {
             string productName = "MAG Z890 Tomahawk WiFi";
-            string description = lblnamemb4 + " " + lblspecmb4;
+            string description = lblnamemb4.Text + " " + lblspecmb4.Text;
             decimal price = decimal.Parse(
     lblpricemb4.Text.Replace("₱", "").Replace(",", "")
 );
@@ -298,7 +298,7 @@ namespace Bits_N_Bytes
         private void mbtnmb5_Click(object sender, EventArgs e)
         {
             string productName = "PRO Z890-P WiFi";
-            string description = lblnamemb5 + " " + lblspecmb5;
+            string description = lblnamemb5.Text + " " + lblspecmb5.Text;
             decimal price = decimal.Parse(
     lblpricemb5.Text.Replace("₱", "").Replace(",", "")
 );
@@ -311,7 +311,7 @@ namespace Bits_N_Bytes
         private void mbtnram1_Click(object sender, EventArgs e)
         {
             string productName = "Trident Z5 Royal Neo";
-            string description = lblnameram1 + " " + lblspecram1;
+            string description = lblnameram1.Text + " " + lblspecram1.Text;
             decimal price = decimal.Parse(
     lblpriceram1.Text.Replace("₱", "").Replace(",", "")
 );
@@ -324,7 +324,7 @@ namespace Bits_N_Bytes
         private void mbtnram2_Click(object sender, EventArgs e)
         {
             string productName = "Trident Z5 RGB";
-            string description = lblnameram2 + " " + lblspecram2;
+            string description = lblnameram2.Text + " " + lblspecram2.Text;
             decimal price = decimal.Parse(
     lblpriceram2.Text.Replace("₱", "").Replace(",", "")
 );
@@ -337,7 +337,7 @@ namespace Bits_N_Bytes
         private void mbtnram3_Click(object sender, EventArgs e)
         {
             string productName = "Ripjaws M5 RGB";
-            string description = lblnameram3 + " " + lblspecram3;
+            string description = lblnameram3.Text + " " + lblspecram3.Text;
             decimal price = decimal.Parse(
     lblpriceram3.Text.Replace("₱", "").Replace(",", "")
 );
@@ -350,7 +350,7 @@ namespace Bits_N_Bytes
         private void mbtnram4_Click(object sender, EventArgs e)
         {
             string productName = "Flare X5 ";
-            string description = lblnameram4 + " " + lblspecram4;
+            string description = lblnameram4.Text + " " + lblspecram4.Text;
             decimal price = decimal.Parse(
     lblpriceram4.Text.Replace("₱", "").Replace(",", "")
 );

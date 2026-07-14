@@ -211,7 +211,7 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(120, 636);
             label5.Name = "label5";
-            label5.Size = new Size(877, 25);
+            label5.Size = new Size(876, 25);
             label5.TabIndex = 15;
             label5.Text = "Quality PC components and custom computer solutions at affordable prices. Whether you’re gaming,";
             // 
@@ -235,7 +235,7 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(120, 600);
             label4.Name = "label4";
-            label4.Size = new Size(807, 25);
+            label4.Size = new Size(806, 25);
             label4.TabIndex = 14;
             label4.Text = "We provide a comfortable and high-performance internet café experience while also offering";
             // 
@@ -269,6 +269,7 @@
             Controls.Add(label2);
             Name = "About";
             Text = "About";
+            WindowState = FormWindowState.Maximized;
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
