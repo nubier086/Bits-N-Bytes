@@ -282,9 +282,9 @@
             label10.ForeColor = Color.Transparent;
             label10.Location = new Point(725, 130);
             label10.Name = "label10";
-            label10.Size = new Size(516, 50);
+            label10.Size = new Size(521, 50);
             label10.TabIndex = 21;
-            label10.Text = "WELCOME TO BITS B BYTES!";
+            label10.Text = "WELCOME TO BITS N BYTES!";
             // 
             // pictureBox3
             // 
