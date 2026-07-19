@@ -139,6 +139,7 @@
             lblspecrtx5070ti = new Label();
             lblnamertx5070ti = new Label();
             lblpricertx5070ti = new Label();
+            pictureBox25 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -167,6 +168,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -236,6 +238,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 12;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox1
             // 
@@ -381,7 +384,7 @@
             lblspecryzen9.AutoSize = true;
             lblspecryzen9.Location = new Point(295, 272);
             lblspecryzen9.Name = "lblspecryzen9";
-            lblspecryzen9.Size = new Size(199, 30);
+            lblspecryzen9.Size = new Size(200, 30);
             lblspecryzen9.TabIndex = 8;
             lblspecryzen9.Text = "16 Cores / 32 Threads, up to 5.7GHz, \r\n3D V-Cache, AM5, DDR5, PCIe 5.0";
             // 
@@ -439,7 +442,7 @@
             lblspecryen5.AutoSize = true;
             lblspecryen5.Location = new Point(539, 272);
             lblspecryen5.Name = "lblspecryen5";
-            lblspecryen5.Size = new Size(221, 30);
+            lblspecryen5.Size = new Size(222, 30);
             lblspecryen5.TabIndex = 13;
             lblspecryen5.Text = "label16 Cores / 12 Threads, up to 5.4GHz,\r\n Zen 5, 65W";
             // 
@@ -662,7 +665,7 @@
             lblnamertx5070.AutoSize = true;
             lblnamertx5070.Location = new Point(1580, 257);
             lblnamertx5070.Name = "lblnamertx5070";
-            lblnamertx5070.Size = new Size(53, 15);
+            lblnamertx5070.Size = new Size(54, 15);
             lblnamertx5070.TabIndex = 32;
             lblnamertx5070.Text = "RTX 5070";
             // 
@@ -671,7 +674,7 @@
             lblspecrtx5070.AutoSize = true;
             lblspecrtx5070.Location = new Point(1580, 272);
             lblspecrtx5070.Name = "lblspecrtx5070";
-            lblspecrtx5070.Size = new Size(162, 30);
+            lblspecrtx5070.Size = new Size(161, 30);
             lblspecrtx5070.TabIndex = 33;
             lblspecrtx5070.Text = "12GB GDDR7, DLSS 4,\r\n Excellent 1440p Performance";
             // 
@@ -975,7 +978,7 @@
             lblnameram2.AutoSize = true;
             lblnameram2.Location = new Point(802, 973);
             lblnameram2.Name = "lblnameram2";
-            lblnameram2.Size = new Size(84, 15);
+            lblnameram2.Size = new Size(85, 15);
             lblnameram2.TabIndex = 87;
             lblnameram2.Text = "Trident Z5 RGB";
             // 
@@ -1035,7 +1038,7 @@
             lblnameram1.AutoSize = true;
             lblnameram1.Location = new Point(545, 973);
             lblnameram1.Name = "lblnameram1";
-            lblnameram1.Size = new Size(119, 15);
+            lblnameram1.Size = new Size(120, 15);
             lblnameram1.TabIndex = 82;
             lblnameram1.Text = "Trident Z5 Royal Neo ";
             // 
@@ -1155,7 +1158,7 @@
             lblnamemb4.AutoSize = true;
             lblnamemb4.Location = new Point(42, 973);
             lblnamemb4.Name = "lblnamemb4";
-            lblnamemb4.Size = new Size(148, 15);
+            lblnamemb4.Size = new Size(149, 15);
             lblnamemb4.TabIndex = 72;
             lblnamemb4.Text = "MAG Z890 Tomahawk WiFi";
             // 
@@ -1215,7 +1218,7 @@
             lblnamemb3.AutoSize = true;
             lblnamemb3.Location = new Point(1580, 622);
             lblnamemb3.Name = "lblnamemb3";
-            lblnamemb3.Size = new Size(128, 15);
+            lblnamemb3.Size = new Size(129, 15);
             lblnamemb3.TabIndex = 67;
             lblnamemb3.Text = "MPG Z890 Edge Ti WiFi";
             // 
@@ -1395,7 +1398,7 @@
             lblnamertx5060ti.AutoSize = true;
             lblnamertx5060ti.Location = new Point(802, 620);
             lblnamertx5060ti.Name = "lblnamertx5060ti";
-            lblnamertx5060ti.Size = new Size(63, 15);
+            lblnamertx5060ti.Size = new Size(64, 15);
             lblnamertx5060ti.TabIndex = 52;
             lblnamertx5060ti.Text = "RTX 5060 ti";
             // 
@@ -1446,7 +1449,7 @@
             lblspecrtx5090.AutoSize = true;
             lblspecrtx5090.Location = new Point(545, 635);
             lblspecrtx5090.Name = "lblspecrtx5090";
-            lblspecrtx5090.Size = new Size(229, 15);
+            lblspecrtx5090.Size = new Size(230, 15);
             lblspecrtx5090.TabIndex = 48;
             lblspecrtx5090.Text = "32GB GDDR7, DLSS 4, Ray Tracing, PCIe 5.0";
             // 
@@ -1455,7 +1458,7 @@
             lblnamertx5090.AutoSize = true;
             lblnamertx5090.Location = new Point(545, 620);
             lblnamertx5090.Name = "lblnamertx5090";
-            lblnamertx5090.Size = new Size(53, 15);
+            lblnamertx5090.Size = new Size(54, 15);
             lblnamertx5090.TabIndex = 47;
             lblnamertx5090.Text = "RTX 5090";
             // 
@@ -1515,7 +1518,7 @@
             lblnamertx5080.AutoSize = true;
             lblnamertx5080.Location = new Point(295, 620);
             lblnamertx5080.Name = "lblnamertx5080";
-            lblnamertx5080.Size = new Size(53, 15);
+            lblnamertx5080.Size = new Size(54, 15);
             lblnamertx5080.TabIndex = 42;
             lblnamertx5080.Text = "RTX 5080";
             // 
@@ -1575,7 +1578,7 @@
             lblnamertx5070ti.AutoSize = true;
             lblnamertx5070ti.Location = new Point(42, 620);
             lblnamertx5070ti.Name = "lblnamertx5070ti";
-            lblnamertx5070ti.Size = new Size(65, 15);
+            lblnamertx5070ti.Size = new Size(67, 15);
             lblnamertx5070ti.TabIndex = 37;
             lblnamertx5070ti.Text = "RTX 5070 Ti";
             // 
@@ -1589,12 +1592,24 @@
             lblpricertx5070ti.TabIndex = 36;
             lblpricertx5070ti.Text = "₱52,000";
             // 
+            // pictureBox25
+            // 
+            pictureBox25.BackgroundImage = (Image)resources.GetObject("pictureBox25.BackgroundImage");
+            pictureBox25.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox25.Location = new Point(277, 145);
+            pictureBox25.Name = "pictureBox25";
+            pictureBox25.Size = new Size(129, 56);
+            pictureBox25.TabIndex = 22;
+            pictureBox25.TabStop = false;
+            pictureBox25.Click += pictureBox25_Click;
+            // 
             // PRODUCT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1924, 1061);
+            Controls.Add(pictureBox25);
             Controls.Add(label10);
             Controls.Add(panel2);
             Controls.Add(flowLayoutPanel1);
@@ -1632,6 +1647,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1749,5 +1765,6 @@
         private Label lblnameram4;
         private Label lblpriceram4;
         private PictureBox pictureBox24;
+        private PictureBox pictureBox25;
     }
 }

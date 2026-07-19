@@ -215,7 +215,7 @@ namespace Bits_N_Bytes
         private void mbtnrtx5090_Click(object sender, EventArgs e)
         {
             string productName = "RTX 5090";
-            string description = lblnamertx5090.Text + " " + lblspecrtx5090 ;
+            string description = lblnamertx5090.Text + " " + lblspecrtx5090;
             decimal price = decimal.Parse(
     lblpricertx5090.Text.Replace("₱", "").Replace(",", "")
 );
@@ -358,6 +358,17 @@ namespace Bits_N_Bytes
             DatabaseHelper.AddToCart(productName, description, price);
 
             MessageBox.Show("Added to cart!");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox25_Click(object sender, EventArgs e)
+        {
+            Bundle bundle = new Bundle();
+            bundle.Show();
         }
     }
 }
