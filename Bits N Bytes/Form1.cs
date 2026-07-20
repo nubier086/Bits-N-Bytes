@@ -27,7 +27,7 @@ namespace Bits_N_Bytes
 
             //HOME
 
-          Form1 form1 = new Form1();
+            Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
 
@@ -50,7 +50,7 @@ namespace Bits_N_Bytes
         {
 
             //ABOUT 
-            About about = new About(); 
+            About about = new About();
             about.Show();
             this.Hide();
 
@@ -63,7 +63,31 @@ namespace Bits_N_Bytes
 
             //HOME LOGO
 
+         
 
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+            PRODUCT product = new PRODUCT();
+            product.Show();
+            this.Hide();
+
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+            About about = new About();
+            about.Show();
+            this.Hide();
 
 
         }
