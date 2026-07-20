@@ -365,10 +365,35 @@ namespace Bits_N_Bytes
 
         }
 
-        private void pictureBox25_Click(object sender, EventArgs e)
+     
+
+        private void label7_Click(object sender, EventArgs e)
         {
-            Bundle bundle = new Bundle();
-            bundle.Show();
+
+            PRODUCT1 product1 = new PRODUCT1();
+            product1.Show();
+            this.Hide();
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+            PRODUCT product = new PRODUCT();
+            product.Show();
+            this.Hide();
+
+        }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+
+
+            PRODUCT1 product1 = new PRODUCT1();
+            product1.Show();
+            this.Hide();
+
+
         }
     }
 }

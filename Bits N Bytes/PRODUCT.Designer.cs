@@ -37,7 +37,6 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label2 = new Label();
-            label10 = new Label();
             pictureBox3 = new PictureBox();
             label3 = new Label();
             label4 = new Label();
@@ -75,6 +74,7 @@
             mbtnrtx5070 = new MaterialSkin.Controls.MaterialButton();
             pictureBox12 = new PictureBox();
             panel2 = new ReaLTaiizor.Controls.Panel();
+            label10 = new Label();
             mbtnram4 = new MaterialSkin.Controls.MaterialButton();
             lblspecram4 = new Label();
             lblnameram4 = new Label();
@@ -139,7 +139,12 @@
             lblspecrtx5070ti = new Label();
             lblnamertx5070ti = new Label();
             lblpricertx5070ti = new Label();
-            pictureBox25 = new PictureBox();
+            label1 = new Label();
+            label6 = new Label();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            label8 = new Label();
+            label7 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -168,13 +173,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanel1.Controls.Add(panel1);
+            flowLayoutPanel1.Controls.Add(panel4);
             flowLayoutPanel1.Location = new Point(-248, 6);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(2456, 124);
@@ -278,17 +284,6 @@
             label2.TabIndex = 10;
             label2.Text = "Your Dream PC Starts Here!";
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Transparent;
-            label10.Location = new Point(725, 130);
-            label10.Name = "label10";
-            label10.Size = new Size(521, 50);
-            label10.TabIndex = 21;
-            label10.Text = "WELCOME TO BITS N BYTES!";
-            // 
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.Transparent;
@@ -384,7 +379,7 @@
             lblspecryzen9.AutoSize = true;
             lblspecryzen9.Location = new Point(295, 272);
             lblspecryzen9.Name = "lblspecryzen9";
-            lblspecryzen9.Size = new Size(200, 30);
+            lblspecryzen9.Size = new Size(199, 30);
             lblspecryzen9.TabIndex = 8;
             lblspecryzen9.Text = "16 Cores / 32 Threads, up to 5.7GHz, \r\n3D V-Cache, AM5, DDR5, PCIe 5.0";
             // 
@@ -442,7 +437,7 @@
             lblspecryen5.AutoSize = true;
             lblspecryen5.Location = new Point(539, 272);
             lblspecryen5.Name = "lblspecryen5";
-            lblspecryen5.Size = new Size(222, 30);
+            lblspecryen5.Size = new Size(221, 30);
             lblspecryen5.TabIndex = 13;
             lblspecryen5.Text = "label16 Cores / 12 Threads, up to 5.4GHz,\r\n Zen 5, 65W";
             // 
@@ -665,7 +660,7 @@
             lblnamertx5070.AutoSize = true;
             lblnamertx5070.Location = new Point(1580, 257);
             lblnamertx5070.Name = "lblnamertx5070";
-            lblnamertx5070.Size = new Size(54, 15);
+            lblnamertx5070.Size = new Size(53, 15);
             lblnamertx5070.TabIndex = 32;
             lblnamertx5070.Text = "RTX 5070";
             // 
@@ -674,7 +669,7 @@
             lblspecrtx5070.AutoSize = true;
             lblspecrtx5070.Location = new Point(1580, 272);
             lblspecrtx5070.Name = "lblspecrtx5070";
-            lblspecrtx5070.Size = new Size(161, 30);
+            lblspecrtx5070.Size = new Size(162, 30);
             lblspecrtx5070.TabIndex = 33;
             lblspecrtx5070.Text = "12GB GDDR7, DLSS 4,\r\n Excellent 1440p Performance";
             // 
@@ -714,6 +709,7 @@
             panel2.AutoScrollMargin = new Size(1840, 1500);
             panel2.AutoScrollMinSize = new Size(1840, 1500);
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(label10);
             panel2.Controls.Add(mbtnram4);
             panel2.Controls.Add(lblspecram4);
             panel2.Controls.Add(lblnameram4);
@@ -823,6 +819,17 @@
             panel2.TabIndex = 12;
             panel2.Text = "panel2";
             panel2.Click += panel2_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Transparent;
+            label10.Location = new Point(651, 716);
+            label10.Name = "label10";
+            label10.Size = new Size(521, 50);
+            label10.TabIndex = 100;
+            label10.Text = "WELCOME TO BITS N BYTES!";
             // 
             // mbtnram4
             // 
@@ -978,7 +985,7 @@
             lblnameram2.AutoSize = true;
             lblnameram2.Location = new Point(802, 973);
             lblnameram2.Name = "lblnameram2";
-            lblnameram2.Size = new Size(85, 15);
+            lblnameram2.Size = new Size(84, 15);
             lblnameram2.TabIndex = 87;
             lblnameram2.Text = "Trident Z5 RGB";
             // 
@@ -1038,7 +1045,7 @@
             lblnameram1.AutoSize = true;
             lblnameram1.Location = new Point(545, 973);
             lblnameram1.Name = "lblnameram1";
-            lblnameram1.Size = new Size(120, 15);
+            lblnameram1.Size = new Size(119, 15);
             lblnameram1.TabIndex = 82;
             lblnameram1.Text = "Trident Z5 Royal Neo ";
             // 
@@ -1158,7 +1165,7 @@
             lblnamemb4.AutoSize = true;
             lblnamemb4.Location = new Point(42, 973);
             lblnamemb4.Name = "lblnamemb4";
-            lblnamemb4.Size = new Size(149, 15);
+            lblnamemb4.Size = new Size(148, 15);
             lblnamemb4.TabIndex = 72;
             lblnamemb4.Text = "MAG Z890 Tomahawk WiFi";
             // 
@@ -1218,7 +1225,7 @@
             lblnamemb3.AutoSize = true;
             lblnamemb3.Location = new Point(1580, 622);
             lblnamemb3.Name = "lblnamemb3";
-            lblnamemb3.Size = new Size(129, 15);
+            lblnamemb3.Size = new Size(128, 15);
             lblnamemb3.TabIndex = 67;
             lblnamemb3.Text = "MPG Z890 Edge Ti WiFi";
             // 
@@ -1398,7 +1405,7 @@
             lblnamertx5060ti.AutoSize = true;
             lblnamertx5060ti.Location = new Point(802, 620);
             lblnamertx5060ti.Name = "lblnamertx5060ti";
-            lblnamertx5060ti.Size = new Size(64, 15);
+            lblnamertx5060ti.Size = new Size(63, 15);
             lblnamertx5060ti.TabIndex = 52;
             lblnamertx5060ti.Text = "RTX 5060 ti";
             // 
@@ -1449,7 +1456,7 @@
             lblspecrtx5090.AutoSize = true;
             lblspecrtx5090.Location = new Point(545, 635);
             lblspecrtx5090.Name = "lblspecrtx5090";
-            lblspecrtx5090.Size = new Size(230, 15);
+            lblspecrtx5090.Size = new Size(229, 15);
             lblspecrtx5090.TabIndex = 48;
             lblspecrtx5090.Text = "32GB GDDR7, DLSS 4, Ray Tracing, PCIe 5.0";
             // 
@@ -1458,7 +1465,7 @@
             lblnamertx5090.AutoSize = true;
             lblnamertx5090.Location = new Point(545, 620);
             lblnamertx5090.Name = "lblnamertx5090";
-            lblnamertx5090.Size = new Size(54, 15);
+            lblnamertx5090.Size = new Size(53, 15);
             lblnamertx5090.TabIndex = 47;
             lblnamertx5090.Text = "RTX 5090";
             // 
@@ -1518,7 +1525,7 @@
             lblnamertx5080.AutoSize = true;
             lblnamertx5080.Location = new Point(295, 620);
             lblnamertx5080.Name = "lblnamertx5080";
-            lblnamertx5080.Size = new Size(54, 15);
+            lblnamertx5080.Size = new Size(53, 15);
             lblnamertx5080.TabIndex = 42;
             lblnamertx5080.Text = "RTX 5080";
             // 
@@ -1578,7 +1585,7 @@
             lblnamertx5070ti.AutoSize = true;
             lblnamertx5070ti.Location = new Point(42, 620);
             lblnamertx5070ti.Name = "lblnamertx5070ti";
-            lblnamertx5070ti.Size = new Size(67, 15);
+            lblnamertx5070ti.Size = new Size(65, 15);
             lblnamertx5070ti.TabIndex = 37;
             lblnamertx5070ti.Text = "RTX 5070 Ti";
             // 
@@ -1592,16 +1599,68 @@
             lblpricertx5070ti.TabIndex = 36;
             lblpricertx5070ti.Text = "₱52,000";
             // 
-            // pictureBox25
+            // label1
             // 
-            pictureBox25.BackgroundImage = (Image)resources.GetObject("pictureBox25.BackgroundImage");
-            pictureBox25.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox25.Location = new Point(277, 145);
-            pictureBox25.Name = "pictureBox25";
-            pictureBox25.Size = new Size(129, 56);
-            pictureBox25.TabIndex = 22;
-            pictureBox25.TabStop = false;
-            pictureBox25.Click += pictureBox25_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Transparent;
+            label1.Location = new Point(735, 130);
+            label1.Name = "label1";
+            label1.Size = new Size(521, 50);
+            label1.TabIndex = 22;
+            label1.Text = "WELCOME TO BITS N BYTES!";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(75, 171);
+            label6.Name = "label6";
+            label6.Size = new Size(171, 32);
+            label6.TabIndex = 0;
+            label6.Text = "View PC Parts";
+            label6.Click += label6_Click;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.White;
+            panel4.Location = new Point(2176, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(247, 63);
+            panel4.TabIndex = 24;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.White;
+            panel5.Controls.Add(label8);
+            panel5.Location = new Point(33, 162);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(247, 63);
+            panel5.TabIndex = 24;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(43, 17);
+            label8.Name = "label8";
+            label8.Size = new Size(171, 32);
+            label8.TabIndex = 1;
+            label8.Text = "View PC Parts";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(329, 171);
+            label7.Name = "label7";
+            label7.Size = new Size(193, 32);
+            label7.TabIndex = 2;
+            label7.Text = "View PC Bundle";
+            label7.Click += label7_Click_1;
             // 
             // PRODUCT
             // 
@@ -1609,8 +1668,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1924, 1061);
-            Controls.Add(pictureBox25);
-            Controls.Add(label10);
+            Controls.Add(label7);
+            Controls.Add(panel5);
+            Controls.Add(label6);
+            Controls.Add(label1);
             Controls.Add(panel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label2);
@@ -1647,7 +1708,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1662,7 +1724,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label2;
-        private Label label10;
         private PictureBox pictureBox3;
         private Label label3;
         private Label label4;
@@ -1765,6 +1826,11 @@
         private Label lblnameram4;
         private Label lblpriceram4;
         private PictureBox pictureBox24;
-        private PictureBox pictureBox25;
+        private Label label10;
+        private Label label1;
+        private Panel panel4;
+        private Panel panel5;
+        private Label label8;
+        private Label label7;
     }
 }

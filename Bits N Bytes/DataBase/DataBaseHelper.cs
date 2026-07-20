@@ -177,6 +177,10 @@ namespace Bits_N_Bytes.Database
             connection.Open();
 
             string sql = @"
+    DELETE FROM Cart
+    WHERE CartID = @id
+    AND Quantity = 1;
+
     UPDATE Cart
     SET Quantity = Quantity - 1
     WHERE CartID = @id
