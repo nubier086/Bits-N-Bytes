@@ -42,13 +42,13 @@
             lblTotal = new Label();
             bigTextBox7 = new ReaLTaiizor.Controls.BigTextBox();
             label4 = new Label();
-            bigTextBox4 = new ReaLTaiizor.Controls.BigTextBox();
             bigTextBox5 = new ReaLTaiizor.Controls.BigTextBox();
             label2 = new Label();
             label3 = new Label();
             airRadioButton1 = new ReaLTaiizor.Controls.AirRadioButton();
             label5 = new Label();
             label6 = new Label();
+            bigTextBox4 = new ReaLTaiizor.Controls.BigTextBox();
             ((System.ComponentModel.ISupportInitialize)productModelsBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCart).BeginInit();
             SuspendLayout();
@@ -102,6 +102,7 @@
             bigTextBox2.MaxLength = 32767;
             bigTextBox2.Multiline = false;
             bigTextBox2.Name = "bigTextBox2";
+            bigTextBox2.PlaceholderText = "First Name";
             bigTextBox2.ReadOnly = false;
             bigTextBox2.Size = new Size(184, 41);
             bigTextBox2.TabIndex = 23;
@@ -119,6 +120,7 @@
             bigTextBox3.MaxLength = 32767;
             bigTextBox3.Multiline = false;
             bigTextBox3.Name = "bigTextBox3";
+            bigTextBox3.PlaceholderText = "Last Name";
             bigTextBox3.ReadOnly = false;
             bigTextBox3.Size = new Size(184, 41);
             bigTextBox3.TabIndex = 24;
@@ -215,23 +217,6 @@
             label4.TabIndex = 41;
             label4.Text = "ADDRESS";
             // 
-            // bigTextBox4
-            // 
-            bigTextBox4.BackColor = Color.Transparent;
-            bigTextBox4.Font = new Font("Tahoma", 11F);
-            bigTextBox4.ForeColor = Color.DimGray;
-            bigTextBox4.Image = null;
-            bigTextBox4.Location = new Point(263, 496);
-            bigTextBox4.MaxLength = 32767;
-            bigTextBox4.Multiline = false;
-            bigTextBox4.Name = "bigTextBox4";
-            bigTextBox4.ReadOnly = false;
-            bigTextBox4.Size = new Size(184, 41);
-            bigTextBox4.TabIndex = 44;
-            bigTextBox4.Text = "Last Name";
-            bigTextBox4.TextAlignment = HorizontalAlignment.Left;
-            bigTextBox4.UseSystemPasswordChar = false;
-            // 
             // bigTextBox5
             // 
             bigTextBox5.BackColor = Color.Transparent;
@@ -242,10 +227,10 @@
             bigTextBox5.MaxLength = 32767;
             bigTextBox5.Multiline = false;
             bigTextBox5.Name = "bigTextBox5";
+            bigTextBox5.PlaceholderText = "City";
             bigTextBox5.ReadOnly = false;
             bigTextBox5.Size = new Size(184, 41);
             bigTextBox5.TabIndex = 43;
-            bigTextBox5.Text = "First Name";
             bigTextBox5.TextAlignment = HorizontalAlignment.Left;
             bigTextBox5.UseSystemPasswordChar = false;
             // 
@@ -281,7 +266,7 @@
             airRadioButton1.Location = new Point(86, 641);
             airRadioButton1.Name = "airRadioButton1";
             airRadioButton1.NoRounding = false;
-            airRadioButton1.Size = new Size(110, 17);
+            airRadioButton1.Size = new Size(110, 16);
             airRadioButton1.TabIndex = 47;
             airRadioButton1.Text = "Cash on Delivery";
             airRadioButton1.Transparent = false;
@@ -307,6 +292,23 @@
             label6.Size = new Size(113, 17);
             label6.TabIndex = 49;
             label6.Text = "Cash on Delivery";
+            // 
+            // bigTextBox4
+            // 
+            bigTextBox4.BackColor = Color.Transparent;
+            bigTextBox4.Font = new Font("Tahoma", 11F);
+            bigTextBox4.ForeColor = Color.DimGray;
+            bigTextBox4.Image = null;
+            bigTextBox4.Location = new Point(263, 496);
+            bigTextBox4.MaxLength = 32767;
+            bigTextBox4.Multiline = false;
+            bigTextBox4.Name = "bigTextBox4";
+            bigTextBox4.PlaceholderText = "0000";
+            bigTextBox4.ReadOnly = false;
+            bigTextBox4.Size = new Size(184, 41);
+            bigTextBox4.TabIndex = 44;
+            bigTextBox4.TextAlignment = HorizontalAlignment.Left;
+            bigTextBox4.UseSystemPasswordChar = false;
             // 
             // RECEIPT
             // 
@@ -354,12 +356,12 @@
         private Label lblTotal;
         private ReaLTaiizor.Controls.BigTextBox bigTextBox7;
         private Label label4;
-        private ReaLTaiizor.Controls.BigTextBox bigTextBox4;
         private ReaLTaiizor.Controls.BigTextBox bigTextBox5;
         private Label label2;
         private Label label3;
         private ReaLTaiizor.Controls.AirRadioButton airRadioButton1;
         private Label label5;
         private Label label6;
+        private ReaLTaiizor.Controls.BigTextBox bigTextBox4;
     }
 }
