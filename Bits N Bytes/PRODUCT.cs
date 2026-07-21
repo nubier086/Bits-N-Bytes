@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bits_N_Bytes.Database;
+using Microsoft.Data.Sqlite;
 
 namespace Bits_N_Bytes
 {
@@ -100,7 +101,6 @@ namespace Bits_N_Bytes
 
             MessageBox.Show("Added to cart!");
 
-
         }
 
         private void mbtnryzen9_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace Bits_N_Bytes
             string productName = "AMD Ryzen 9 9950X3D";
             string description = lblnameryzen9.Text + " " + lblspecryzen9.Text;
             decimal price = decimal.Parse(
-    lblpriceryzen9.Text.Replace("₱", "").Replace(",", "")
+lblpriceryzen9.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -121,7 +121,7 @@ namespace Bits_N_Bytes
             string productName = "Ryzen 5 9600X";
             string description = lblnameryzen5.Text + " " + lblspecryen5.Text;
             decimal price = decimal.Parse(
-    lblpriceryzen5.Text.Replace("₱", "").Replace(",", "")
+lblpriceryzen5.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -134,7 +134,7 @@ namespace Bits_N_Bytes
             string productName = "Core Ultra 9 285K";
             string description = lblnameintel9.Text + " " + lblsppecintel9.Text;
             decimal price = decimal.Parse(
-    lblpriceintel9.Text.Replace("₱", "").Replace(",", "")
+lblpriceintel9.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -147,7 +147,7 @@ namespace Bits_N_Bytes
             string productName = "Core Ultra 7 265K";
             string description = lblnameintel7.Text + " " + lblspecintel7.Text;
             decimal price = decimal.Parse(
-    lblpriceintel7.Text.Replace("₱", "").Replace(",", "")
+lblpriceintel7.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -160,7 +160,7 @@ namespace Bits_N_Bytes
             string productName = "Core Ultra 5 245K";
             string description = lblnameintel5.Text + " " + lblspecintel5.Text;
             decimal price = decimal.Parse(
-    lblpriceintel5.Text.Replace("₱", "").Replace(",", "")
+lblpriceintel5.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -173,7 +173,7 @@ namespace Bits_N_Bytes
             string productName = "RTX 5070";
             string description = lblnamertx5070.Text + " " + lblspecrtx5070.Text;
             decimal price = decimal.Parse(
-    lblpricertx5070.Text.Replace("₱", "").Replace(",", "")
+lblpricertx5070.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -191,7 +191,7 @@ namespace Bits_N_Bytes
             string productName = "RTX 5070 ti";
             string description = lblnamertx5070ti.Text + " " + lblspecrtx5070ti.Text;
             decimal price = decimal.Parse(
-    lblpricertx5070ti.Text.Replace("₱", "").Replace(",", "")
+lblpricertx5070ti.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -204,7 +204,7 @@ namespace Bits_N_Bytes
             string productName = "RTX 5080";
             string description = lblnamertx5080.Text + " " + lblspecrtx5080.Text;
             decimal price = decimal.Parse(
-    lblpricertx5080.Text.Replace("₱", "").Replace(",", "")
+lblpricertx5080.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -217,7 +217,7 @@ namespace Bits_N_Bytes
             string productName = "RTX 5090";
             string description = lblnamertx5090.Text + " " + lblspecrtx5090;
             decimal price = decimal.Parse(
-    lblpricertx5090.Text.Replace("₱", "").Replace(",", "")
+lblpricertx5090.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -230,7 +230,7 @@ namespace Bits_N_Bytes
             string productName = "RTX 5060 ti";
             string description = lblnamertx5060ti.Text + " " + lblspecrtx5060ti.Text;
             decimal price = decimal.Parse(
-    lblpricertx5060ti.Text.Replace("₱", "").Replace(",", "")
+lblpricertx5060ti.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -243,7 +243,7 @@ namespace Bits_N_Bytes
             string productName = "MEG Z890 ACE";
             string description = lblnamemb1.Text + " " + lblspecmb1.Text;
             decimal price = decimal.Parse(
-    lblpricemb1.Text.Replace("₱", "").Replace(",", "")
+lblpricemb1.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -256,7 +256,7 @@ namespace Bits_N_Bytes
             string productName = "MEG Z890 ACE";
             string description = lblnamemb2.Text + " " + lblspecmb2.Text;
             decimal price = decimal.Parse(
-    lblpricemb2.Text.Replace("₱", "").Replace(",", "")
+lblpricemb2.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -269,7 +269,7 @@ namespace Bits_N_Bytes
             string productName = "MEG Z890 ACE";
             string description = lblnamemb3.Text + " " + lblspecmb3.Text;
             decimal price = decimal.Parse(
-    lblpricemb3.Text.Replace("₱", "").Replace(",", "")
+lblpricemb3.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -287,7 +287,7 @@ namespace Bits_N_Bytes
             string productName = "MAG Z890 Tomahawk WiFi";
             string description = lblnamemb4.Text + " " + lblspecmb4.Text;
             decimal price = decimal.Parse(
-    lblpricemb4.Text.Replace("₱", "").Replace(",", "")
+lblpricemb4.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -300,7 +300,7 @@ namespace Bits_N_Bytes
             string productName = "PRO Z890-P WiFi";
             string description = lblnamemb5.Text + " " + lblspecmb5.Text;
             decimal price = decimal.Parse(
-    lblpricemb5.Text.Replace("₱", "").Replace(",", "")
+lblpricemb5.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -313,7 +313,7 @@ namespace Bits_N_Bytes
             string productName = "Trident Z5 Royal Neo";
             string description = lblnameram1.Text + " " + lblspecram1.Text;
             decimal price = decimal.Parse(
-    lblpriceram1.Text.Replace("₱", "").Replace(",", "")
+lblpriceram1.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -326,7 +326,7 @@ namespace Bits_N_Bytes
             string productName = "Trident Z5 RGB";
             string description = lblnameram2.Text + " " + lblspecram2.Text;
             decimal price = decimal.Parse(
-    lblpriceram2.Text.Replace("₱", "").Replace(",", "")
+lblpriceram2.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -339,7 +339,7 @@ namespace Bits_N_Bytes
             string productName = "Ripjaws M5 RGB";
             string description = lblnameram3.Text + " " + lblspecram3.Text;
             decimal price = decimal.Parse(
-    lblpriceram3.Text.Replace("₱", "").Replace(",", "")
+lblpriceram3.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -352,7 +352,7 @@ namespace Bits_N_Bytes
             string productName = "Flare X5 ";
             string description = lblnameram4.Text + " " + lblspecram4.Text;
             decimal price = decimal.Parse(
-    lblpriceram4.Text.Replace("₱", "").Replace(",", "")
+lblpriceram4.Text.Replace("₱", "").Replace(",", "")
 );
 
             DatabaseHelper.AddToCart(productName, description, price);
@@ -365,7 +365,7 @@ namespace Bits_N_Bytes
 
         }
 
-     
+
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -394,6 +394,55 @@ namespace Bits_N_Bytes
             this.Hide();
 
 
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            string keyword = txtsearch.Text.Trim().ToLower();
+
+            foreach (Control c in panel1.Controls)
+            {
+                SearchControls(c, keyword);
+            }
+
+            foreach (Control c in panel2.Controls)
+            {
+                SearchControls(c, keyword);
+            }
+        }
+
+        private void SearchControls(Control parent, string keyword)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is Label lbl)
+                {
+                    if (lbl.Text.ToLower().Contains(keyword))
+                    {
+                        parent.Visible = true;
+                        return;
+                    }
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(keyword))
+                parent.Visible = false;
+            else
+                parent.Visible = true;
+        }
+
+        // Handle Enter key in the search textbox
+        private void txtsearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnsearch.PerformClick();
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

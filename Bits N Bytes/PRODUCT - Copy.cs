@@ -6,11 +6,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bits_N_Bytes.Database;
+using System.Data.SqlClient;
 
 namespace Bits_N_Bytes
 {
     public partial class PRODUCT1 : Form
     {
+
+        string connectionString = @"Server=Bits_N_Bytes.Database;Database=Bits_N_Bytes.Database;Trusted_Connection=True;";
         public PRODUCT1()
         {
             InitializeComponent();

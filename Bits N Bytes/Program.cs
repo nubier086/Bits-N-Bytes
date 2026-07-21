@@ -15,12 +15,15 @@ namespace Bits_N_Bytes
 
             DatabaseHelper.InitializeDatabase();
 
+            // Add sample product including Brand and Category
             DatabaseHelper.AddProduct(
-            "AMD Ryzen 7 5700",
-             9750,
-             20,
-             "Images/ryzen7.png"
-);
+                "AMD Ryzen 7 5700",
+                9750,
+                20,
+                "Images/ryzen7.png",
+                "AMD",
+                "CPU"
+            );
 
             Application.Run(new Form1());
         }
