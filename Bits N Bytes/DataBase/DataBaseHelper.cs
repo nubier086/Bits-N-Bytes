@@ -37,6 +37,15 @@ namespace Bits_N_Bytes.Database
 
         public static void InitializeDatabase()
         {
+
+
+
+
+
+
+
+
+
             string folder = Path.GetDirectoryName(DbPath)!;
 
             if (!Directory.Exists(folder))
@@ -63,6 +72,17 @@ namespace Bits_N_Bytes.Database
             Quantity INTEGER NOT NULL
             );";
 
+
+
+            string sql = @"
+CREATE TABLE IF NOT EXISTS Users
+(
+    UserID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Username TEXT NOT NULL,
+    Password TEXT NOT NULL,
+    Role TEXT NOT NULL
+);";
+
             using var command = connection.CreateCommand();
 
             command.CommandText = createProductsTable;
@@ -70,6 +90,10 @@ namespace Bits_N_Bytes.Database
 
             command.CommandText = createCartTable;
             command.ExecuteNonQuery();
+
+            command.CommandText = sql;
+            command.ExecuteNonQuery();
+
         }
         public static void AddProduct(string name, decimal price, int stock, string image)
         {

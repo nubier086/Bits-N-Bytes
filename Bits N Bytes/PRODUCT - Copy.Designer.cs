@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRODUCT1));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new ReaLTaiizor.Controls.Panel();
             pictureBox5 = new PictureBox();
@@ -57,6 +59,7 @@
             label7 = new Label();
             panel3 = new Panel();
             label1 = new Label();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -84,6 +87,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(guna2Button2);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox4);
@@ -223,6 +227,7 @@
             // 
             // panel2
             // 
+            panel2.AutoScroll = true;
             panel2.AutoScrollMargin = new Size(1840, 1500);
             panel2.AutoScrollMinSize = new Size(1840, 1500);
             panel2.BackColor = Color.White;
@@ -430,6 +435,23 @@
             label1.Text = "View PC Parts";
             label1.Click += label1_Click;
             // 
+            // guna2Button2
+            // 
+            guna2Button2.CustomizableEdges = customizableEdges1;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.Gold;
+            guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2Button2.ForeColor = Color.Black;
+            guna2Button2.Location = new Point(1881, 19);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button2.Size = new Size(144, 57);
+            guna2Button2.TabIndex = 27;
+            guna2Button2.Text = "Login/Sign In";
+            // 
             // PRODUCT1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -494,5 +516,6 @@
         private Label lblpricebun1;
         private Label lblnamebun3;
         private Label lblpricebun3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

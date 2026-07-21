@@ -63,7 +63,7 @@ namespace Bits_N_Bytes
 
             //HOME LOGO
 
-         
+
 
             Form1 form1 = new Form1();
             form1.Show();
@@ -88,6 +88,17 @@ namespace Bits_N_Bytes
             About about = new About();
             about.Show();
             this.Hide();
+
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+
+           Login login = new Login();
+            login.Show();
+            
 
 
         }

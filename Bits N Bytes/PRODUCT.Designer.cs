@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRODUCT));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new ReaLTaiizor.Controls.Panel();
             pictureBox5 = new PictureBox();
@@ -36,6 +38,7 @@
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            panel4 = new Panel();
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label3 = new Label();
@@ -141,10 +144,10 @@
             lblpricertx5070ti = new Label();
             label1 = new Label();
             label6 = new Label();
-            panel4 = new Panel();
             panel5 = new Panel();
             label8 = new Label();
             label7 = new Label();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -190,6 +193,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(guna2Button2);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox4);
@@ -271,6 +275,14 @@
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click_2;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.White;
+            panel4.Location = new Point(2176, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(247, 63);
+            panel4.TabIndex = 24;
             // 
             // label2
             // 
@@ -1622,14 +1634,6 @@
             label6.Text = "View PC Parts";
             label6.Click += label6_Click;
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.White;
-            panel4.Location = new Point(2176, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(247, 63);
-            panel4.TabIndex = 24;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.White;
@@ -1661,6 +1665,23 @@
             label7.TabIndex = 2;
             label7.Text = "View PC Bundle";
             label7.Click += label7_Click_1;
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.CustomizableEdges = customizableEdges1;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.Gold;
+            guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2Button2.ForeColor = Color.Black;
+            guna2Button2.Location = new Point(1898, 19);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button2.Size = new Size(144, 57);
+            guna2Button2.TabIndex = 25;
+            guna2Button2.Text = "Login/Sign In";
             // 
             // PRODUCT
             // 
@@ -1832,5 +1853,6 @@
         private Panel panel5;
         private Label label8;
         private Label label7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
