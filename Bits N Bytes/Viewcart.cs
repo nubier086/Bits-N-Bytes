@@ -88,15 +88,28 @@ namespace Bits_N_Bytes
 
             int cartId = Convert.ToInt32(dgvCart.Rows[e.RowIndex].Cells["CartID"].Value);
 
+            // Get the ProductID from the Cart table
+            int productId = DatabaseHelper.GetProductIdFromCart(cartId);
+
             if (dgvCart.Columns[e.ColumnIndex].Name == "Plus")
             {
+                // Increase cart quantity
                 DatabaseHelper.IncreaseQuantity(cartId);
+
+                // Decrease available stock
+                DatabaseHelper.DecreaseStock(productId);
+
                 LoadCart();
             }
 
             if (dgvCart.Columns[e.ColumnIndex].Name == "Minus")
             {
+                // Decrease cart quantity
                 DatabaseHelper.DecreaseQuantity(cartId);
+
+                // Return one item to stock
+                DatabaseHelper.IncreaseStock(productId);
+
                 LoadCart();
             }
         }
@@ -111,5 +124,11 @@ namespace Bits_N_Bytes
 
 
         }
+
+
+        
     }
+
+
+
 }

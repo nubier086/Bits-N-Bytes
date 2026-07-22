@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             ADMINLABEL1 = new Label();
             dataGridViewPRODUCTLIST1 = new DataGridView();
             labelPRODUCTNAME2 = new Label();
@@ -38,6 +38,7 @@
             labelSTOCK3 = new Label();
             numericUpDown1 = new NumericUpDown();
             buttonUPDATESTOCK1 = new Button();
+            searchbtn1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPRODUCTLIST1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
@@ -48,40 +49,48 @@
             ADMINLABEL1.BackColor = Color.Transparent;
             ADMINLABEL1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ADMINLABEL1.ForeColor = SystemColors.ActiveCaptionText;
-            ADMINLABEL1.Location = new Point(330, 9);
+            ADMINLABEL1.Location = new Point(287, 9);
             ADMINLABEL1.Name = "ADMINLABEL1";
-            ADMINLABEL1.Size = new Size(120, 21);
+            ADMINLABEL1.Size = new Size(215, 21);
             ADMINLABEL1.TabIndex = 0;
-            ADMINLABEL1.Text = "ADMIN PANEL";
+            ADMINLABEL1.Text = "ADMIN INVENTORY PANEL";
             ADMINLABEL1.Click += ADMINLABEL1_Click;
             // 
             // dataGridViewPRODUCTLIST1
             // 
-            dataGridViewCellStyle4.BackColor = Color.Transparent;
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            dataGridViewPRODUCTLIST1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewPRODUCTLIST1.AllowUserToAddRows = false;
+            dataGridViewPRODUCTLIST1.AllowUserToDeleteRows = false;
+            dataGridViewPRODUCTLIST1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewPRODUCTLIST1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewPRODUCTLIST1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewPRODUCTLIST1.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = SystemColors.ButtonFace;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = SystemColors.InfoText;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.GrayText;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dataGridViewPRODUCTLIST1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.ButtonFace;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.InfoText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.GrayText;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridViewPRODUCTLIST1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewPRODUCTLIST1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = SystemColors.Window;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle6.ForeColor = SystemColors.Control;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dataGridViewPRODUCTLIST1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.Control;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridViewPRODUCTLIST1.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewPRODUCTLIST1.GridColor = SystemColors.ActiveCaptionText;
-            dataGridViewPRODUCTLIST1.Location = new Point(12, 45);
+            dataGridViewPRODUCTLIST1.Location = new Point(12, 98);
+            dataGridViewPRODUCTLIST1.MultiSelect = false;
             dataGridViewPRODUCTLIST1.Name = "dataGridViewPRODUCTLIST1";
-            dataGridViewPRODUCTLIST1.Size = new Size(776, 296);
+            dataGridViewPRODUCTLIST1.ReadOnly = true;
+            dataGridViewPRODUCTLIST1.RowHeadersVisible = false;
+            dataGridViewPRODUCTLIST1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewPRODUCTLIST1.Size = new Size(776, 226);
             dataGridViewPRODUCTLIST1.TabIndex = 1;
             // 
             // labelPRODUCTNAME2
@@ -90,17 +99,17 @@
             labelPRODUCTNAME2.BackColor = Color.Transparent;
             labelPRODUCTNAME2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelPRODUCTNAME2.ForeColor = SystemColors.ActiveCaptionText;
-            labelPRODUCTNAME2.Location = new Point(12, 354);
+            labelPRODUCTNAME2.Location = new Point(12, 50);
             labelPRODUCTNAME2.Name = "labelPRODUCTNAME2";
-            labelPRODUCTNAME2.Size = new Size(128, 21);
+            labelPRODUCTNAME2.Size = new Size(99, 21);
             labelPRODUCTNAME2.TabIndex = 2;
-            labelPRODUCTNAME2.Text = "Product Name: ";
+            labelPRODUCTNAME2.Text = "Product ID: ";
             // 
             // producttextbox
             // 
-            producttextbox.Location = new Point(136, 354);
+            producttextbox.Location = new Point(106, 52);
             producttextbox.Name = "producttextbox";
-            producttextbox.Size = new Size(225, 23);
+            producttextbox.Size = new Size(55, 23);
             producttextbox.TabIndex = 4;
             // 
             // labelSTOCK3
@@ -109,7 +118,7 @@
             labelSTOCK3.BackColor = Color.Transparent;
             labelSTOCK3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelSTOCK3.ForeColor = SystemColors.ActiveCaptionText;
-            labelSTOCK3.Location = new Point(12, 391);
+            labelSTOCK3.Location = new Point(12, 339);
             labelSTOCK3.Name = "labelSTOCK3";
             labelSTOCK3.Size = new Size(61, 21);
             labelSTOCK3.TabIndex = 5;
@@ -118,7 +127,7 @@
             // numericUpDown1
             // 
             numericUpDown1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            numericUpDown1.Location = new Point(78, 391);
+            numericUpDown1.Location = new Point(71, 337);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(62, 29);
             numericUpDown1.TabIndex = 6;
@@ -128,12 +137,25 @@
             // 
             buttonUPDATESTOCK1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonUPDATESTOCK1.ForeColor = SystemColors.ActiveCaptionText;
-            buttonUPDATESTOCK1.Location = new Point(146, 389);
+            buttonUPDATESTOCK1.Location = new Point(12, 374);
             buttonUPDATESTOCK1.Name = "buttonUPDATESTOCK1";
             buttonUPDATESTOCK1.Size = new Size(121, 32);
             buttonUPDATESTOCK1.TabIndex = 7;
             buttonUPDATESTOCK1.Text = "UPDATE STOCK";
             buttonUPDATESTOCK1.UseVisualStyleBackColor = true;
+            buttonUPDATESTOCK1.Click += buttonUPDATESTOCK1_Click;
+            // 
+            // searchbtn1
+            // 
+            searchbtn1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            searchbtn1.ForeColor = SystemColors.ActiveCaptionText;
+            searchbtn1.Location = new Point(167, 49);
+            searchbtn1.Name = "searchbtn1";
+            searchbtn1.Size = new Size(100, 25);
+            searchbtn1.TabIndex = 8;
+            searchbtn1.Text = "SEARCH";
+            searchbtn1.UseVisualStyleBackColor = true;
+            searchbtn1.Click += searchbtn1_Click;
             // 
             // AdminPanel
             // 
@@ -141,6 +163,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
+            Controls.Add(searchbtn1);
             Controls.Add(buttonUPDATESTOCK1);
             Controls.Add(numericUpDown1);
             Controls.Add(labelSTOCK3);
@@ -167,5 +190,6 @@
         private Label labelSTOCK3;
         private NumericUpDown numericUpDown1;
         private Button buttonUPDATESTOCK1;
+        private Button searchbtn1;
     }
 }

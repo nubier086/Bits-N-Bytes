@@ -97,7 +97,7 @@ namespace Bits_N_Bytes
 
         private void PRODUCT_Load(object sender, EventArgs e)
         {
-
+            LoadStocks();
         }
 
 
@@ -119,21 +119,60 @@ namespace Bits_N_Bytes
 
         }
 
+        private void AddProductToCart(
+         int productId,
+         string productName,
+         Label nameLabel,
+         Label specLabel,
+         Label priceLabel)
+
+
+
+        {
+            int stock = DatabaseHelper.GetStock(productId);
+
+            if (stock <= 0)
+            {
+                MessageBox.Show("Out of Stock!");
+                return;
+            }
+
+            string description = nameLabel.Text + " " + specLabel.Text;
+
+            decimal price = decimal.Parse(
+                priceLabel.Text.Replace("₱", "").Replace(",", "")
+            );
+
+            DatabaseHelper.AddToCart(productId, productName, description, price);
+
+            DatabaseHelper.DecreaseStock(productId);
+
+            MessageBox.Show("Added to cart!");
+
+            LoadStocks();
+        }
+
+
+        private void LoadStocks()
+        {
+            lblStock21.Text = "Stock: " + DatabaseHelper.GetStock(21);
+            lblStock22.Text = "Stock: " + DatabaseHelper.GetStock(22);
+            lblStock23.Text = "Stock: " + DatabaseHelper.GetStock(23);
+        }
+
+
         private void materialButton1_Click(object sender, EventArgs e)
         {
 
             //BUNDLE 1
 
 
-            string productName = "AMD Ryzen 9 9950X3D";
-            string description = lblnamebun1.Text + " " + lblspecbun1.Text;
-            decimal price = decimal.Parse(
-    lblpricebun1.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            21,
+            "Bundle 1",
+            lblnamebun1,
+            lblspecbun1,
+            lblpricebun1);
         }
 
         
@@ -142,35 +181,27 @@ namespace Bits_N_Bytes
         {
             //BUNDLE 2
 
-
-            string productName = "AMD Ryzen 9 9950X3D";
-            string description = lblnamebun2.Text + " " + lblspecbun2.Text;
-            decimal price = decimal.Parse(
-    lblpricebun2.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+        22,
+            "Bundle 2",
+            lblnamebun2,
+            lblspecbun2,
+            lblpricebun2);
         }
+        
 
 
         
 
         private void materialButton3_Click(object sender, EventArgs e)
         {
-            //BUNDLE 3
-
-
-            string productName = "AMD Ryzen 9 9950X3D";
-            string description = lblnamebun3.Text + " " + lblspecbun3.Text;
-            decimal price = decimal.Parse(
-    lblpricebun3.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            // BUNDLE 3
+            AddProductToCart(
+                23,
+                "Bundle 3",
+                lblnamebun3,
+                lblspecbun3,
+                lblpricebun3);
         }
     }
 }

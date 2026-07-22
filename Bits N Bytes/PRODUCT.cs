@@ -17,6 +17,71 @@ namespace Bits_N_Bytes
             InitializeComponent();
         }
 
+
+        private void AddProductToCart(
+    int productId,
+    string productName,
+    Label nameLabel,
+    Label specLabel,
+    Label priceLabel)
+        {
+            int stock = DatabaseHelper.GetStock(productId);
+
+            if (stock <= 0)
+            {
+                MessageBox.Show("Out of Stock!");
+                return;
+            }
+
+            string description = nameLabel.Text + " " + specLabel.Text;
+
+            decimal price = decimal.Parse(
+                priceLabel.Text.Replace("₱", "").Replace(",", "")
+            );
+
+            DatabaseHelper.AddToCart(productId, productName, description, price);
+
+            DatabaseHelper.DecreaseStock(productId);
+
+            LoadStocks();
+
+            MessageBox.Show("Added to cart!");
+        }
+
+        private void LoadStocks()
+        {
+            lblStock1.Text = "Stock: " + DatabaseHelper.GetStock(1);
+            lblStock2.Text = "Stock: " + DatabaseHelper.GetStock(2);
+            lblStock3.Text = "Stock: " + DatabaseHelper.GetStock(3);
+            lblStock4.Text = "Stock: " + DatabaseHelper.GetStock(4);
+            lblStock5.Text = "Stock: " + DatabaseHelper.GetStock(5);
+            lblStock6.Text = "Stock: " + DatabaseHelper.GetStock(6);
+            lblStock7.Text = "Stock: " + DatabaseHelper.GetStock(7);
+            lblStock8.Text = "Stock: " + DatabaseHelper.GetStock(8);
+            lblStock9.Text = "Stock: " + DatabaseHelper.GetStock(9);
+            lblStock10.Text = "Stock: " + DatabaseHelper.GetStock(10);
+            lblStock11.Text = "Stock: " + DatabaseHelper.GetStock(11);
+            lblStock12.Text = "Stock: " + DatabaseHelper.GetStock(12);
+            lblStock13.Text = "Stock: " + DatabaseHelper.GetStock(13);
+            lblStock14.Text = "Stock: " + DatabaseHelper.GetStock(14);
+            lblStock15.Text = "Stock: " + DatabaseHelper.GetStock(15);
+            lblStock16.Text = "Stock: " + DatabaseHelper.GetStock(16);
+            lblStock17.Text = "Stock: " + DatabaseHelper.GetStock(17);
+            lblStock18.Text = "Stock: " + DatabaseHelper.GetStock(18);
+            lblStock19.Text = "Stock: " + DatabaseHelper.GetStock(19);
+            lblStock20.Text = "Stock: " + DatabaseHelper.GetStock(20);
+        }
+
+
+
+        private void PRODUCT_Load(object sender, EventArgs e)
+        {
+            LoadStocks();
+        }
+
+
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //HOME
@@ -93,92 +158,72 @@ namespace Bits_N_Bytes
         //MATERIALBUTTON CODE CONNECTED TO DATABASE
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            string productName = "AMD Ryzen 7 5700";
-            string description = label4.Text + " " + label5.Text;
-            decimal price = decimal.Parse(label3.Text.Replace("₱", "").Replace(",", ""));
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
-
+            AddProductToCart(
+            1,
+                "AMD Ryzen 7 5700",
+                 label4,
+                 label5,
+                 label3);
         }
 
         private void mbtnryzen9_Click(object sender, EventArgs e)
         {
-            string productName = "AMD Ryzen 9 9950X3D";
-            string description = lblnameryzen9.Text + " " + lblspecryzen9.Text;
-            decimal price = decimal.Parse(
-lblpriceryzen9.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            2,
+            "AMD Ryzen 9 9950X3D",
+             lblnameryzen9,
+             lblspecryzen9,
+             lblpriceryzen9);
         }
 
         private void mtbnryzen5_Click(object sender, EventArgs e)
         {
-            string productName = "Ryzen 5 9600X";
-            string description = lblnameryzen5.Text + " " + lblspecryen5.Text;
-            decimal price = decimal.Parse(
-lblpriceryzen5.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            3,
+            "Ryzen 5 9600X",
+            lblnameryzen5,
+            lblspecryen5,
+            lblpriceryzen5);
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            string productName = "Core Ultra 9 285K";
-            string description = lblnameintel9.Text + " " + lblsppecintel9.Text;
-            decimal price = decimal.Parse(
-lblpriceintel9.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            4,
+            "Core Ultra 9 285K",
+            lblnameintel9,
+            lblsppecintel9,
+            lblpriceintel9);
         }
 
         private void mbtnintel7_Click(object sender, EventArgs e)
         {
-            string productName = "Core Ultra 7 265K";
-            string description = lblnameintel7.Text + " " + lblspecintel7.Text;
-            decimal price = decimal.Parse(
-lblpriceintel7.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            5,
+            "Core Ultra 7 265K",
+            lblnameintel7,
+            lblspecintel7,
+            lblpriceintel7);
         }
 
         private void mbtnintel5_Click(object sender, EventArgs e)
         {
-            string productName = "Core Ultra 5 245K";
-            string description = lblnameintel5.Text + " " + lblspecintel5.Text;
-            decimal price = decimal.Parse(
-lblpriceintel5.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            6,
+            "Core Ultra 5 245K",
+            lblnameintel5,
+            lblspecintel5,
+            lblpriceintel5);
         }
 
         private void mbtnrtx5070_Click(object sender, EventArgs e)
         {
-            string productName = "RTX 5070";
-            string description = lblnamertx5070.Text + " " + lblspecrtx5070.Text;
-            decimal price = decimal.Parse(
-lblpricertx5070.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            7,
+            "RTX 5070",
+            lblnamertx5070,
+            lblspecrtx5070,
+            lblpricertx5070);
         }
 
         private void panel2_Click(object sender, EventArgs e)
@@ -188,176 +233,134 @@ lblpricertx5070.Text.Replace("₱", "").Replace(",", "")
 
         private void mbtnrtx5070ti_Click(object sender, EventArgs e)
         {
-            string productName = "RTX 5070 ti";
-            string description = lblnamertx5070ti.Text + " " + lblspecrtx5070ti.Text;
-            decimal price = decimal.Parse(
-lblpricertx5070ti.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            8,
+            "RTX 5070 Ti",
+            lblnamertx5070ti,
+            lblspecrtx5070ti,
+            lblpricertx5070ti);
         }
 
         private void mbtnrtx5080_Click(object sender, EventArgs e)
         {
-            string productName = "RTX 5080";
-            string description = lblnamertx5080.Text + " " + lblspecrtx5080.Text;
-            decimal price = decimal.Parse(
-lblpricertx5080.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            9,
+            "RTX 5080",
+            lblnamertx5080,
+            lblspecrtx5080,
+            lblpricertx5080);
         }
 
         private void mbtnrtx5090_Click(object sender, EventArgs e)
         {
-            string productName = "RTX 5090";
-            string description = lblnamertx5090.Text + " " + lblspecrtx5090;
-            decimal price = decimal.Parse(
-lblpricertx5090.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            10,
+            "RTX 5090",
+            lblnamertx5090,
+            lblspecrtx5090,
+            lblpricertx5090);
         }
 
         private void mbtnrtx5060ti_Click(object sender, EventArgs e)
         {
-            string productName = "RTX 5060 ti";
-            string description = lblnamertx5060ti.Text + " " + lblspecrtx5060ti.Text;
-            decimal price = decimal.Parse(
-lblpricertx5060ti.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            11,
+            "RTX 5060 Ti",
+            lblnamertx5060ti,
+            lblspecrtx5060ti,
+            lblpricertx5060ti);
         }
 
         private void mbtnmb1_Click(object sender, EventArgs e)
         {
-            string productName = "MEG Z890 ACE";
-            string description = lblnamemb1.Text + " " + lblspecmb1.Text;
-            decimal price = decimal.Parse(
-lblpricemb1.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            12,
+            "MEG Z890 ACE",
+            lblnamemb1,
+            lblspecmb1,
+            lblpricemb1);
         }
 
         private void mbtnmb2_Click(object sender, EventArgs e)
         {
-            string productName = "MEG Z890 ACE";
-            string description = lblnamemb2.Text + " " + lblspecmb2.Text;
-            decimal price = decimal.Parse(
-lblpricemb2.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            13,
+            "MEG Z890 ACE",
+            lblnamemb2,
+            lblspecmb2,
+            lblpricemb2);
         }
 
         private void mbtnmb3_Click(object sender, EventArgs e)
         {
-            string productName = "MEG Z890 ACE";
-            string description = lblnamemb3.Text + " " + lblspecmb3.Text;
-            decimal price = decimal.Parse(
-lblpricemb3.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            14,
+            "MEG Z890 ACE",
+            lblnamemb3,
+            lblspecmb3,
+            lblpricemb3);
         }
 
-        private void PRODUCT_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void mbtnmb4_Click(object sender, EventArgs e)
         {
-            string productName = "MAG Z890 Tomahawk WiFi";
-            string description = lblnamemb4.Text + " " + lblspecmb4.Text;
-            decimal price = decimal.Parse(
-lblpricemb4.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            15,
+            "MAG Z890 Tomahawk WiFi",
+            lblnamemb4,
+            lblspecmb4,
+            lblpricemb4);
         }
 
         private void mbtnmb5_Click(object sender, EventArgs e)
         {
-            string productName = "PRO Z890-P WiFi";
-            string description = lblnamemb5.Text + " " + lblspecmb5.Text;
-            decimal price = decimal.Parse(
-lblpricemb5.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            16,
+            "PRO Z890-P WiFi",
+            lblnamemb5,
+            lblspecmb5,
+            lblpricemb5);
         }
 
         private void mbtnram1_Click(object sender, EventArgs e)
         {
-            string productName = "Trident Z5 Royal Neo";
-            string description = lblnameram1.Text + " " + lblspecram1.Text;
-            decimal price = decimal.Parse(
-lblpriceram1.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            17,
+            "Trident Z5 Royal Neo",
+            lblnameram1,
+            lblspecram1,
+            lblpriceram1);
         }
 
         private void mbtnram2_Click(object sender, EventArgs e)
         {
-            string productName = "Trident Z5 RGB";
-            string description = lblnameram2.Text + " " + lblspecram2.Text;
-            decimal price = decimal.Parse(
-lblpriceram2.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            18,
+            "Trident Z5 RGB",
+            lblnameram2,
+            lblspecram2,
+            lblpriceram2);
         }
 
         private void mbtnram3_Click(object sender, EventArgs e)
         {
-            string productName = "Ripjaws M5 RGB";
-            string description = lblnameram3.Text + " " + lblspecram3.Text;
-            decimal price = decimal.Parse(
-lblpriceram3.Text.Replace("₱", "").Replace(",", "")
-);
-
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
+            AddProductToCart(
+            19,
+            "Ripjaws M5 RGB",
+            lblnameram3,
+            lblspecram3,
+            lblpriceram3);
         }
 
         private void mbtnram4_Click(object sender, EventArgs e)
         {
-            string productName = "Flare X5 ";
-            string description = lblnameram4.Text + " " + lblspecram4.Text;
-            decimal price = decimal.Parse(
-lblpriceram4.Text.Replace("₱", "").Replace(",", "")
-);
+            AddProductToCart(
+            20,
+            "Flare X5",
+            lblnameram4,
+            lblspecram4,
+            lblpriceram4);
 
-            DatabaseHelper.AddToCart(productName, description, price);
-
-            MessageBox.Show("Added to cart!");
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -456,6 +459,11 @@ lblpriceram4.Text.Replace("₱", "").Replace(",", "")
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStock20_Click(object sender, EventArgs e)
         {
 
         }

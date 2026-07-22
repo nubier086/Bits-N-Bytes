@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRODUCT1));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new ReaLTaiizor.Controls.Panel();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -59,7 +60,9 @@
             label7 = new Label();
             panel3 = new Panel();
             label1 = new Label();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            lblStock21 = new Label();
+            lblStock22 = new Label();
+            lblStock23 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -101,6 +104,23 @@
             panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel1.TabIndex = 0;
             panel1.Text = "panel1";
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.CustomizableEdges = customizableEdges3;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.Gold;
+            guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2Button2.ForeColor = Color.Black;
+            guna2Button2.Location = new Point(1881, 19);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Button2.Size = new Size(144, 57);
+            guna2Button2.TabIndex = 27;
+            guna2Button2.Text = "Login/Sign In";
             // 
             // pictureBox5
             // 
@@ -231,6 +251,9 @@
             panel2.AutoScrollMargin = new Size(1840, 1500);
             panel2.AutoScrollMinSize = new Size(1840, 1500);
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(lblStock23);
+            panel2.Controls.Add(lblStock22);
+            panel2.Controls.Add(lblStock21);
             panel2.Controls.Add(lblspecbun3);
             panel2.Controls.Add(lblnamebun3);
             panel2.Controls.Add(lblpricebun3);
@@ -288,7 +311,7 @@
             lblspecbun2.AutoSize = true;
             lblspecbun2.Location = new Point(852, 596);
             lblspecbun2.Name = "lblspecbun2";
-            lblspecbun2.Size = new Size(208, 45);
+            lblspecbun2.Size = new Size(209, 45);
             lblspecbun2.TabIndex = 109;
             lblspecbun2.Text = "Ryzen 5 5600GT,22 inch 100hz Monitor\r\nB450 mobo,16gb Ram ,600w PSU\r\n256 SSD\r\n";
             // 
@@ -435,22 +458,32 @@
             label1.Text = "View PC Parts";
             label1.Click += label1_Click;
             // 
-            // guna2Button2
+            // lblStock21
             // 
-            guna2Button2.CustomizableEdges = customizableEdges1;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.Gold;
-            guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button2.ForeColor = Color.Black;
-            guna2Button2.Location = new Point(1881, 19);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button2.Size = new Size(144, 57);
-            guna2Button2.TabIndex = 27;
-            guna2Button2.Text = "Login/Sign In";
+            lblStock21.AutoSize = true;
+            lblStock21.Location = new Point(400, 659);
+            lblStock21.Name = "lblStock21";
+            lblStock21.Size = new Size(48, 15);
+            lblStock21.TabIndex = 121;
+            lblStock21.Text = "Stock: 0";
+            // 
+            // lblStock22
+            // 
+            lblStock22.AutoSize = true;
+            lblStock22.Location = new Point(852, 659);
+            lblStock22.Name = "lblStock22";
+            lblStock22.Size = new Size(48, 15);
+            lblStock22.TabIndex = 122;
+            lblStock22.Text = "Stock: 0";
+            // 
+            // lblStock23
+            // 
+            lblStock23.AutoSize = true;
+            lblStock23.Location = new Point(1294, 659);
+            lblStock23.Name = "lblStock23";
+            lblStock23.Size = new Size(48, 15);
+            lblStock23.TabIndex = 123;
+            lblStock23.Text = "Stock: 0";
             // 
             // PRODUCT1
             // 
@@ -517,5 +550,8 @@
         private Label lblnamebun3;
         private Label lblpricebun3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Label lblStock21;
+        private Label lblStock23;
+        private Label lblStock22;
     }
 }

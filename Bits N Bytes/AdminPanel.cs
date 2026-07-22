@@ -39,7 +39,7 @@ namespace Bits_N_Bytes
         //COLOR DATAGRIDVIEW EVENT HANDLER
         private void AdminPanel_Load(object sender, EventArgs e)
         {
-            dataGridViewPRODUCTLIST1.DataSource = DatabaseHelper.GetProducts();
+            LoadProducts();
 
             dataGridViewPRODUCTLIST1.EnableHeadersVisualStyles = false;
 
@@ -54,6 +54,42 @@ namespace Bits_N_Bytes
 
             dataGridViewPRODUCTLIST1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridViewPRODUCTLIST1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+        }
+
+        private void searchbtn1_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(producttextbox.Text, out int productId))
+            {
+                MessageBox.Show("Please enter a valid Product ID.");
+                return;
+            }
+
+            DataTable table = DatabaseHelper.SearchProduct(productId);
+
+            if (table.Rows.Count == 0)
+            {
+                MessageBox.Show("Product not found.");
+                return;
+            }
+
+            dataGridViewPRODUCTLIST1.DataSource = table;
+
+            numericUpDown1.Value = Convert.ToDecimal(table.Rows[0]["Stock"]);
+        }
+
+        private void buttonUPDATESTOCK1_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(producttextbox.Text, out int productId))
+            {
+                MessageBox.Show("Please enter a valid Product ID.");
+                return;
+            }
+
+            DatabaseHelper.UpdateStock(productId, (int)numericUpDown1.Value);
+
+            MessageBox.Show("Stock updated successfully!");
+
+            LoadProducts();
         }
     }
 }
