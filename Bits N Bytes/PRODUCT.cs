@@ -449,5 +449,15 @@ lblpriceram4.Text.Replace("₱", "").Replace(",", "")
         {
 
         }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRODUCT));
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new ReaLTaiizor.Controls.Panel();
@@ -80,7 +80,6 @@
             lblnameryzen9 = new Label();
             lblpriceryzen9 = new Label();
             pcbRyzen9 = new PictureBox();
-            label10 = new Label();
             mbtnram4 = new MaterialSkin.Controls.MaterialButton();
             lblspecram4 = new Label();
             lblnameram4 = new Label();
@@ -152,6 +151,27 @@
             label7 = new Label();
             txtsearch = new TextBox();
             btnsearch = new Button();
+            label9 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label10 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            label26 = new Label();
+            label27 = new Label();
+            label28 = new Label();
+            label29 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -192,14 +212,13 @@
             flowLayoutPanel1.Controls.Add(textBox1);
             flowLayoutPanel1.Location = new Point(-248, 6);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(2456, 124);
+            flowLayoutPanel1.Size = new Size(2696, 124);
             flowLayoutPanel1.TabIndex = 11;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(guna2Button2);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox4);
@@ -208,7 +227,7 @@
             panel1.EdgeColor = Color.White;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(5, 5, 5, 5);
+            panel1.Padding = new Padding(5);
             panel1.Size = new Size(2167, 88);
             panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel1.TabIndex = 0;
@@ -217,7 +236,7 @@
             // 
             // guna2Button2
             // 
-            guna2Button2.CustomizableEdges = customizableEdges1;
+            guna2Button2.CustomizableEdges = customizableEdges3;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -225,9 +244,9 @@
             guna2Button2.FillColor = Color.Gold;
             guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button2.ForeColor = Color.Black;
-            guna2Button2.Location = new Point(1898, 19);
+            guna2Button2.Location = new Point(1313, 136);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button2.Size = new Size(144, 57);
             guna2Button2.TabIndex = 25;
             guna2Button2.Text = "Login/Sign In";
@@ -292,7 +311,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(2067, 8);
+            pictureBox2.Location = new Point(546, 8);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(81, 70);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -310,7 +329,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(3, 96);
+            textBox1.Location = new Point(2429, 2);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(110, 23);
@@ -424,7 +443,7 @@
             lblspecryen5.AutoSize = true;
             lblspecryen5.Location = new Point(539, 272);
             lblspecryen5.Name = "lblspecryen5";
-            lblspecryen5.Size = new Size(222, 30);
+            lblspecryen5.Size = new Size(221, 30);
             lblspecryen5.TabIndex = 13;
             lblspecryen5.Text = "label16 Cores / 12 Threads, up to 5.4GHz,\r\n Zen 5, 65W";
             // 
@@ -647,7 +666,7 @@
             lblnamertx5070.AutoSize = true;
             lblnamertx5070.Location = new Point(1580, 257);
             lblnamertx5070.Name = "lblnamertx5070";
-            lblnamertx5070.Size = new Size(54, 15);
+            lblnamertx5070.Size = new Size(53, 15);
             lblnamertx5070.TabIndex = 32;
             lblnamertx5070.Text = "RTX 5070";
             // 
@@ -656,7 +675,7 @@
             lblspecrtx5070.AutoSize = true;
             lblspecrtx5070.Location = new Point(1580, 272);
             lblspecrtx5070.Name = "lblspecrtx5070";
-            lblspecrtx5070.Size = new Size(161, 30);
+            lblspecrtx5070.Size = new Size(162, 30);
             lblspecrtx5070.TabIndex = 33;
             lblspecrtx5070.Text = "12GB GDDR7, DLSS 4,\r\n Excellent 1440p Performance";
             // 
@@ -696,8 +715,27 @@
             panel2.AutoScrollMargin = new Size(1840, 1500);
             panel2.AutoScrollMinSize = new Size(1840, 1500);
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(label29);
+            panel2.Controls.Add(label28);
+            panel2.Controls.Add(label27);
+            panel2.Controls.Add(label26);
+            panel2.Controls.Add(label25);
+            panel2.Controls.Add(label24);
+            panel2.Controls.Add(label23);
+            panel2.Controls.Add(label22);
+            panel2.Controls.Add(label21);
+            panel2.Controls.Add(label11);
+            panel2.Controls.Add(label20);
+            panel2.Controls.Add(label19);
+            panel2.Controls.Add(label18);
+            panel2.Controls.Add(label17);
+            panel2.Controls.Add(label16);
+            panel2.Controls.Add(label15);
+            panel2.Controls.Add(label14);
+            panel2.Controls.Add(label13);
+            panel2.Controls.Add(label12);
+            panel2.Controls.Add(label9);
             panel2.Controls.Add(panel3);
-            panel2.Controls.Add(label10);
             panel2.Controls.Add(mbtnram4);
             panel2.Controls.Add(lblspecram4);
             panel2.Controls.Add(lblnameram4);
@@ -796,7 +834,7 @@
             panel2.EdgeColor = Color.FromArgb(32, 41, 50);
             panel2.Location = new Point(34, 218);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(5, 5, 5, 5);
+            panel2.Padding = new Padding(5);
             panel2.Size = new Size(1840, 1500);
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 12;
@@ -806,6 +844,7 @@
             // panel3
             // 
             panel3.Controls.Add(mbtnryzen9);
+            panel3.Controls.Add(label10);
             panel3.Controls.Add(lblspecryzen9);
             panel3.Controls.Add(lblnameryzen9);
             panel3.Controls.Add(lblpriceryzen9);
@@ -840,7 +879,7 @@
             lblspecryzen9.AutoSize = true;
             lblspecryzen9.Location = new Point(-1, 254);
             lblspecryzen9.Name = "lblspecryzen9";
-            lblspecryzen9.Size = new Size(200, 30);
+            lblspecryzen9.Size = new Size(199, 30);
             lblspecryzen9.TabIndex = 13;
             lblspecryzen9.Text = "16 Cores / 32 Threads, up to 5.7GHz, \r\n3D V-Cache, AM5, DDR5, PCIe 5.0";
             // 
@@ -872,17 +911,6 @@
             pcbRyzen9.Size = new Size(204, 169);
             pcbRyzen9.TabIndex = 10;
             pcbRyzen9.TabStop = false;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Transparent;
-            label10.Location = new Point(651, 716);
-            label10.Name = "label10";
-            label10.Size = new Size(521, 50);
-            label10.TabIndex = 100;
-            label10.Text = "WELCOME TO BITS N BYTES!";
             // 
             // mbtnram4
             // 
@@ -1038,7 +1066,7 @@
             lblnameram2.AutoSize = true;
             lblnameram2.Location = new Point(802, 973);
             lblnameram2.Name = "lblnameram2";
-            lblnameram2.Size = new Size(85, 15);
+            lblnameram2.Size = new Size(84, 15);
             lblnameram2.TabIndex = 87;
             lblnameram2.Text = "Trident Z5 RGB";
             // 
@@ -1098,7 +1126,7 @@
             lblnameram1.AutoSize = true;
             lblnameram1.Location = new Point(545, 973);
             lblnameram1.Name = "lblnameram1";
-            lblnameram1.Size = new Size(120, 15);
+            lblnameram1.Size = new Size(119, 15);
             lblnameram1.TabIndex = 82;
             lblnameram1.Text = "Trident Z5 Royal Neo ";
             // 
@@ -1218,7 +1246,7 @@
             lblnamemb4.AutoSize = true;
             lblnamemb4.Location = new Point(42, 973);
             lblnamemb4.Name = "lblnamemb4";
-            lblnamemb4.Size = new Size(149, 15);
+            lblnamemb4.Size = new Size(148, 15);
             lblnamemb4.TabIndex = 72;
             lblnamemb4.Text = "MAG Z890 Tomahawk WiFi";
             // 
@@ -1251,7 +1279,7 @@
             mbtnmb3.Depth = 0;
             mbtnmb3.HighEmphasis = true;
             mbtnmb3.Icon = null;
-            mbtnmb3.Location = new Point(1670, 675);
+            mbtnmb3.Location = new Point(1670, 679);
             mbtnmb3.Margin = new Padding(4, 6, 4, 6);
             mbtnmb3.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb3.Name = "mbtnmb3";
@@ -1278,7 +1306,7 @@
             lblnamemb3.AutoSize = true;
             lblnamemb3.Location = new Point(1580, 622);
             lblnamemb3.Name = "lblnamemb3";
-            lblnamemb3.Size = new Size(129, 15);
+            lblnamemb3.Size = new Size(128, 15);
             lblnamemb3.TabIndex = 67;
             lblnamemb3.Text = "MPG Z890 Edge Ti WiFi";
             // 
@@ -1311,7 +1339,7 @@
             mbtnmb2.Depth = 0;
             mbtnmb2.HighEmphasis = true;
             mbtnmb2.Icon = null;
-            mbtnmb2.Location = new Point(1404, 675);
+            mbtnmb2.Location = new Point(1404, 679);
             mbtnmb2.Margin = new Padding(4, 6, 4, 6);
             mbtnmb2.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb2.Name = "mbtnmb2";
@@ -1371,7 +1399,7 @@
             mbtnmb1.Depth = 0;
             mbtnmb1.HighEmphasis = true;
             mbtnmb1.Icon = null;
-            mbtnmb1.Location = new Point(1149, 673);
+            mbtnmb1.Location = new Point(1149, 679);
             mbtnmb1.Margin = new Padding(4, 6, 4, 6);
             mbtnmb1.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb1.Name = "mbtnmb1";
@@ -1431,7 +1459,7 @@
             mbtnrtx5060ti.Depth = 0;
             mbtnrtx5060ti.HighEmphasis = true;
             mbtnrtx5060ti.Icon = null;
-            mbtnrtx5060ti.Location = new Point(892, 669);
+            mbtnrtx5060ti.Location = new Point(892, 679);
             mbtnrtx5060ti.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5060ti.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5060ti.Name = "mbtnrtx5060ti";
@@ -1458,7 +1486,7 @@
             lblnamertx5060ti.AutoSize = true;
             lblnamertx5060ti.Location = new Point(802, 620);
             lblnamertx5060ti.Name = "lblnamertx5060ti";
-            lblnamertx5060ti.Size = new Size(64, 15);
+            lblnamertx5060ti.Size = new Size(63, 15);
             lblnamertx5060ti.TabIndex = 52;
             lblnamertx5060ti.Text = "RTX 5060 ti";
             // 
@@ -1491,7 +1519,7 @@
             mbtnrtx5090.Depth = 0;
             mbtnrtx5090.HighEmphasis = true;
             mbtnrtx5090.Icon = null;
-            mbtnrtx5090.Location = new Point(635, 669);
+            mbtnrtx5090.Location = new Point(635, 679);
             mbtnrtx5090.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5090.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5090.Name = "mbtnrtx5090";
@@ -1509,7 +1537,7 @@
             lblspecrtx5090.AutoSize = true;
             lblspecrtx5090.Location = new Point(545, 635);
             lblspecrtx5090.Name = "lblspecrtx5090";
-            lblspecrtx5090.Size = new Size(230, 15);
+            lblspecrtx5090.Size = new Size(229, 15);
             lblspecrtx5090.TabIndex = 48;
             lblspecrtx5090.Text = "32GB GDDR7, DLSS 4, Ray Tracing, PCIe 5.0";
             // 
@@ -1518,7 +1546,7 @@
             lblnamertx5090.AutoSize = true;
             lblnamertx5090.Location = new Point(545, 620);
             lblnamertx5090.Name = "lblnamertx5090";
-            lblnamertx5090.Size = new Size(54, 15);
+            lblnamertx5090.Size = new Size(53, 15);
             lblnamertx5090.TabIndex = 47;
             lblnamertx5090.Text = "RTX 5090";
             // 
@@ -1551,7 +1579,7 @@
             mbtnrtx5080.Depth = 0;
             mbtnrtx5080.HighEmphasis = true;
             mbtnrtx5080.Icon = null;
-            mbtnrtx5080.Location = new Point(385, 669);
+            mbtnrtx5080.Location = new Point(385, 675);
             mbtnrtx5080.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5080.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5080.Name = "mbtnrtx5080";
@@ -1578,7 +1606,7 @@
             lblnamertx5080.AutoSize = true;
             lblnamertx5080.Location = new Point(295, 620);
             lblnamertx5080.Name = "lblnamertx5080";
-            lblnamertx5080.Size = new Size(54, 15);
+            lblnamertx5080.Size = new Size(53, 15);
             lblnamertx5080.TabIndex = 42;
             lblnamertx5080.Text = "RTX 5080";
             // 
@@ -1638,7 +1666,7 @@
             lblnamertx5070ti.AutoSize = true;
             lblnamertx5070ti.Location = new Point(42, 620);
             lblnamertx5070ti.Name = "lblnamertx5070ti";
-            lblnamertx5070ti.Size = new Size(67, 15);
+            lblnamertx5070ti.Size = new Size(65, 15);
             lblnamertx5070ti.TabIndex = 37;
             lblnamertx5070ti.Text = "RTX 5070 Ti";
             // 
@@ -1728,12 +1756,202 @@
             btnsearch.UseVisualStyleBackColor = true;
             btnsearch.Click += btnsearch_Click;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(58, 317);
+            label9.Name = "label9";
+            label9.Size = new Size(48, 15);
+            label9.TabIndex = 102;
+            label9.Text = "Stock: 0";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(567, 320);
+            label11.Name = "label11";
+            label11.Size = new Size(48, 15);
+            label11.TabIndex = 103;
+            label11.Text = "Stock: 0";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(1415, 467);
+            label12.Name = "label12";
+            label12.Size = new Size(48, 15);
+            label12.TabIndex = 103;
+            label12.Text = "Stock: 0";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(817, 320);
+            label13.Name = "label13";
+            label13.Size = new Size(48, 15);
+            label13.TabIndex = 104;
+            label13.Text = "Stock: 0";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(1081, 321);
+            label14.Name = "label14";
+            label14.Size = new Size(48, 15);
+            label14.TabIndex = 105;
+            label14.Text = "Stock: 0";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(1338, 328);
+            label15.Name = "label15";
+            label15.Size = new Size(48, 15);
+            label15.TabIndex = 106;
+            label15.Text = "Stock: 0";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(59, 686);
+            label16.Name = "label16";
+            label16.Size = new Size(48, 15);
+            label16.TabIndex = 107;
+            label16.Text = "Stock: 0";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(1597, 321);
+            label17.Name = "label17";
+            label17.Size = new Size(48, 15);
+            label17.TabIndex = 108;
+            label17.Text = "Stock: 0";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(321, 690);
+            label18.Name = "label18";
+            label18.Size = new Size(48, 15);
+            label18.TabIndex = 109;
+            label18.Text = "Stock: 0";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(567, 690);
+            label19.Name = "label19";
+            label19.Size = new Size(48, 15);
+            label19.TabIndex = 110;
+            label19.Text = "Stock: 0";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(817, 690);
+            label20.Name = "label20";
+            label20.Size = new Size(48, 15);
+            label20.TabIndex = 111;
+            label20.Text = "Stock: 0";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(15, 294);
+            label10.Name = "label10";
+            label10.Size = new Size(48, 15);
+            label10.TabIndex = 112;
+            label10.Text = "Stock: 0";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(1080, 688);
+            label21.Name = "label21";
+            label21.Size = new Size(48, 15);
+            label21.TabIndex = 112;
+            label21.Text = "Stock: 0";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(1341, 695);
+            label22.Name = "label22";
+            label22.Size = new Size(48, 15);
+            label22.TabIndex = 113;
+            label22.Text = "Stock: 0";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(1601, 690);
+            label23.Name = "label23";
+            label23.Size = new Size(48, 15);
+            label23.TabIndex = 114;
+            label23.Text = "Stock: 0";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(300, 1037);
+            label24.Name = "label24";
+            label24.Size = new Size(48, 15);
+            label24.TabIndex = 115;
+            label24.Text = "Stock: 0";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(59, 1035);
+            label25.Name = "label25";
+            label25.Size = new Size(48, 15);
+            label25.TabIndex = 116;
+            label25.Text = "Stock: 0";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(550, 1037);
+            label26.Name = "label26";
+            label26.Size = new Size(48, 15);
+            label26.TabIndex = 117;
+            label26.Text = "Stock: 0";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(817, 1037);
+            label27.Name = "label27";
+            label27.Size = new Size(48, 15);
+            label27.TabIndex = 118;
+            label27.Text = "Stock: 0";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(1072, 1035);
+            label28.Name = "label28";
+            label28.Size = new Size(48, 15);
+            label28.TabIndex = 119;
+            label28.Text = "Stock: 0";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(1330, 1037);
+            label29.Name = "label29";
+            label29.Size = new Size(48, 15);
+            label29.TabIndex = 120;
+            label29.Text = "Stock: 0";
+            // 
             // PRODUCT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1684, 791);
+            ClientSize = new Size(1924, 791);
+            Controls.Add(guna2Button2);
             Controls.Add(btnsearch);
             Controls.Add(txtsearch);
             Controls.Add(label7);
@@ -1892,7 +2110,6 @@
         private Label lblnameram4;
         private Label lblpriceram4;
         private PictureBox pictureBox24;
-        private Label label10;
         private Label label1;
         private Panel panel4;
         private Panel panel5;
@@ -1908,5 +2125,26 @@
         private Label lblnameryzen9;
         private Label lblpriceryzen9;
         private PictureBox pcbRyzen9;
+        private Label label20;
+        private Label label19;
+        private Label label18;
+        private Label label17;
+        private Label label16;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private Label label12;
+        private Label label9;
+        private Label label11;
+        private Label label29;
+        private Label label28;
+        private Label label27;
+        private Label label26;
+        private Label label25;
+        private Label label24;
+        private Label label23;
+        private Label label22;
+        private Label label21;
+        private Label label10;
     }
 }
