@@ -1,4 +1,7 @@
-﻿namespace Bits_N_Bytes
+﻿using Bits_N_Bytes.Database;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Bits_N_Bytes
 {
     partial class Login
     {
@@ -164,22 +167,41 @@
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            string role = DatabaseHelper.LoginUser(USERNAME.Text, PASSWORD.Text);
+
+            if (role == null)
+            {
+                MessageBox.Show("Invalid username or password.");
+                return;
+            }
+
+            if (role == "Admin")
+            {
+                AdminPanel admin = new AdminPanel();
+                admin.Show();
+                this.Hide();
+            }
+            else
+            {
+                Form1 home = new Form1();
+                home.Show();
+                this.Hide();
+            }
         }
 
         private void PASSWORD_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         private void USERNAME_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         #endregion

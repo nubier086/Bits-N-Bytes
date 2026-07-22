@@ -17,10 +17,13 @@ namespace Bits_N_Bytes
 
         private void label1_Click(object sender, EventArgs e)
         {
-
-
-
+            signup signup = new signup();
+            signup.Show();
+            this.Hide();
 
         }
+
+
+
     }
 }

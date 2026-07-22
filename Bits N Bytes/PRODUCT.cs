@@ -442,7 +442,12 @@ lblpriceram4.Text.Replace("₱", "").Replace(",", "")
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

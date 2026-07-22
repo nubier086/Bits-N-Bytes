@@ -39,26 +39,16 @@ namespace Bits_N_Bytes.Database
         public static void InitializeDatabase()
         {
 
-
-
-
-
-            using var connection = GetConnection();
-            connection.Open();
-
-            using var cmd = connection.CreateCommand();
-            cmd.CommandText = "SELECT COUNT(*) FROM Products";
-
-            MessageBox.Show("Products in database: " + cmd.ExecuteScalar());
-
             string folder = Path.GetDirectoryName(DbPath)!;
 
 
             if (!Directory.Exists(folder))
                 Directory.CreateDirectory(folder);
 
-           
+            using var connection = GetConnection();
+            connection.Open();
 
+           
             string createProductsTable = @"
             CREATE TABLE IF NOT EXISTS Products(
                 ProductID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -79,16 +69,15 @@ namespace Bits_N_Bytes.Database
             Quantity INTEGER NOT NULL
             );";
 
-
-
             string sql = @"
-CREATE TABLE IF NOT EXISTS Users
-(
-    UserID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Username TEXT NOT NULL,
-    Password TEXT NOT NULL,
-    Role TEXT NOT NULL
-);";
+            CREATE TABLE IF NOT EXISTS Users
+          (
+            UserID INTEGER PRIMARY KEY AUTOINCREMENT,
+            Username TEXT NOT NULL UNIQUE,
+            Password TEXT NOT NULL,
+            Role TEXT NOT NULL
+          );";
+
 
             using var command = connection.CreateCommand();
 
@@ -100,6 +89,16 @@ CREATE TABLE IF NOT EXISTS Users
 
             command.CommandText = sql;
             command.ExecuteNonQuery();
+
+            using var adminCommand = connection.CreateCommand();
+
+            adminCommand.CommandText = @"
+            INSERT OR IGNORE INTO Users
+            (Username, Password, Role)
+            VALUES
+            ('admin', 'admin123', 'Admin');";
+
+            adminCommand.ExecuteNonQuery();
 
             // Ensure legacy databases get the new columns without recreating the table.
             // Check existing columns in Products and add Brand/Category if missing.
@@ -129,6 +128,8 @@ CREATE TABLE IF NOT EXISTS Users
             }
 
         }
+
+
         public static void AddProduct(string name, decimal price, int stock, string image, string brand = null, string category = null)
         {
             using var connection = GetConnection();
@@ -237,14 +238,14 @@ CREATE TABLE IF NOT EXISTS Users
             connection.Open();
 
             string sql = @"
-    DELETE FROM Cart
-    WHERE CartID = @id
-    AND Quantity = 1;
+             DELETE FROM Cart
+             WHERE CartID = @id
+             AND Quantity = 1;
 
-    UPDATE Cart
-    SET Quantity = Quantity - 1
-    WHERE CartID = @id
-    AND Quantity > 1;";
+             UPDATE Cart
+             SET Quantity = Quantity - 1
+             WHERE CartID = @id
+             AND Quantity > 1;";
 
             using var command = connection.CreateCommand();
             command.CommandText = sql;
@@ -252,6 +253,98 @@ CREATE TABLE IF NOT EXISTS Users
 
             command.ExecuteNonQuery();
         }
+
+        public static System.Data.DataTable GetProducts()
+        {
+            System.Data.DataTable table = new();
+
+            using var connection = GetConnection();
+            connection.Open();
+
+            string sql = @"
+
+              SELECT
+              ProductID,
+              ProductName,
+              Brand,
+              Category,
+              Price,
+              Stock
+              FROM Products;";
+
+            using var command = connection.CreateCommand();
+            command.CommandText = sql;
+
+            using var reader = command.ExecuteReader();
+
+            table.Load(reader);
+
+            return table;
+        }
+
+        public static string LoginUser(string username, string password)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            string sql = @"
+            SELECT Role
+            FROM Users
+            WHERE Username = @username
+            AND Password = @password;";
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@username", username);
+            command.Parameters.AddWithValue("@password", password);
+
+            var result = command.ExecuteScalar();
+
+            if (result != null)
+                return result.ToString();
+
+            return null;
+        }
+
+        public static bool RegisterUser(string username, string password)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            // Check if username already exists
+            string checkSql = "SELECT COUNT(*) FROM Users WHERE Username = @username;";
+
+            using var checkCommand = connection.CreateCommand();
+            checkCommand.CommandText = checkSql;
+            checkCommand.Parameters.AddWithValue("@username", username);
+
+            long count = (long)checkCommand.ExecuteScalar();
+
+            if (count > 0)
+            {
+                return false;
+            }
+
+            //Insert new user
+            string insertSql = @"
+            INSERT INTO Users
+            (Username, Password, Role)
+            VALUES
+            (@username, @password, 'User');";
+
+            using var insertCommand = connection.CreateCommand();
+
+            insertCommand.CommandText = insertSql;
+            insertCommand.Parameters.AddWithValue("@username", username);
+            insertCommand.Parameters.AddWithValue("@password", password);
+
+            insertCommand.ExecuteNonQuery();
+
+            return true;
+        }
+
+
     }
 
 

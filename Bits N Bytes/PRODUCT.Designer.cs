@@ -74,6 +74,12 @@
             mbtnrtx5070 = new MaterialSkin.Controls.MaterialButton();
             pictureBox12 = new PictureBox();
             panel2 = new ReaLTaiizor.Controls.Panel();
+            panel3 = new Panel();
+            mbtnryzen9 = new MaterialSkin.Controls.MaterialButton();
+            lblspecryzen9 = new Label();
+            lblnameryzen9 = new Label();
+            lblpriceryzen9 = new Label();
+            pcbRyzen9 = new PictureBox();
             label10 = new Label();
             mbtnram4 = new MaterialSkin.Controls.MaterialButton();
             lblspecram4 = new Label();
@@ -146,12 +152,6 @@
             label7 = new Label();
             txtsearch = new TextBox();
             btnsearch = new Button();
-            panel3 = new Panel();
-            mbtnryzen9 = new MaterialSkin.Controls.MaterialButton();
-            lblspecryzen9 = new Label();
-            lblnameryzen9 = new Label();
-            lblpriceryzen9 = new Label();
-            pcbRyzen9 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -167,6 +167,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pcbRyzen9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
@@ -180,8 +182,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panel5.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbRyzen9).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -190,10 +190,9 @@
             flowLayoutPanel1.Controls.Add(panel1);
             flowLayoutPanel1.Controls.Add(panel4);
             flowLayoutPanel1.Controls.Add(textBox1);
-            flowLayoutPanel1.Location = new Point(-283, 8);
-            flowLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
+            flowLayoutPanel1.Location = new Point(-248, 6);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(2807, 165);
+            flowLayoutPanel1.Size = new Size(2456, 124);
             flowLayoutPanel1.TabIndex = 11;
             // 
             // panel1
@@ -207,14 +206,14 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(pictureBox2);
             panel1.EdgeColor = Color.White;
-            panel1.Location = new Point(3, 4);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(6, 7, 6, 7);
-            panel1.Size = new Size(2477, 117);
+            panel1.Padding = new Padding(5, 5, 5, 5);
+            panel1.Size = new Size(2167, 88);
             panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel1.TabIndex = 0;
             panel1.Text = "panel1";
+            panel1.Click += panel1_Click;
             // 
             // guna2Button2
             // 
@@ -226,11 +225,10 @@
             guna2Button2.FillColor = Color.Gold;
             guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button2.ForeColor = Color.Black;
-            guna2Button2.Location = new Point(2169, 25);
-            guna2Button2.Margin = new Padding(3, 4, 3, 4);
+            guna2Button2.Location = new Point(1898, 19);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button2.Size = new Size(165, 76);
+            guna2Button2.Size = new Size(144, 57);
             guna2Button2.TabIndex = 25;
             guna2Button2.Text = "Login/Sign In";
             // 
@@ -240,10 +238,9 @@
             pictureBox5.BackgroundImageLayout = ImageLayout.Center;
             pictureBox5.ErrorImage = (Image)resources.GetObject("pictureBox5.ErrorImage");
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(1096, 25);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
+            pictureBox5.Location = new Point(959, 19);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(143, 81);
+            pictureBox5.Size = new Size(125, 61);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 14;
             pictureBox5.TabStop = false;
@@ -255,10 +252,9 @@
             pictureBox6.BackgroundImageLayout = ImageLayout.Center;
             pictureBox6.ErrorImage = (Image)resources.GetObject("pictureBox6.ErrorImage");
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1544, 25);
-            pictureBox6.Margin = new Padding(3, 4, 3, 4);
+            pictureBox6.Location = new Point(1351, 19);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(171, 81);
+            pictureBox6.Size = new Size(150, 61);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 13;
             pictureBox6.TabStop = false;
@@ -270,10 +266,9 @@
             pictureBox4.BackgroundImageLayout = ImageLayout.Center;
             pictureBox4.ErrorImage = (Image)resources.GetObject("pictureBox4.ErrorImage");
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1309, 25);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Location = new Point(1145, 19);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(171, 81);
+            pictureBox4.Size = new Size(150, 61);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 12;
             pictureBox4.TabStop = false;
@@ -285,10 +280,9 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(319, -16);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(279, -12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(242, 153);
+            pictureBox1.Size = new Size(212, 115);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -298,10 +292,9 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(2362, 11);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(2067, 8);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(93, 93);
+            pictureBox2.Size = new Size(81, 70);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -310,17 +303,17 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(2486, 4);
-            panel4.Margin = new Padding(3, 4, 3, 4);
+            panel4.Location = new Point(2176, 3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(282, 84);
+            panel4.Size = new Size(247, 63);
             panel4.TabIndex = 24;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(3, 128);
+            textBox1.Location = new Point(3, 96);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(110, 23);
             textBox1.TabIndex = 26;
             // 
             // label2
@@ -329,9 +322,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1013, 240);
+            label2.Location = new Point(886, 180);
             label2.Name = "label2";
-            label2.Size = new Size(262, 28);
+            label2.Size = new Size(209, 21);
             label2.TabIndex = 10;
             label2.Text = "Your Dream PC Starts Here!";
             // 
@@ -340,10 +333,9 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImageLayout = ImageLayout.None;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(48, 33);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Location = new Point(42, 25);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(233, 224);
+            pictureBox3.Size = new Size(204, 168);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
@@ -353,27 +345,27 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(48, 276);
+            label3.Location = new Point(42, 207);
             label3.Name = "label3";
-            label3.Size = new Size(180, 46);
+            label3.Size = new Size(144, 37);
             label3.TabIndex = 1;
             label3.Text = "₱9,750.00";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(48, 343);
+            label4.Location = new Point(42, 257);
             label4.Name = "label4";
-            label4.Size = new Size(138, 20);
+            label4.Size = new Size(107, 15);
             label4.TabIndex = 2;
             label4.Text = "AMD Ryzen 7 5700 ";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(48, 363);
+            label5.Location = new Point(42, 272);
             label5.Name = "label5";
-            label5.Size = new Size(196, 20);
+            label5.Size = new Size(155, 15);
             label5.TabIndex = 3;
             label5.Text = " 8-Core 3.4 GHz Socket AM4";
             label5.Click += label5_Click;
@@ -385,8 +377,8 @@
             materialButton1.Depth = 0;
             materialButton1.HighEmphasis = true;
             materialButton1.Icon = null;
-            materialButton1.Location = new Point(151, 408);
-            materialButton1.Margin = new Padding(5, 8, 5, 8);
+            materialButton1.Location = new Point(132, 306);
+            materialButton1.Margin = new Padding(4, 6, 4, 6);
             materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton1.Name = "materialButton1";
             materialButton1.NoAccentTextColor = Color.Empty;
@@ -402,10 +394,9 @@
             // 
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(623, 31);
-            pictureBox7.Margin = new Padding(3, 4, 3, 4);
+            pictureBox7.Location = new Point(545, 23);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(233, 227);
+            pictureBox7.Size = new Size(204, 170);
             pictureBox7.TabIndex = 10;
             pictureBox7.TabStop = false;
             // 
@@ -413,27 +404,27 @@
             // 
             lblpriceryzen5.AutoSize = true;
             lblpriceryzen5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpriceryzen5.Location = new Point(623, 276);
+            lblpriceryzen5.Location = new Point(545, 207);
             lblpriceryzen5.Name = "lblpriceryzen5";
-            lblpriceryzen5.Size = new Size(151, 46);
+            lblpriceryzen5.Size = new Size(121, 37);
             lblpriceryzen5.TabIndex = 11;
             lblpriceryzen5.Text = "₱14,000";
             // 
             // lblnameryzen5
             // 
             lblnameryzen5.AutoSize = true;
-            lblnameryzen5.Location = new Point(623, 343);
+            lblnameryzen5.Location = new Point(545, 257);
             lblnameryzen5.Name = "lblnameryzen5";
-            lblnameryzen5.Size = new Size(105, 20);
+            lblnameryzen5.Size = new Size(81, 15);
             lblnameryzen5.TabIndex = 12;
             lblnameryzen5.Text = "Ryzen 5 9600X";
             // 
             // lblspecryen5
             // 
             lblspecryen5.AutoSize = true;
-            lblspecryen5.Location = new Point(616, 363);
+            lblspecryen5.Location = new Point(539, 272);
             lblspecryen5.Name = "lblspecryen5";
-            lblspecryen5.Size = new Size(281, 40);
+            lblspecryen5.Size = new Size(222, 30);
             lblspecryen5.TabIndex = 13;
             lblspecryen5.Text = "label16 Cores / 12 Threads, up to 5.4GHz,\r\n Zen 5, 65W";
             // 
@@ -444,8 +435,8 @@
             mtbnryzen5.Depth = 0;
             mtbnryzen5.HighEmphasis = true;
             mtbnryzen5.Icon = null;
-            mtbnryzen5.Location = new Point(726, 408);
-            mtbnryzen5.Margin = new Padding(5, 8, 5, 8);
+            mtbnryzen5.Location = new Point(635, 306);
+            mtbnryzen5.Margin = new Padding(4, 6, 4, 6);
             mtbnryzen5.MouseState = MaterialSkin.MouseState.HOVER;
             mtbnryzen5.Name = "mtbnryzen5";
             mtbnryzen5.NoAccentTextColor = Color.Empty;
@@ -461,10 +452,9 @@
             // 
             pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
             pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox8.Location = new Point(917, 32);
-            pictureBox8.Margin = new Padding(3, 4, 3, 4);
+            pictureBox8.Location = new Point(802, 24);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(233, 228);
+            pictureBox8.Size = new Size(204, 171);
             pictureBox8.TabIndex = 15;
             pictureBox8.TabStop = false;
             // 
@@ -472,27 +462,27 @@
             // 
             lblpriceintel9.AutoSize = true;
             lblpriceintel9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpriceintel9.Location = new Point(917, 276);
+            lblpriceintel9.Location = new Point(802, 207);
             lblpriceintel9.Name = "lblpriceintel9";
-            lblpriceintel9.Size = new Size(151, 46);
+            lblpriceintel9.Size = new Size(121, 37);
             lblpriceintel9.TabIndex = 16;
             lblpriceintel9.Text = "₱28,000";
             // 
             // lblnameintel9
             // 
             lblnameintel9.AutoSize = true;
-            lblnameintel9.Location = new Point(917, 343);
+            lblnameintel9.Location = new Point(802, 257);
             lblnameintel9.Name = "lblnameintel9";
-            lblnameintel9.Size = new Size(125, 20);
+            lblnameintel9.Size = new Size(97, 15);
             lblnameintel9.TabIndex = 17;
             lblnameintel9.Text = "Core Ultra 9 285K";
             // 
             // lblsppecintel9
             // 
             lblsppecintel9.AutoSize = true;
-            lblsppecintel9.Location = new Point(917, 363);
+            lblsppecintel9.Location = new Point(802, 272);
             lblsppecintel9.Name = "lblsppecintel9";
-            lblsppecintel9.Size = new Size(292, 40);
+            lblsppecintel9.Size = new Size(231, 30);
             lblsppecintel9.TabIndex = 18;
             lblsppecintel9.Text = "24 Cores (8P+16E), up to 5.7GHz, LGA1851,\r\n DDR5, PCIe 5.0";
             // 
@@ -503,8 +493,8 @@
             materialButton2.Depth = 0;
             materialButton2.HighEmphasis = true;
             materialButton2.Icon = null;
-            materialButton2.Location = new Point(1019, 408);
-            materialButton2.Margin = new Padding(5, 8, 5, 8);
+            materialButton2.Location = new Point(892, 306);
+            materialButton2.Margin = new Padding(4, 6, 4, 6);
             materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton2.Name = "materialButton2";
             materialButton2.NoAccentTextColor = Color.Empty;
@@ -520,10 +510,9 @@
             // 
             pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
             pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox9.Location = new Point(1210, 33);
-            pictureBox9.Margin = new Padding(3, 4, 3, 4);
+            pictureBox9.Location = new Point(1059, 25);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(233, 229);
+            pictureBox9.Size = new Size(204, 172);
             pictureBox9.TabIndex = 20;
             pictureBox9.TabStop = false;
             // 
@@ -531,27 +520,27 @@
             // 
             lblpriceintel7.AutoSize = true;
             lblpriceintel7.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpriceintel7.Location = new Point(1210, 276);
+            lblpriceintel7.Location = new Point(1059, 207);
             lblpriceintel7.Name = "lblpriceintel7";
-            lblpriceintel7.Size = new Size(151, 46);
+            lblpriceintel7.Size = new Size(121, 37);
             lblpriceintel7.TabIndex = 21;
             lblpriceintel7.Text = "₱22,000";
             // 
             // lblnameintel7
             // 
             lblnameintel7.AutoSize = true;
-            lblnameintel7.Location = new Point(1210, 343);
+            lblnameintel7.Location = new Point(1059, 257);
             lblnameintel7.Name = "lblnameintel7";
-            lblnameintel7.Size = new Size(125, 20);
+            lblnameintel7.Size = new Size(97, 15);
             lblnameintel7.TabIndex = 22;
             lblnameintel7.Text = "Core Ultra 7 265K";
             // 
             // lblspecintel7
             // 
             lblspecintel7.AutoSize = true;
-            lblspecintel7.Location = new Point(1210, 363);
+            lblspecintel7.Location = new Point(1059, 272);
             lblspecintel7.Name = "lblspecintel7";
-            lblspecintel7.Size = new Size(226, 40);
+            lblspecintel7.Size = new Size(179, 30);
             lblspecintel7.TabIndex = 23;
             lblspecintel7.Text = "20 Cores (8P+12E), up to 5.5GHz,\r\n Unlocked";
             // 
@@ -562,8 +551,8 @@
             mbtnintel7.Depth = 0;
             mbtnintel7.HighEmphasis = true;
             mbtnintel7.Icon = null;
-            mbtnintel7.Location = new Point(1313, 411);
-            mbtnintel7.Margin = new Padding(5, 8, 5, 8);
+            mbtnintel7.Location = new Point(1149, 308);
+            mbtnintel7.Margin = new Padding(4, 6, 4, 6);
             mbtnintel7.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnintel7.Name = "mbtnintel7";
             mbtnintel7.NoAccentTextColor = Color.Empty;
@@ -579,10 +568,9 @@
             // 
             pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
             pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox10.Location = new Point(1502, 32);
-            pictureBox10.Margin = new Padding(3, 4, 3, 4);
+            pictureBox10.Location = new Point(1314, 24);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(233, 229);
+            pictureBox10.Size = new Size(204, 172);
             pictureBox10.TabIndex = 25;
             pictureBox10.TabStop = false;
             // 
@@ -590,27 +578,27 @@
             // 
             lblpriceintel5.AutoSize = true;
             lblpriceintel5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpriceintel5.Location = new Point(1502, 276);
+            lblpriceintel5.Location = new Point(1314, 207);
             lblpriceintel5.Name = "lblpriceintel5";
-            lblpriceintel5.Size = new Size(151, 46);
+            lblpriceintel5.Size = new Size(121, 37);
             lblpriceintel5.TabIndex = 26;
             lblpriceintel5.Text = "₱16,000";
             // 
             // lblnameintel5
             // 
             lblnameintel5.AutoSize = true;
-            lblnameintel5.Location = new Point(1502, 343);
+            lblnameintel5.Location = new Point(1314, 257);
             lblnameintel5.Name = "lblnameintel5";
-            lblnameintel5.Size = new Size(125, 20);
+            lblnameintel5.Size = new Size(97, 15);
             lblnameintel5.TabIndex = 27;
             lblnameintel5.Text = "Core Ultra 5 245K";
             // 
             // lblspecintel5
             // 
             lblspecintel5.AutoSize = true;
-            lblspecintel5.Location = new Point(1502, 363);
+            lblspecintel5.Location = new Point(1314, 272);
             lblspecintel5.Name = "lblspecintel5";
-            lblspecintel5.Size = new Size(218, 40);
+            lblspecintel5.Size = new Size(173, 30);
             lblspecintel5.TabIndex = 28;
             lblspecintel5.Text = "14 Cores (6P+8E), up to 5.2GHz,\r\n Unlocked";
             // 
@@ -621,8 +609,8 @@
             mbtnintel5.Depth = 0;
             mbtnintel5.HighEmphasis = true;
             mbtnintel5.Icon = null;
-            mbtnintel5.Location = new Point(1605, 411);
-            mbtnintel5.Margin = new Padding(5, 8, 5, 8);
+            mbtnintel5.Location = new Point(1404, 308);
+            mbtnintel5.Margin = new Padding(4, 6, 4, 6);
             mbtnintel5.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnintel5.Name = "mbtnintel5";
             mbtnintel5.NoAccentTextColor = Color.Empty;
@@ -638,10 +626,9 @@
             // 
             pictureBox11.BackgroundImage = (Image)resources.GetObject("pictureBox11.BackgroundImage");
             pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox11.Location = new Point(1806, 31);
-            pictureBox11.Margin = new Padding(3, 4, 3, 4);
+            pictureBox11.Location = new Point(1580, 23);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(233, 229);
+            pictureBox11.Size = new Size(204, 172);
             pictureBox11.TabIndex = 30;
             pictureBox11.TabStop = false;
             // 
@@ -649,27 +636,27 @@
             // 
             lblpricertx5070.AutoSize = true;
             lblpricertx5070.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpricertx5070.Location = new Point(1806, 276);
+            lblpricertx5070.Location = new Point(1580, 207);
             lblpricertx5070.Name = "lblpricertx5070";
-            lblpricertx5070.Size = new Size(151, 46);
+            lblpricertx5070.Size = new Size(121, 37);
             lblpricertx5070.TabIndex = 31;
             lblpricertx5070.Text = "₱38,000";
             // 
             // lblnamertx5070
             // 
             lblnamertx5070.AutoSize = true;
-            lblnamertx5070.Location = new Point(1806, 343);
+            lblnamertx5070.Location = new Point(1580, 257);
             lblnamertx5070.Name = "lblnamertx5070";
-            lblnamertx5070.Size = new Size(70, 20);
+            lblnamertx5070.Size = new Size(54, 15);
             lblnamertx5070.TabIndex = 32;
             lblnamertx5070.Text = "RTX 5070";
             // 
             // lblspecrtx5070
             // 
             lblspecrtx5070.AutoSize = true;
-            lblspecrtx5070.Location = new Point(1806, 363);
+            lblspecrtx5070.Location = new Point(1580, 272);
             lblspecrtx5070.Name = "lblspecrtx5070";
-            lblspecrtx5070.Size = new Size(204, 40);
+            lblspecrtx5070.Size = new Size(161, 30);
             lblspecrtx5070.TabIndex = 33;
             lblspecrtx5070.Text = "12GB GDDR7, DLSS 4,\r\n Excellent 1440p Performance";
             // 
@@ -680,8 +667,8 @@
             mbtnrtx5070.Depth = 0;
             mbtnrtx5070.HighEmphasis = true;
             mbtnrtx5070.Icon = null;
-            mbtnrtx5070.Location = new Point(1909, 411);
-            mbtnrtx5070.Margin = new Padding(5, 8, 5, 8);
+            mbtnrtx5070.Location = new Point(1670, 308);
+            mbtnrtx5070.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5070.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5070.Name = "mbtnrtx5070";
             mbtnrtx5070.NoAccentTextColor = Color.Empty;
@@ -697,10 +684,9 @@
             // 
             pictureBox12.BackgroundImage = (Image)resources.GetObject("pictureBox12.BackgroundImage");
             pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox12.Location = new Point(48, 517);
-            pictureBox12.Margin = new Padding(3, 4, 3, 4);
+            pictureBox12.Location = new Point(42, 388);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(233, 227);
+            pictureBox12.Size = new Size(204, 170);
             pictureBox12.TabIndex = 35;
             pictureBox12.TabStop = false;
             // 
@@ -808,24 +794,93 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(pictureBox3);
             panel2.EdgeColor = Color.FromArgb(32, 41, 50);
-            panel2.Location = new Point(39, 291);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(34, 218);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(6, 7, 6, 7);
-            panel2.Size = new Size(2103, 2000);
+            panel2.Padding = new Padding(5, 5, 5, 5);
+            panel2.Size = new Size(1840, 1500);
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 12;
             panel2.Text = "panel2";
             panel2.Click += panel2_Click;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(mbtnryzen9);
+            panel3.Controls.Add(lblspecryzen9);
+            panel3.Controls.Add(lblnameryzen9);
+            panel3.Controls.Add(lblpriceryzen9);
+            panel3.Controls.Add(pcbRyzen9);
+            panel3.Location = new Point(285, 23);
+            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(219, 320);
+            panel3.TabIndex = 101;
+            // 
+            // mbtnryzen9
+            // 
+            mbtnryzen9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            mbtnryzen9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            mbtnryzen9.Depth = 0;
+            mbtnryzen9.HighEmphasis = true;
+            mbtnryzen9.Icon = null;
+            mbtnryzen9.Location = new Point(89, 287);
+            mbtnryzen9.Margin = new Padding(4, 6, 4, 6);
+            mbtnryzen9.MouseState = MaterialSkin.MouseState.HOVER;
+            mbtnryzen9.Name = "mbtnryzen9";
+            mbtnryzen9.NoAccentTextColor = Color.Empty;
+            mbtnryzen9.Size = new Size(114, 36);
+            mbtnryzen9.TabIndex = 14;
+            mbtnryzen9.Text = "ADD TO CART";
+            mbtnryzen9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            mbtnryzen9.UseAccentColor = false;
+            mbtnryzen9.UseVisualStyleBackColor = true;
+            // 
+            // lblspecryzen9
+            // 
+            lblspecryzen9.AutoSize = true;
+            lblspecryzen9.Location = new Point(-1, 254);
+            lblspecryzen9.Name = "lblspecryzen9";
+            lblspecryzen9.Size = new Size(200, 30);
+            lblspecryzen9.TabIndex = 13;
+            lblspecryzen9.Text = "16 Cores / 32 Threads, up to 5.7GHz, \r\n3D V-Cache, AM5, DDR5, PCIe 5.0";
+            // 
+            // lblnameryzen9
+            // 
+            lblnameryzen9.AutoSize = true;
+            lblnameryzen9.Location = new Point(-1, 238);
+            lblnameryzen9.Name = "lblnameryzen9";
+            lblnameryzen9.Size = new Size(95, 15);
+            lblnameryzen9.TabIndex = 12;
+            lblnameryzen9.Text = "Ryzen 9 9950X3D";
+            // 
+            // lblpriceryzen9
+            // 
+            lblpriceryzen9.AutoSize = true;
+            lblpriceryzen9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
+            lblpriceryzen9.Location = new Point(-1, 188);
+            lblpriceryzen9.Name = "lblpriceryzen9";
+            lblpriceryzen9.Size = new Size(121, 37);
+            lblpriceryzen9.TabIndex = 11;
+            lblpriceryzen9.Text = "₱45,000";
+            // 
+            // pcbRyzen9
+            // 
+            pcbRyzen9.BackgroundImage = (Image)resources.GetObject("pcbRyzen9.BackgroundImage");
+            pcbRyzen9.BackgroundImageLayout = ImageLayout.Stretch;
+            pcbRyzen9.Location = new Point(-1, 5);
+            pcbRyzen9.Name = "pcbRyzen9";
+            pcbRyzen9.Size = new Size(204, 169);
+            pcbRyzen9.TabIndex = 10;
+            pcbRyzen9.TabStop = false;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Transparent;
-            label10.Location = new Point(744, 955);
+            label10.Location = new Point(651, 716);
             label10.Name = "label10";
-            label10.Size = new Size(659, 62);
+            label10.Size = new Size(521, 50);
             label10.TabIndex = 100;
             label10.Text = "WELCOME TO BITS N BYTES!";
             // 
@@ -836,8 +891,8 @@
             mbtnram4.Depth = 0;
             mbtnram4.HighEmphasis = true;
             mbtnram4.Icon = null;
-            mbtnram4.Location = new Point(1605, 1368);
-            mbtnram4.Margin = new Padding(5, 8, 5, 8);
+            mbtnram4.Location = new Point(1404, 1026);
+            mbtnram4.Margin = new Padding(4, 6, 4, 6);
             mbtnram4.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnram4.Name = "mbtnram4";
             mbtnram4.NoAccentTextColor = Color.Empty;
@@ -852,18 +907,18 @@
             // lblspecram4
             // 
             lblspecram4.AutoSize = true;
-            lblspecram4.Location = new Point(1502, 1317);
+            lblspecram4.Location = new Point(1314, 988);
             lblspecram4.Name = "lblspecram4";
-            lblspecram4.Size = new Size(248, 20);
+            lblspecram4.Size = new Size(195, 15);
             lblspecram4.TabIndex = 98;
             lblspecram4.Text = "DDR5-6000, Low Profile, AMD EXPO";
             // 
             // lblnameram4
             // 
             lblnameram4.AutoSize = true;
-            lblnameram4.Location = new Point(1502, 1297);
+            lblnameram4.Location = new Point(1314, 973);
             lblnameram4.Name = "lblnameram4";
-            lblnameram4.Size = new Size(62, 20);
+            lblnameram4.Size = new Size(48, 15);
             lblnameram4.TabIndex = 97;
             lblnameram4.Text = "Flare X5";
             // 
@@ -871,9 +926,9 @@
             // 
             lblpriceram4.AutoSize = true;
             lblpriceram4.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpriceram4.Location = new Point(1502, 1231);
+            lblpriceram4.Location = new Point(1314, 923);
             lblpriceram4.Name = "lblpriceram4";
-            lblpriceram4.Size = new Size(131, 46);
+            lblpriceram4.Size = new Size(105, 37);
             lblpriceram4.TabIndex = 96;
             lblpriceram4.Text = "₱6,500";
             // 
@@ -882,10 +937,9 @@
             pictureBox24.BackColor = Color.Transparent;
             pictureBox24.BackgroundImage = (Image)resources.GetObject("pictureBox24.BackgroundImage");
             pictureBox24.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox24.Location = new Point(1502, 988);
-            pictureBox24.Margin = new Padding(3, 4, 3, 4);
+            pictureBox24.Location = new Point(1314, 741);
             pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(233, 224);
+            pictureBox24.Size = new Size(204, 168);
             pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox24.TabIndex = 95;
             pictureBox24.TabStop = false;
@@ -897,8 +951,8 @@
             mbtnram3.Depth = 0;
             mbtnram3.HighEmphasis = true;
             mbtnram3.Icon = null;
-            mbtnram3.Location = new Point(1313, 1368);
-            mbtnram3.Margin = new Padding(5, 8, 5, 8);
+            mbtnram3.Location = new Point(1149, 1026);
+            mbtnram3.Margin = new Padding(4, 6, 4, 6);
             mbtnram3.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnram3.Name = "mbtnram3";
             mbtnram3.NoAccentTextColor = Color.Empty;
@@ -913,18 +967,18 @@
             // lblspecram3
             // 
             lblspecram3.AutoSize = true;
-            lblspecram3.Location = new Point(1210, 1317);
+            lblspecram3.Location = new Point(1059, 988);
             lblspecram3.Name = "lblspecram3";
-            lblspecram3.Size = new Size(267, 20);
+            lblspecram3.Size = new Size(212, 15);
             lblspecram3.TabIndex = 93;
             lblspecram3.Text = "DDR5-6400, RGB, Gaming Performance";
             // 
             // lblnameram3
             // 
             lblnameram3.AutoSize = true;
-            lblnameram3.Location = new Point(1210, 1297);
+            lblnameram3.Location = new Point(1059, 973);
             lblnameram3.Name = "lblnameram3";
-            lblnameram3.Size = new Size(156, 20);
+            lblnameram3.Size = new Size(122, 15);
             lblnameram3.TabIndex = 92;
             lblnameram3.Text = "Ripjaws M5 RGB 32GB";
             // 
@@ -932,9 +986,9 @@
             // 
             lblpriceram3.AutoSize = true;
             lblpriceram3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpriceram3.Location = new Point(1210, 1231);
+            lblpriceram3.Location = new Point(1059, 923);
             lblpriceram3.Name = "lblpriceram3";
-            lblpriceram3.Size = new Size(131, 46);
+            lblpriceram3.Size = new Size(105, 37);
             lblpriceram3.TabIndex = 91;
             lblpriceram3.Text = "₱7,500";
             // 
@@ -943,10 +997,9 @@
             pictureBox23.BackColor = Color.Transparent;
             pictureBox23.BackgroundImage = (Image)resources.GetObject("pictureBox23.BackgroundImage");
             pictureBox23.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox23.Location = new Point(1210, 988);
-            pictureBox23.Margin = new Padding(3, 4, 3, 4);
+            pictureBox23.Location = new Point(1059, 741);
             pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(233, 224);
+            pictureBox23.Size = new Size(204, 168);
             pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox23.TabIndex = 90;
             pictureBox23.TabStop = false;
@@ -958,8 +1011,8 @@
             mbtnram2.Depth = 0;
             mbtnram2.HighEmphasis = true;
             mbtnram2.Icon = null;
-            mbtnram2.Location = new Point(1019, 1368);
-            mbtnram2.Margin = new Padding(5, 8, 5, 8);
+            mbtnram2.Location = new Point(892, 1026);
+            mbtnram2.Margin = new Padding(4, 6, 4, 6);
             mbtnram2.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnram2.Name = "mbtnram2";
             mbtnram2.NoAccentTextColor = Color.Empty;
@@ -974,18 +1027,18 @@
             // lblspecram2
             // 
             lblspecram2.AutoSize = true;
-            lblspecram2.Location = new Point(917, 1317);
+            lblspecram2.Location = new Point(802, 988);
             lblspecram2.Name = "lblspecram2";
-            lblspecram2.Size = new Size(236, 20);
+            lblspecram2.Size = new Size(185, 15);
             lblspecram2.TabIndex = 88;
             lblspecram2.Text = "DDR5-6400, RGB, Intel XMP Ready";
             // 
             // lblnameram2
             // 
             lblnameram2.AutoSize = true;
-            lblnameram2.Location = new Point(917, 1297);
+            lblnameram2.Location = new Point(802, 973);
             lblnameram2.Name = "lblnameram2";
-            lblnameram2.Size = new Size(108, 20);
+            lblnameram2.Size = new Size(85, 15);
             lblnameram2.TabIndex = 87;
             lblnameram2.Text = "Trident Z5 RGB";
             // 
@@ -993,9 +1046,9 @@
             // 
             lblpriceram2.AutoSize = true;
             lblpriceram2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpriceram2.Location = new Point(917, 1231);
+            lblpriceram2.Location = new Point(802, 923);
             lblpriceram2.Name = "lblpriceram2";
-            lblpriceram2.Size = new Size(131, 46);
+            lblpriceram2.Size = new Size(105, 37);
             lblpriceram2.TabIndex = 86;
             lblpriceram2.Text = "₱8,500";
             // 
@@ -1004,10 +1057,9 @@
             pictureBox22.BackColor = Color.Transparent;
             pictureBox22.BackgroundImage = (Image)resources.GetObject("pictureBox22.BackgroundImage");
             pictureBox22.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox22.Location = new Point(917, 988);
-            pictureBox22.Margin = new Padding(3, 4, 3, 4);
+            pictureBox22.Location = new Point(802, 741);
             pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(233, 224);
+            pictureBox22.Size = new Size(204, 168);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox22.TabIndex = 85;
             pictureBox22.TabStop = false;
@@ -1019,8 +1071,8 @@
             mbtnram1.Depth = 0;
             mbtnram1.HighEmphasis = true;
             mbtnram1.Icon = null;
-            mbtnram1.Location = new Point(726, 1368);
-            mbtnram1.Margin = new Padding(5, 8, 5, 8);
+            mbtnram1.Location = new Point(635, 1026);
+            mbtnram1.Margin = new Padding(4, 6, 4, 6);
             mbtnram1.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnram1.Name = "mbtnram1";
             mbtnram1.NoAccentTextColor = Color.Empty;
@@ -1035,18 +1087,18 @@
             // lblspecram1
             // 
             lblspecram1.AutoSize = true;
-            lblspecram1.Location = new Point(623, 1317);
+            lblspecram1.Location = new Point(545, 988);
             lblspecram1.Name = "lblspecram1";
-            lblspecram1.Size = new Size(276, 20);
+            lblspecram1.Size = new Size(219, 15);
             lblspecram1.TabIndex = 83;
             lblspecram1.Text = "DDR5-6400, RGB, CL32, Premium Design";
             // 
             // lblnameram1
             // 
             lblnameram1.AutoSize = true;
-            lblnameram1.Location = new Point(623, 1297);
+            lblnameram1.Location = new Point(545, 973);
             lblnameram1.Name = "lblnameram1";
-            lblnameram1.Size = new Size(153, 20);
+            lblnameram1.Size = new Size(120, 15);
             lblnameram1.TabIndex = 82;
             lblnameram1.Text = "Trident Z5 Royal Neo ";
             // 
@@ -1054,9 +1106,9 @@
             // 
             lblpriceram1.AutoSize = true;
             lblpriceram1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpriceram1.Location = new Point(623, 1231);
+            lblpriceram1.Location = new Point(545, 923);
             lblpriceram1.Name = "lblpriceram1";
-            lblpriceram1.Size = new Size(151, 46);
+            lblpriceram1.Size = new Size(121, 37);
             lblpriceram1.TabIndex = 81;
             lblpriceram1.Text = "₱12,000";
             // 
@@ -1065,10 +1117,9 @@
             pictureBox21.BackColor = Color.Transparent;
             pictureBox21.BackgroundImage = (Image)resources.GetObject("pictureBox21.BackgroundImage");
             pictureBox21.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox21.Location = new Point(623, 988);
-            pictureBox21.Margin = new Padding(3, 4, 3, 4);
+            pictureBox21.Location = new Point(545, 741);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(233, 224);
+            pictureBox21.Size = new Size(204, 168);
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox21.TabIndex = 80;
             pictureBox21.TabStop = false;
@@ -1080,8 +1131,8 @@
             mbtnmb5.Depth = 0;
             mbtnmb5.HighEmphasis = true;
             mbtnmb5.Icon = null;
-            mbtnmb5.Location = new Point(440, 1368);
-            mbtnmb5.Margin = new Padding(5, 8, 5, 8);
+            mbtnmb5.Location = new Point(385, 1026);
+            mbtnmb5.Margin = new Padding(4, 6, 4, 6);
             mbtnmb5.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb5.Name = "mbtnmb5";
             mbtnmb5.NoAccentTextColor = Color.Empty;
@@ -1096,18 +1147,18 @@
             // lblspecmb5
             // 
             lblspecmb5.AutoSize = true;
-            lblspecmb5.Location = new Point(337, 1317);
+            lblspecmb5.Location = new Point(295, 988);
             lblspecmb5.Name = "lblspecmb5";
-            lblspecmb5.Size = new Size(258, 20);
+            lblspecmb5.Size = new Size(204, 15);
             lblspecmb5.TabIndex = 78;
             lblspecmb5.Text = "Z890, DDR5, PCIe 5.0, Budget Friendly";
             // 
             // lblnamemb5
             // 
             lblnamemb5.AutoSize = true;
-            lblnamemb5.Location = new Point(337, 1297);
+            lblnamemb5.Location = new Point(295, 973);
             lblnamemb5.Name = "lblnamemb5";
-            lblnamemb5.Size = new Size(121, 20);
+            lblnamemb5.Size = new Size(96, 15);
             lblnamemb5.TabIndex = 77;
             lblnamemb5.Text = "PRO Z890-P WiFi";
             // 
@@ -1115,9 +1166,9 @@
             // 
             lblpricemb5.AutoSize = true;
             lblpricemb5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricemb5.Location = new Point(337, 1231);
+            lblpricemb5.Location = new Point(295, 923);
             lblpricemb5.Name = "lblpricemb5";
-            lblpricemb5.Size = new Size(151, 46);
+            lblpricemb5.Size = new Size(121, 37);
             lblpricemb5.TabIndex = 76;
             lblpricemb5.Text = "₱14,000";
             // 
@@ -1126,10 +1177,9 @@
             pictureBox20.BackColor = Color.Transparent;
             pictureBox20.BackgroundImage = (Image)resources.GetObject("pictureBox20.BackgroundImage");
             pictureBox20.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox20.Location = new Point(337, 988);
-            pictureBox20.Margin = new Padding(3, 4, 3, 4);
+            pictureBox20.Location = new Point(295, 741);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(233, 224);
+            pictureBox20.Size = new Size(204, 168);
             pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox20.TabIndex = 75;
             pictureBox20.TabStop = false;
@@ -1141,8 +1191,8 @@
             mbtnmb4.Depth = 0;
             mbtnmb4.HighEmphasis = true;
             mbtnmb4.Icon = null;
-            mbtnmb4.Location = new Point(151, 1368);
-            mbtnmb4.Margin = new Padding(5, 8, 5, 8);
+            mbtnmb4.Location = new Point(132, 1026);
+            mbtnmb4.Margin = new Padding(4, 6, 4, 6);
             mbtnmb4.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb4.Name = "mbtnmb4";
             mbtnmb4.NoAccentTextColor = Color.Empty;
@@ -1157,18 +1207,18 @@
             // lblspecmb4
             // 
             lblspecmb4.AutoSize = true;
-            lblspecmb4.Location = new Point(48, 1317);
+            lblspecmb4.Location = new Point(42, 988);
             lblspecmb4.Name = "lblspecmb4";
-            lblspecmb4.Size = new Size(228, 20);
+            lblspecmb4.Size = new Size(179, 15);
             lblspecmb4.TabIndex = 73;
             lblspecmb4.Text = "Z890, DDR5, Strong VRM, Wi-Fi 7";
             // 
             // lblnamemb4
             // 
             lblnamemb4.AutoSize = true;
-            lblnamemb4.Location = new Point(48, 1297);
+            lblnamemb4.Location = new Point(42, 973);
             lblnamemb4.Name = "lblnamemb4";
-            lblnamemb4.Size = new Size(187, 20);
+            lblnamemb4.Size = new Size(149, 15);
             lblnamemb4.TabIndex = 72;
             lblnamemb4.Text = "MAG Z890 Tomahawk WiFi";
             // 
@@ -1176,9 +1226,9 @@
             // 
             lblpricemb4.AutoSize = true;
             lblpricemb4.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricemb4.Location = new Point(48, 1231);
+            lblpricemb4.Location = new Point(42, 923);
             lblpricemb4.Name = "lblpricemb4";
-            lblpricemb4.Size = new Size(151, 46);
+            lblpricemb4.Size = new Size(121, 37);
             lblpricemb4.TabIndex = 71;
             lblpricemb4.Text = "₱18,000";
             // 
@@ -1187,10 +1237,9 @@
             pictureBox19.BackColor = Color.Transparent;
             pictureBox19.BackgroundImage = (Image)resources.GetObject("pictureBox19.BackgroundImage");
             pictureBox19.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox19.Location = new Point(48, 988);
-            pictureBox19.Margin = new Padding(3, 4, 3, 4);
+            pictureBox19.Location = new Point(42, 741);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(233, 224);
+            pictureBox19.Size = new Size(204, 168);
             pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox19.TabIndex = 70;
             pictureBox19.TabStop = false;
@@ -1202,8 +1251,8 @@
             mbtnmb3.Depth = 0;
             mbtnmb3.HighEmphasis = true;
             mbtnmb3.Icon = null;
-            mbtnmb3.Location = new Point(1909, 900);
-            mbtnmb3.Margin = new Padding(5, 8, 5, 8);
+            mbtnmb3.Location = new Point(1670, 675);
+            mbtnmb3.Margin = new Padding(4, 6, 4, 6);
             mbtnmb3.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb3.Name = "mbtnmb3";
             mbtnmb3.NoAccentTextColor = Color.Empty;
@@ -1218,18 +1267,18 @@
             // lblspecmb3
             // 
             lblspecmb3.AutoSize = true;
-            lblspecmb3.Location = new Point(1806, 849);
+            lblspecmb3.Location = new Point(1580, 637);
             lblspecmb3.Name = "lblspecmb3";
-            lblspecmb3.Size = new Size(201, 20);
+            lblspecmb3.Size = new Size(158, 15);
             lblspecmb3.TabIndex = 68;
             lblspecmb3.Text = "Z890, DDR5, PCIe 5.0, Wi-Fi 7";
             // 
             // lblnamemb3
             // 
             lblnamemb3.AutoSize = true;
-            lblnamemb3.Location = new Point(1806, 829);
+            lblnamemb3.Location = new Point(1580, 622);
             lblnamemb3.Name = "lblnamemb3";
-            lblnamemb3.Size = new Size(164, 20);
+            lblnamemb3.Size = new Size(129, 15);
             lblnamemb3.TabIndex = 67;
             lblnamemb3.Text = "MPG Z890 Edge Ti WiFi";
             // 
@@ -1237,9 +1286,9 @@
             // 
             lblpricemb3.AutoSize = true;
             lblpricemb3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricemb3.Location = new Point(1806, 763);
+            lblpricemb3.Location = new Point(1580, 572);
             lblpricemb3.Name = "lblpricemb3";
-            lblpricemb3.Size = new Size(151, 46);
+            lblpricemb3.Size = new Size(121, 37);
             lblpricemb3.TabIndex = 66;
             lblpricemb3.Text = "₱24,000";
             // 
@@ -1248,10 +1297,9 @@
             pictureBox18.BackColor = Color.Transparent;
             pictureBox18.BackgroundImage = (Image)resources.GetObject("pictureBox18.BackgroundImage");
             pictureBox18.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox18.Location = new Point(1806, 520);
-            pictureBox18.Margin = new Padding(3, 4, 3, 4);
+            pictureBox18.Location = new Point(1580, 390);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(233, 224);
+            pictureBox18.Size = new Size(204, 168);
             pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox18.TabIndex = 65;
             pictureBox18.TabStop = false;
@@ -1263,8 +1311,8 @@
             mbtnmb2.Depth = 0;
             mbtnmb2.HighEmphasis = true;
             mbtnmb2.Icon = null;
-            mbtnmb2.Location = new Point(1605, 900);
-            mbtnmb2.Margin = new Padding(5, 8, 5, 8);
+            mbtnmb2.Location = new Point(1404, 675);
+            mbtnmb2.Margin = new Padding(4, 6, 4, 6);
             mbtnmb2.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb2.Name = "mbtnmb2";
             mbtnmb2.NoAccentTextColor = Color.Empty;
@@ -1279,18 +1327,18 @@
             // lblspecmb2
             // 
             lblspecmb2.AutoSize = true;
-            lblspecmb2.Location = new Point(1502, 849);
+            lblspecmb2.Location = new Point(1314, 637);
             lblspecmb2.Name = "lblspecmb2";
-            lblspecmb2.Size = new Size(227, 20);
+            lblspecmb2.Size = new Size(178, 15);
             lblspecmb2.TabIndex = 63;
             lblspecmb2.Text = "Z890, DDR5, Wi-Fi 7, 5×M.2 Slots";
             // 
             // lblnamemb2
             // 
             lblnamemb2.AutoSize = true;
-            lblnamemb2.Location = new Point(1502, 829);
+            lblnamemb2.Location = new Point(1314, 622);
             lblnamemb2.Name = "lblnamemb2";
-            lblnamemb2.Size = new Size(162, 20);
+            lblnamemb2.Size = new Size(129, 15);
             lblnamemb2.TabIndex = 62;
             lblnamemb2.Text = "MPG Z890 Carbon WiFi";
             // 
@@ -1298,9 +1346,9 @@
             // 
             lblpricemb2.AutoSize = true;
             lblpricemb2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricemb2.Location = new Point(1502, 763);
+            lblpricemb2.Location = new Point(1314, 572);
             lblpricemb2.Name = "lblpricemb2";
-            lblpricemb2.Size = new Size(151, 46);
+            lblpricemb2.Size = new Size(121, 37);
             lblpricemb2.TabIndex = 61;
             lblpricemb2.Text = "₱28,000";
             // 
@@ -1309,10 +1357,9 @@
             pictureBox17.BackColor = Color.Transparent;
             pictureBox17.BackgroundImage = (Image)resources.GetObject("pictureBox17.BackgroundImage");
             pictureBox17.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox17.Location = new Point(1502, 520);
-            pictureBox17.Margin = new Padding(3, 4, 3, 4);
+            pictureBox17.Location = new Point(1314, 390);
             pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(233, 224);
+            pictureBox17.Size = new Size(204, 168);
             pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox17.TabIndex = 60;
             pictureBox17.TabStop = false;
@@ -1324,8 +1371,8 @@
             mbtnmb1.Depth = 0;
             mbtnmb1.HighEmphasis = true;
             mbtnmb1.Icon = null;
-            mbtnmb1.Location = new Point(1313, 897);
-            mbtnmb1.Margin = new Padding(5, 8, 5, 8);
+            mbtnmb1.Location = new Point(1149, 673);
+            mbtnmb1.Margin = new Padding(4, 6, 4, 6);
             mbtnmb1.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnmb1.Name = "mbtnmb1";
             mbtnmb1.NoAccentTextColor = Color.Empty;
@@ -1340,18 +1387,18 @@
             // lblspecmb1
             // 
             lblspecmb1.AutoSize = true;
-            lblspecmb1.Location = new Point(1210, 847);
+            lblspecmb1.Location = new Point(1059, 635);
             lblspecmb1.Name = "lblspecmb1";
-            lblspecmb1.Size = new Size(300, 20);
+            lblspecmb1.Size = new Size(236, 15);
             lblspecmb1.TabIndex = 58;
             lblspecmb1.Text = "Intel Z890, LGA1851, DDR5, Wi-Fi 7, PCIe 5.0";
             // 
             // lblnamemb1
             // 
             lblnamemb1.AutoSize = true;
-            lblnamemb1.Location = new Point(1210, 827);
+            lblnamemb1.Location = new Point(1059, 620);
             lblnamemb1.Name = "lblnamemb1";
-            lblnamemb1.Size = new Size(108, 20);
+            lblnamemb1.Size = new Size(85, 15);
             lblnamemb1.TabIndex = 57;
             lblnamemb1.Text = "MEG Z890 ACE";
             // 
@@ -1359,9 +1406,9 @@
             // 
             lblpricemb1.AutoSize = true;
             lblpricemb1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricemb1.Location = new Point(1210, 760);
+            lblpricemb1.Location = new Point(1059, 570);
             lblpricemb1.Name = "lblpricemb1";
-            lblpricemb1.Size = new Size(151, 46);
+            lblpricemb1.Size = new Size(121, 37);
             lblpricemb1.TabIndex = 56;
             lblpricemb1.Text = "₱38,000";
             // 
@@ -1370,10 +1417,9 @@
             pictureBox16.BackColor = Color.Transparent;
             pictureBox16.BackgroundImage = (Image)resources.GetObject("pictureBox16.BackgroundImage");
             pictureBox16.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox16.Location = new Point(1210, 517);
-            pictureBox16.Margin = new Padding(3, 4, 3, 4);
+            pictureBox16.Location = new Point(1059, 388);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(233, 224);
+            pictureBox16.Size = new Size(204, 168);
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 55;
             pictureBox16.TabStop = false;
@@ -1385,8 +1431,8 @@
             mbtnrtx5060ti.Depth = 0;
             mbtnrtx5060ti.HighEmphasis = true;
             mbtnrtx5060ti.Icon = null;
-            mbtnrtx5060ti.Location = new Point(1019, 892);
-            mbtnrtx5060ti.Margin = new Padding(5, 8, 5, 8);
+            mbtnrtx5060ti.Location = new Point(892, 669);
+            mbtnrtx5060ti.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5060ti.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5060ti.Name = "mbtnrtx5060ti";
             mbtnrtx5060ti.NoAccentTextColor = Color.Empty;
@@ -1401,18 +1447,18 @@
             // lblspecrtx5060ti
             // 
             lblspecrtx5060ti.AutoSize = true;
-            lblspecrtx5060ti.Location = new Point(917, 847);
+            lblspecrtx5060ti.Location = new Point(802, 635);
             lblspecrtx5060ti.Name = "lblspecrtx5060ti";
-            lblspecrtx5060ti.Size = new Size(289, 20);
+            lblspecrtx5060ti.Size = new Size(225, 15);
             lblspecrtx5060ti.TabIndex = 53;
             lblspecrtx5060ti.Text = "8GB/16GB GDDR7, Best for 1080p Gaming";
             // 
             // lblnamertx5060ti
             // 
             lblnamertx5060ti.AutoSize = true;
-            lblnamertx5060ti.Location = new Point(917, 827);
+            lblnamertx5060ti.Location = new Point(802, 620);
             lblnamertx5060ti.Name = "lblnamertx5060ti";
-            lblnamertx5060ti.Size = new Size(83, 20);
+            lblnamertx5060ti.Size = new Size(64, 15);
             lblnamertx5060ti.TabIndex = 52;
             lblnamertx5060ti.Text = "RTX 5060 ti";
             // 
@@ -1420,9 +1466,9 @@
             // 
             lblpricertx5060ti.AutoSize = true;
             lblpricertx5060ti.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricertx5060ti.Location = new Point(917, 760);
+            lblpricertx5060ti.Location = new Point(802, 570);
             lblpricertx5060ti.Name = "lblpricertx5060ti";
-            lblpricertx5060ti.Size = new Size(151, 46);
+            lblpricertx5060ti.Size = new Size(121, 37);
             lblpricertx5060ti.TabIndex = 51;
             lblpricertx5060ti.Text = "₱25,000";
             // 
@@ -1431,10 +1477,9 @@
             pictureBox15.BackColor = Color.Transparent;
             pictureBox15.BackgroundImage = (Image)resources.GetObject("pictureBox15.BackgroundImage");
             pictureBox15.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox15.Location = new Point(917, 517);
-            pictureBox15.Margin = new Padding(3, 4, 3, 4);
+            pictureBox15.Location = new Point(802, 388);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(233, 224);
+            pictureBox15.Size = new Size(204, 168);
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox15.TabIndex = 50;
             pictureBox15.TabStop = false;
@@ -1446,8 +1491,8 @@
             mbtnrtx5090.Depth = 0;
             mbtnrtx5090.HighEmphasis = true;
             mbtnrtx5090.Icon = null;
-            mbtnrtx5090.Location = new Point(726, 892);
-            mbtnrtx5090.Margin = new Padding(5, 8, 5, 8);
+            mbtnrtx5090.Location = new Point(635, 669);
+            mbtnrtx5090.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5090.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5090.Name = "mbtnrtx5090";
             mbtnrtx5090.NoAccentTextColor = Color.Empty;
@@ -1462,18 +1507,18 @@
             // lblspecrtx5090
             // 
             lblspecrtx5090.AutoSize = true;
-            lblspecrtx5090.Location = new Point(623, 847);
+            lblspecrtx5090.Location = new Point(545, 635);
             lblspecrtx5090.Name = "lblspecrtx5090";
-            lblspecrtx5090.Size = new Size(292, 20);
+            lblspecrtx5090.Size = new Size(230, 15);
             lblspecrtx5090.TabIndex = 48;
             lblspecrtx5090.Text = "32GB GDDR7, DLSS 4, Ray Tracing, PCIe 5.0";
             // 
             // lblnamertx5090
             // 
             lblnamertx5090.AutoSize = true;
-            lblnamertx5090.Location = new Point(623, 827);
+            lblnamertx5090.Location = new Point(545, 620);
             lblnamertx5090.Name = "lblnamertx5090";
-            lblnamertx5090.Size = new Size(70, 20);
+            lblnamertx5090.Size = new Size(54, 15);
             lblnamertx5090.TabIndex = 47;
             lblnamertx5090.Text = "RTX 5090";
             // 
@@ -1481,9 +1526,9 @@
             // 
             lblpricertx5090.AutoSize = true;
             lblpricertx5090.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricertx5090.Location = new Point(623, 760);
+            lblpricertx5090.Location = new Point(545, 570);
             lblpricertx5090.Name = "lblpricertx5090";
-            lblpricertx5090.Size = new Size(171, 46);
+            lblpricertx5090.Size = new Size(137, 37);
             lblpricertx5090.TabIndex = 46;
             lblpricertx5090.Text = "₱160,000";
             // 
@@ -1492,10 +1537,9 @@
             pictureBox14.BackColor = Color.Transparent;
             pictureBox14.BackgroundImageLayout = ImageLayout.None;
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(623, 517);
-            pictureBox14.Margin = new Padding(3, 4, 3, 4);
+            pictureBox14.Location = new Point(545, 388);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(233, 224);
+            pictureBox14.Size = new Size(204, 168);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox14.TabIndex = 45;
             pictureBox14.TabStop = false;
@@ -1507,8 +1551,8 @@
             mbtnrtx5080.Depth = 0;
             mbtnrtx5080.HighEmphasis = true;
             mbtnrtx5080.Icon = null;
-            mbtnrtx5080.Location = new Point(440, 892);
-            mbtnrtx5080.Margin = new Padding(5, 8, 5, 8);
+            mbtnrtx5080.Location = new Point(385, 669);
+            mbtnrtx5080.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5080.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5080.Name = "mbtnrtx5080";
             mbtnrtx5080.NoAccentTextColor = Color.Empty;
@@ -1523,18 +1567,18 @@
             // lblspecrtx5080
             // 
             lblspecrtx5080.AutoSize = true;
-            lblspecrtx5080.Location = new Point(337, 847);
+            lblspecrtx5080.Location = new Point(295, 635);
             lblspecrtx5080.Name = "lblspecrtx5080";
-            lblspecrtx5080.Size = new Size(230, 20);
+            lblspecrtx5080.Size = new Size(179, 15);
             lblspecrtx5080.TabIndex = 43;
             lblspecrtx5080.Text = "16GB GDDR7, DLSS 4, 4K Gaming";
             // 
             // lblnamertx5080
             // 
             lblnamertx5080.AutoSize = true;
-            lblnamertx5080.Location = new Point(337, 827);
+            lblnamertx5080.Location = new Point(295, 620);
             lblnamertx5080.Name = "lblnamertx5080";
-            lblnamertx5080.Size = new Size(70, 20);
+            lblnamertx5080.Size = new Size(54, 15);
             lblnamertx5080.TabIndex = 42;
             lblnamertx5080.Text = "RTX 5080";
             // 
@@ -1542,9 +1586,9 @@
             // 
             lblpricertx5080.AutoSize = true;
             lblpricertx5080.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpricertx5080.Location = new Point(337, 760);
+            lblpricertx5080.Location = new Point(295, 570);
             lblpricertx5080.Name = "lblpricertx5080";
-            lblpricertx5080.Size = new Size(151, 46);
+            lblpricertx5080.Size = new Size(121, 37);
             lblpricertx5080.TabIndex = 41;
             lblpricertx5080.Text = "₱75,000";
             // 
@@ -1553,10 +1597,9 @@
             pictureBox13.BackColor = Color.Transparent;
             pictureBox13.BackgroundImageLayout = ImageLayout.None;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(337, 517);
-            pictureBox13.Margin = new Padding(3, 4, 3, 4);
+            pictureBox13.Location = new Point(295, 388);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(233, 224);
+            pictureBox13.Size = new Size(204, 168);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox13.TabIndex = 40;
             pictureBox13.TabStop = false;
@@ -1568,8 +1611,8 @@
             mbtnrtx5070ti.Depth = 0;
             mbtnrtx5070ti.HighEmphasis = true;
             mbtnrtx5070ti.Icon = null;
-            mbtnrtx5070ti.Location = new Point(151, 897);
-            mbtnrtx5070ti.Margin = new Padding(5, 8, 5, 8);
+            mbtnrtx5070ti.Location = new Point(132, 673);
+            mbtnrtx5070ti.Margin = new Padding(4, 6, 4, 6);
             mbtnrtx5070ti.MouseState = MaterialSkin.MouseState.HOVER;
             mbtnrtx5070ti.Name = "mbtnrtx5070ti";
             mbtnrtx5070ti.NoAccentTextColor = Color.Empty;
@@ -1584,18 +1627,18 @@
             // lblspecrtx5070ti
             // 
             lblspecrtx5070ti.AutoSize = true;
-            lblspecrtx5070ti.Location = new Point(48, 847);
+            lblspecrtx5070ti.Location = new Point(42, 635);
             lblspecrtx5070ti.Name = "lblspecrtx5070ti";
-            lblspecrtx5070ti.Size = new Size(291, 20);
+            lblspecrtx5070ti.Size = new Size(228, 15);
             lblspecrtx5070ti.TabIndex = 38;
             lblspecrtx5070ti.Text = "16GB GDDR7, High-end 1440p/4K Gaming";
             // 
             // lblnamertx5070ti
             // 
             lblnamertx5070ti.AutoSize = true;
-            lblnamertx5070ti.Location = new Point(48, 827);
+            lblnamertx5070ti.Location = new Point(42, 620);
             lblnamertx5070ti.Name = "lblnamertx5070ti";
-            lblnamertx5070ti.Size = new Size(86, 20);
+            lblnamertx5070ti.Size = new Size(67, 15);
             lblnamertx5070ti.TabIndex = 37;
             lblnamertx5070ti.Text = "RTX 5070 Ti";
             // 
@@ -1603,9 +1646,9 @@
             // 
             lblpricertx5070ti.AutoSize = true;
             lblpricertx5070ti.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpricertx5070ti.Location = new Point(48, 760);
+            lblpricertx5070ti.Location = new Point(42, 570);
             lblpricertx5070ti.Name = "lblpricertx5070ti";
-            lblpricertx5070ti.Size = new Size(151, 46);
+            lblpricertx5070ti.Size = new Size(121, 37);
             lblpricertx5070ti.TabIndex = 36;
             lblpricertx5070ti.Text = "₱52,000";
             // 
@@ -1614,9 +1657,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(840, 173);
+            label1.Location = new Point(735, 130);
             label1.Name = "label1";
-            label1.Size = new Size(659, 62);
+            label1.Size = new Size(521, 50);
             label1.TabIndex = 22;
             label1.Text = "WELCOME TO BITS N BYTES!";
             // 
@@ -1625,9 +1668,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(86, 228);
+            label6.Location = new Point(75, 171);
             label6.Name = "label6";
-            label6.Size = new Size(211, 41);
+            label6.Size = new Size(171, 32);
             label6.TabIndex = 0;
             label6.Text = "View PC Parts";
             label6.Click += label6_Click;
@@ -1636,10 +1679,9 @@
             // 
             panel5.BackColor = Color.White;
             panel5.Controls.Add(label8);
-            panel5.Location = new Point(38, 216);
-            panel5.Margin = new Padding(3, 4, 3, 4);
+            panel5.Location = new Point(33, 162);
             panel5.Name = "panel5";
-            panel5.Size = new Size(282, 84);
+            panel5.Size = new Size(247, 63);
             panel5.TabIndex = 24;
             // 
             // label8
@@ -1647,9 +1689,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(49, 23);
+            label8.Location = new Point(43, 17);
             label8.Name = "label8";
-            label8.Size = new Size(211, 41);
+            label8.Size = new Size(171, 32);
             label8.TabIndex = 1;
             label8.Text = "View PC Parts";
             // 
@@ -1658,108 +1700,40 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(376, 228);
+            label7.Location = new Point(329, 171);
             label7.Name = "label7";
-            label7.Size = new Size(239, 41);
+            label7.Size = new Size(193, 32);
             label7.TabIndex = 2;
             label7.Text = "View PC Bundle";
             label7.Click += label7_Click_1;
             // 
             // txtsearch
             // 
-            txtsearch.Location = new Point(636, 244);
+            txtsearch.Location = new Point(556, 183);
+            txtsearch.Margin = new Padding(3, 2, 3, 2);
             txtsearch.Name = "txtsearch";
             txtsearch.PlaceholderText = "Search";
-            txtsearch.Size = new Size(261, 27);
+            txtsearch.Size = new Size(229, 23);
             txtsearch.TabIndex = 25;
             txtsearch.KeyDown += txtsearch_KeyDown;
             // 
             // btnsearch
             // 
-            btnsearch.Location = new Point(903, 243);
+            btnsearch.Location = new Point(790, 182);
+            btnsearch.Margin = new Padding(3, 2, 3, 2);
             btnsearch.Name = "btnsearch";
-            btnsearch.Size = new Size(94, 29);
+            btnsearch.Size = new Size(82, 22);
             btnsearch.TabIndex = 26;
             btnsearch.Text = "Search";
             btnsearch.UseVisualStyleBackColor = true;
             btnsearch.Click += btnsearch_Click;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(mbtnryzen9);
-            panel3.Controls.Add(lblspecryzen9);
-            panel3.Controls.Add(lblnameryzen9);
-            panel3.Controls.Add(lblpriceryzen9);
-            panel3.Controls.Add(pcbRyzen9);
-            panel3.Location = new Point(326, 31);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(250, 427);
-            panel3.TabIndex = 101;
-            // 
-            // mbtnryzen9
-            // 
-            mbtnryzen9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            mbtnryzen9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            mbtnryzen9.Depth = 0;
-            mbtnryzen9.HighEmphasis = true;
-            mbtnryzen9.Icon = null;
-            mbtnryzen9.Location = new Point(102, 383);
-            mbtnryzen9.Margin = new Padding(5, 8, 5, 8);
-            mbtnryzen9.MouseState = MaterialSkin.MouseState.HOVER;
-            mbtnryzen9.Name = "mbtnryzen9";
-            mbtnryzen9.NoAccentTextColor = Color.Empty;
-            mbtnryzen9.Size = new Size(114, 36);
-            mbtnryzen9.TabIndex = 14;
-            mbtnryzen9.Text = "ADD TO CART";
-            mbtnryzen9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            mbtnryzen9.UseAccentColor = false;
-            mbtnryzen9.UseVisualStyleBackColor = true;
-            // 
-            // lblspecryzen9
-            // 
-            lblspecryzen9.AutoSize = true;
-            lblspecryzen9.Location = new Point(-1, 338);
-            lblspecryzen9.Name = "lblspecryzen9";
-            lblspecryzen9.Size = new Size(252, 40);
-            lblspecryzen9.TabIndex = 13;
-            lblspecryzen9.Text = "16 Cores / 32 Threads, up to 5.7GHz, \r\n3D V-Cache, AM5, DDR5, PCIe 5.0";
-            // 
-            // lblnameryzen9
-            // 
-            lblnameryzen9.AutoSize = true;
-            lblnameryzen9.Location = new Point(-1, 318);
-            lblnameryzen9.Name = "lblnameryzen9";
-            lblnameryzen9.Size = new Size(124, 20);
-            lblnameryzen9.TabIndex = 12;
-            lblnameryzen9.Text = "Ryzen 9 9950X3D";
-            // 
-            // lblpriceryzen9
-            // 
-            lblpriceryzen9.AutoSize = true;
-            lblpriceryzen9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            lblpriceryzen9.Location = new Point(-1, 251);
-            lblpriceryzen9.Name = "lblpriceryzen9";
-            lblpriceryzen9.Size = new Size(151, 46);
-            lblpriceryzen9.TabIndex = 11;
-            lblpriceryzen9.Text = "₱45,000";
-            // 
-            // pcbRyzen9
-            // 
-            pcbRyzen9.BackgroundImage = (Image)resources.GetObject("pcbRyzen9.BackgroundImage");
-            pcbRyzen9.BackgroundImageLayout = ImageLayout.Stretch;
-            pcbRyzen9.Location = new Point(-1, 7);
-            pcbRyzen9.Margin = new Padding(3, 4, 3, 4);
-            pcbRyzen9.Name = "pcbRyzen9";
-            pcbRyzen9.Size = new Size(233, 225);
-            pcbRyzen9.TabIndex = 10;
-            pcbRyzen9.TabStop = false;
-            // 
             // PRODUCT
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1924, 1055);
+            ClientSize = new Size(1684, 791);
             Controls.Add(btnsearch);
             Controls.Add(txtsearch);
             Controls.Add(label7);
@@ -1769,7 +1743,6 @@
             Controls.Add(panel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label2);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "PRODUCT";
             Text = "PRODUCT";
             WindowState = FormWindowState.Maximized;
@@ -1791,6 +1764,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pcbRyzen9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
@@ -1805,9 +1781,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbRyzen9).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
