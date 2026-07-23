@@ -189,6 +189,7 @@
             lblpriceryzen9 = new Label();
             pcbRyzen9 = new PictureBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
+            linkLabelRP1 = new LinkLabel();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -256,6 +257,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(linkLabelRP1);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox4);
@@ -2127,6 +2129,19 @@
             flowLayoutPanel3.Size = new Size(1844, 695);
             flowLayoutPanel3.TabIndex = 27;
             // 
+            // linkLabelRP1
+            // 
+            linkLabelRP1.AutoSize = true;
+            linkLabelRP1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabelRP1.LinkColor = Color.Black;
+            linkLabelRP1.Location = new Point(647, 56);
+            linkLabelRP1.Name = "linkLabelRP1";
+            linkLabelRP1.Size = new Size(142, 21);
+            linkLabelRP1.TabIndex = 15;
+            linkLabelRP1.TabStop = true;
+            linkLabelRP1.Text = "Recent Purchases";
+            linkLabelRP1.LinkClicked += linkLabelRP1_LinkClicked;
+            // 
             // PRODUCT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -2149,6 +2164,7 @@
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -2383,5 +2399,6 @@
         private PictureBox pcbRyzen9;
         private FlowLayoutPanel flowLayoutPanel3;
         private Label lblStock17;
+        private LinkLabel linkLabelRP1;
     }
 }

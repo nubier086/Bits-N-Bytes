@@ -606,6 +606,38 @@ ORDER BY PurchaseDate DESC; ";
 
             command.ExecuteNonQuery();
         }
+
+        public static DataTable GetRecentPurchasesByUser(string username)
+        {
+            DataTable table = new();
+
+            using var connection = GetConnection();
+            connection.Open();
+
+            string sql = @"
+
+            SELECT
+            Username,
+            ProductName,
+            Quantity,
+            Price,
+            Total,
+            PurchaseDate
+            FROM Receipts
+            WHERE Username = @user
+            ORDER BY PurchaseDate DESC;";
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = sql;
+            command.Parameters.AddWithValue("@user", username);
+
+            using var reader = command.ExecuteReader();
+
+            table.Load(reader);
+
+            return table;
+        }
     }
         
  }

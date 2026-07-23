@@ -490,5 +490,17 @@ namespace Bits_N_Bytes
 
         }
 
+        //RECENT PURCHASE LINK LABEL
+        private void linkLabelRP1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(UserSession.Username))
+            {
+                MessageBox.Show("Please log in first.");
+                return;
+            }
+
+            UserRecentPurchase form = new UserRecentPurchase();
+            form.Show();
+        }
     }
 }
