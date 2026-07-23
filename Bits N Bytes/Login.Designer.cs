@@ -153,6 +153,7 @@ namespace Bits_N_Bytes
             Controls.Add(label1);
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,12 +178,16 @@ namespace Bits_N_Bytes
 
             if (role == "Admin")
             {
+                UserSession.Username = USERNAME.Text;
+
                 AdminPanel admin = new AdminPanel();
                 admin.Show();
                 this.Hide();
             }
             else
             {
+                UserSession.Username = USERNAME.Text;
+
                 Form1 home = new Form1();
                 home.Show();
                 this.Hide();

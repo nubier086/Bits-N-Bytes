@@ -39,6 +39,7 @@
             numericUpDown1 = new NumericUpDown();
             buttonUPDATESTOCK1 = new Button();
             searchbtn1 = new Button();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPRODUCTLIST1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
@@ -157,12 +158,26 @@
             searchbtn1.UseVisualStyleBackColor = true;
             searchbtn1.Click += searchbtn1_Click;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(657, 420);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(131, 21);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Recent Purchases";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // AdminPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
+            Controls.Add(linkLabel1);
             Controls.Add(searchbtn1);
             Controls.Add(buttonUPDATESTOCK1);
             Controls.Add(numericUpDown1);
@@ -191,5 +206,6 @@
         private NumericUpDown numericUpDown1;
         private Button buttonUPDATESTOCK1;
         private Button searchbtn1;
+        private LinkLabel linkLabel1;
     }
 }

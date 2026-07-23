@@ -87,10 +87,32 @@ namespace Bits_N_Bytes
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Receipt Sent to Email, Thank you for Purchasing on Bits N Bytes. Enjoy our Products!");
-            DatabaseHelper.ClearCart2();
-            LoadCart();
 
+            if (string.IsNullOrWhiteSpace(UserSession.Username))
+            {
+                DialogResult result = MessageBox.Show(
+                    "You need to create an account or log in before checking out.\n\nWould you like to go to the Login page?",
+                    "Account Required",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes)
+                {
+                    Login login = new Login();
+                    login.Show();
+                    this.Hide();   // or this.Close();
+                }
+
+                return;
+            }
+
+            DatabaseHelper.SaveCartReceipt(UserSession.Username);
+
+            MessageBox.Show("Receipt Sent to Email. Thank you for purchasing!");
+
+            DatabaseHelper.ClearCart2();
+
+            LoadCart();
 
         }
     }

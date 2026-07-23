@@ -91,5 +91,11 @@ namespace Bits_N_Bytes
 
             LoadProducts();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            recent form = new recent();
+            form.Show();
+        }
     }
 }

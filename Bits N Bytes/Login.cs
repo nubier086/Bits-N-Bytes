@@ -23,7 +23,9 @@ namespace Bits_N_Bytes
 
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

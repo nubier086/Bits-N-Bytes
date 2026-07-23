@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace Bits_N_Bytes.Database
 {
@@ -80,6 +81,17 @@ namespace Bits_N_Bytes.Database
             Role TEXT NOT NULL
           );";
 
+            string createReceiptsTable = @"
+CREATE TABLE IF NOT EXISTS Receipts(
+    ReceiptID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Username TEXT NOT NULL,
+    ProductName TEXT NOT NULL,
+    Quantity INTEGER NOT NULL,
+    Price REAL NOT NULL,
+    Total REAL NOT NULL,
+    PurchaseDate TEXT NOT NULL
+);";
+
 
             using var command = connection.CreateCommand();
 
@@ -90,6 +102,9 @@ namespace Bits_N_Bytes.Database
             command.ExecuteNonQuery();
 
             command.CommandText = sql;
+            command.ExecuteNonQuery();
+
+            command.CommandText = createReceiptsTable;
             command.ExecuteNonQuery();
 
             using var adminCommand = connection.CreateCommand();
@@ -190,6 +205,72 @@ namespace Bits_N_Bytes.Database
             command.Parameters.AddWithValue("@price", price);
 
             command.ExecuteNonQuery();
+        }
+
+
+        public static void SaveCartReceipt(string username)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            string sql = @"
+    INSERT INTO Receipts
+    (Username, ProductName, Quantity, Price, Total, PurchaseDate)
+    SELECT
+        @user,
+        ProductName,
+        Quantity,
+        Price,
+        Quantity * Price,
+        @date
+    FROM Cart;";
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = sql;
+
+            command.Parameters.AddWithValue("@user", username);
+            command.Parameters.AddWithValue("@date",
+                DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+
+            command.ExecuteNonQuery();
+        }
+
+
+        public static DataTable GetRecentPurchases()
+        {
+            DataTable table = new();
+
+            using var connection = GetConnection();
+            connection.Open();
+
+          
+
+
+
+            string sql = @"
+SELECT
+    Username,
+    ProductName,
+    Quantity,
+    Price,
+    Total,
+    PurchaseDate
+FROM Receipts
+ORDER BY PurchaseDate DESC; ";
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = sql;
+            
+
+            using var reader = command.ExecuteReader();
+
+            table.Load(reader);
+
+          
+
+            return table;
         }
 
         public static int GetStock(int productId)
