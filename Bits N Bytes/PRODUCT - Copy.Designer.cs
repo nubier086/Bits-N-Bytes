@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRODUCT1));
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new ReaLTaiizor.Controls.Panel();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -44,6 +41,9 @@
             bundle1 = new PictureBox();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
             panel2 = new ReaLTaiizor.Controls.Panel();
+            lblStock23 = new Label();
+            lblStock22 = new Label();
+            lblStock21 = new Label();
             lblspecbun3 = new Label();
             lblnamebun3 = new Label();
             lblpricebun3 = new Label();
@@ -60,9 +60,6 @@
             label7 = new Label();
             panel3 = new Panel();
             label1 = new Label();
-            lblStock21 = new Label();
-            lblStock22 = new Label();
-            lblStock23 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -90,7 +87,6 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(guna2Button2);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox4);
@@ -104,23 +100,6 @@
             panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel1.TabIndex = 0;
             panel1.Text = "panel1";
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.CustomizableEdges = customizableEdges3;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.Gold;
-            guna2Button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button2.ForeColor = Color.Black;
-            guna2Button2.Location = new Point(1881, 19);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button2.Size = new Size(144, 57);
-            guna2Button2.TabIndex = 27;
-            guna2Button2.Text = "Login/Sign In";
             // 
             // pictureBox5
             // 
@@ -182,7 +161,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(2067, 8);
+            pictureBox2.Location = new Point(504, 10);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(81, 70);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -277,6 +256,33 @@
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 12;
             panel2.Text = "panel2";
+            // 
+            // lblStock23
+            // 
+            lblStock23.AutoSize = true;
+            lblStock23.Location = new Point(1294, 659);
+            lblStock23.Name = "lblStock23";
+            lblStock23.Size = new Size(48, 15);
+            lblStock23.TabIndex = 123;
+            lblStock23.Text = "Stock: 0";
+            // 
+            // lblStock22
+            // 
+            lblStock22.AutoSize = true;
+            lblStock22.Location = new Point(852, 659);
+            lblStock22.Name = "lblStock22";
+            lblStock22.Size = new Size(48, 15);
+            lblStock22.TabIndex = 122;
+            lblStock22.Text = "Stock: 0";
+            // 
+            // lblStock21
+            // 
+            lblStock21.AutoSize = true;
+            lblStock21.Location = new Point(400, 659);
+            lblStock21.Name = "lblStock21";
+            lblStock21.Size = new Size(48, 15);
+            lblStock21.TabIndex = 121;
+            lblStock21.Text = "Stock: 0";
             // 
             // lblspecbun3
             // 
@@ -458,33 +464,6 @@
             label1.Text = "View PC Parts";
             label1.Click += label1_Click;
             // 
-            // lblStock21
-            // 
-            lblStock21.AutoSize = true;
-            lblStock21.Location = new Point(400, 659);
-            lblStock21.Name = "lblStock21";
-            lblStock21.Size = new Size(48, 15);
-            lblStock21.TabIndex = 121;
-            lblStock21.Text = "Stock: 0";
-            // 
-            // lblStock22
-            // 
-            lblStock22.AutoSize = true;
-            lblStock22.Location = new Point(852, 659);
-            lblStock22.Name = "lblStock22";
-            lblStock22.Size = new Size(48, 15);
-            lblStock22.TabIndex = 122;
-            lblStock22.Text = "Stock: 0";
-            // 
-            // lblStock23
-            // 
-            lblStock23.AutoSize = true;
-            lblStock23.Location = new Point(1294, 659);
-            lblStock23.Name = "lblStock23";
-            lblStock23.Size = new Size(48, 15);
-            lblStock23.TabIndex = 123;
-            lblStock23.Text = "Stock: 0";
-            // 
             // PRODUCT1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -549,7 +528,6 @@
         private Label lblpricebun1;
         private Label lblnamebun3;
         private Label lblpricebun3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Label lblStock21;
         private Label lblStock23;
         private Label lblStock22;

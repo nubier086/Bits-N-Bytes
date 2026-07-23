@@ -515,7 +515,7 @@ namespace Bits_N_Bytes.Database
             string sql = @"
             UPDATE Products
             SET Stock = Stock + @amount
-            oWHERE ProductID = @id;";
+            WHERE ProductID = @id;";
 
             using var command = connection.CreateCommand();
 

@@ -155,14 +155,14 @@ namespace Bits_N_Bytes
                  label3);
         }
 
-        private void mbtnryzen9_Click(object sender, EventArgs e)
+        private void mbtnryzen9_Click_1(object sender, EventArgs e)
         {
             AddProductToCart(
-            2,
-            "AMD Ryzen 9 9950X3D",
-             lblnameryzen9,
-             lblspecryzen9,
-             lblpriceryzen9);
+                2,
+                "AMD Ryzen 9 9950X3D",
+                lblnameryzen9,
+                lblspecryzen9,
+                lblpriceryzen9);
         }
 
         private void mtbnryzen5_Click(object sender, EventArgs e)
@@ -489,5 +489,6 @@ namespace Bits_N_Bytes
         {
 
         }
+
     }
 }

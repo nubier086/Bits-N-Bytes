@@ -147,6 +147,7 @@
             lblStock16 = new Label();
             mbtnmb5 = new MaterialSkin.Controls.MaterialButton();
             panel11 = new Panel();
+            lblStock17 = new Label();
             pictureBox21 = new PictureBox();
             lblpriceram1 = new Label();
             lblnameram1 = new Label();
@@ -188,7 +189,6 @@
             lblpriceryzen9 = new Label();
             pcbRyzen9 = new PictureBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
-            lblStock17 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -1616,6 +1616,15 @@
             panel11.Size = new Size(222, 321);
             panel11.TabIndex = 123;
             // 
+            // lblStock17
+            // 
+            lblStock17.AutoSize = true;
+            lblStock17.Location = new Point(17, 296);
+            lblStock17.Name = "lblStock17";
+            lblStock17.Size = new Size(48, 15);
+            lblStock17.TabIndex = 119;
+            lblStock17.Text = "Stock: 0";
+            // 
             // pictureBox21
             // 
             pictureBox21.BackColor = Color.Transparent;
@@ -2040,6 +2049,7 @@
             mbtnryzen9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             mbtnryzen9.UseAccentColor = false;
             mbtnryzen9.UseVisualStyleBackColor = true;
+            mbtnryzen9.Click += mbtnryzen9_Click_1;
             // 
             // lblStock2
             // 
@@ -2116,15 +2126,6 @@
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(1844, 695);
             flowLayoutPanel3.TabIndex = 27;
-            // 
-            // lblStock17
-            // 
-            lblStock17.AutoSize = true;
-            lblStock17.Location = new Point(17, 296);
-            lblStock17.Name = "lblStock17";
-            lblStock17.Size = new Size(48, 15);
-            lblStock17.TabIndex = 119;
-            lblStock17.Text = "Stock: 0";
             // 
             // PRODUCT
             // 

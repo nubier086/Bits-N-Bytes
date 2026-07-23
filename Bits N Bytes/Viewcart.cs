@@ -21,6 +21,14 @@ namespace Bits_N_Bytes
         {
             dgvCart.DataSource = DatabaseHelper.GetCartItems();
 
+            dgvCart.DefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Regular);
+            dgvCart.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+
+            dgvCart.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCart.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvCart.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dgvCart.RowTemplate.Height = 40;
+
             if (dgvCart.Columns.Contains("CartID"))
             {
                 dgvCart.Columns["CartID"].Visible = false;
