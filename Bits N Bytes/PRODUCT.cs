@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Bits_N_Bytes.Database;
+using Microsoft.Data.Sqlite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Bits_N_Bytes.Database;
-using Microsoft.Data.Sqlite;
+using System.Xml.Linq;
 
 namespace Bits_N_Bytes
 {
@@ -100,17 +101,10 @@ namespace Bits_N_Bytes
             About about = new About();
             about.Show();
             this.Hide();
-
-
-
-
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-
-
-
 
         }
 
@@ -120,16 +114,11 @@ namespace Bits_N_Bytes
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
-
-
-
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             //VIEWCART
-
-
 
             Viewcart viewcart = new Viewcart();
             viewcart.Show();
@@ -402,36 +391,54 @@ namespace Bits_N_Bytes
         private void btnsearch_Click(object sender, EventArgs e)
         {
             string keyword = txtsearch.Text.Trim().ToLower();
+            SearchPanel(flowLayoutPanel3, keyword);
+        }
 
-            foreach (Control c in panel1.Controls)
+        private bool ContainsKeyword(Control control, string keyword)
+        {
+            if (control is Label lbl &&
+                lbl.Text.ToLower().Contains(keyword))
             {
-                SearchControls(c, keyword);
+                return true;
             }
 
-            foreach (Control c in panel2.Controls)
+            foreach (Control child in control.Controls)
             {
-                SearchControls(c, keyword);
+                if (ContainsKeyword(child, keyword))
+                    return true;
+            }
+
+            return false;
+        }
+
+        private void SearchPanel(Control container, string keyword)
+        {
+            int index = 0;
+
+            foreach (Control product in container.Controls)
+            {
+                if (!(product is Panel))
+                    continue;
+
+                bool found = ContainsKeyword(product, keyword);
+
+                product.Visible = string.IsNullOrWhiteSpace(keyword) || found;
+
+                if (found)
+                {
+                    container.Controls.SetChildIndex(product, index);
+                    index++;
+                }
             }
         }
 
         private void SearchControls(Control parent, string keyword)
         {
-            foreach (Control c in parent.Controls)
+            foreach (Control product in parent.Controls)
             {
-                if (c is Label lbl)
-                {
-                    if (lbl.Text.ToLower().Contains(keyword))
-                    {
-                        parent.Visible = true;
-                        return;
-                    }
-                }
+                bool found = ContainsKeyword(product, keyword);
+                product.Visible = string.IsNullOrEmpty(keyword) || found;
             }
-
-            if (!string.IsNullOrWhiteSpace(keyword))
-                parent.Visible = false;
-            else
-                parent.Visible = true;
         }
 
         // Handle Enter key in the search textbox
@@ -464,6 +471,21 @@ namespace Bits_N_Bytes
         }
 
         private void lblStock20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel15_Paint(object sender, PaintEventArgs e)
         {
 
         }
