@@ -78,6 +78,7 @@ namespace Bits_N_Bytes
         private void PRODUCT_Load(object sender, EventArgs e)
         {
             LoadStocks();
+            lblWelcome.Text = $"Welcome, {UserSession.Username}!";
         }
 
 
@@ -501,6 +502,11 @@ namespace Bits_N_Bytes
 
             UserRecentPurchase form = new UserRecentPurchase();
             form.Show();
+        }
+
+        private void lblWelcome_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

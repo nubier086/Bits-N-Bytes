@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRODUCT));
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new ReaLTaiizor.Controls.Panel();
+            lblWelcome = new Label();
+            linkLabelRP1 = new LinkLabel();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -189,7 +191,6 @@
             lblpriceryzen9 = new Label();
             pcbRyzen9 = new PictureBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
-            linkLabelRP1 = new LinkLabel();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -257,6 +258,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(lblWelcome);
             panel1.Controls.Add(linkLabelRP1);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox6);
@@ -272,6 +274,32 @@
             panel1.TabIndex = 0;
             panel1.Text = "panel1";
             panel1.Click += panel1_Click;
+            // 
+            // lblWelcome
+            // 
+            lblWelcome.AutoSize = true;
+            lblWelcome.BackColor = Color.Transparent;
+            lblWelcome.Font = new Font("Century Gothic", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblWelcome.Location = new Point(1773, 19);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(197, 42);
+            lblWelcome.TabIndex = 16;
+            lblWelcome.Text = "WELCOME!";
+            lblWelcome.Click += lblWelcome_Click;
+            lblWelcome.Resize += lblWelcome_Click;
+            // 
+            // linkLabelRP1
+            // 
+            linkLabelRP1.AutoSize = true;
+            linkLabelRP1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabelRP1.LinkColor = Color.Black;
+            linkLabelRP1.Location = new Point(647, 56);
+            linkLabelRP1.Name = "linkLabelRP1";
+            linkLabelRP1.Size = new Size(142, 21);
+            linkLabelRP1.TabIndex = 15;
+            linkLabelRP1.TabStop = true;
+            linkLabelRP1.Text = "Recent Purchases";
+            linkLabelRP1.LinkClicked += linkLabelRP1_LinkClicked;
             // 
             // pictureBox5
             // 
@@ -2129,19 +2157,6 @@
             flowLayoutPanel3.Size = new Size(1844, 695);
             flowLayoutPanel3.TabIndex = 27;
             // 
-            // linkLabelRP1
-            // 
-            linkLabelRP1.AutoSize = true;
-            linkLabelRP1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabelRP1.LinkColor = Color.Black;
-            linkLabelRP1.Location = new Point(647, 56);
-            linkLabelRP1.Name = "linkLabelRP1";
-            linkLabelRP1.Size = new Size(142, 21);
-            linkLabelRP1.TabIndex = 15;
-            linkLabelRP1.TabStop = true;
-            linkLabelRP1.Text = "Recent Purchases";
-            linkLabelRP1.LinkClicked += linkLabelRP1_LinkClicked;
-            // 
             // PRODUCT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -2400,5 +2415,6 @@
         private FlowLayoutPanel flowLayoutPanel3;
         private Label lblStock17;
         private LinkLabel linkLabelRP1;
+        private Label lblWelcome;
     }
 }
